@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from 'next/font/google'
 import "./globals.css";
-import Naavbar from "../../components/Navbaar";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const mont= Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Cro Quad",
@@ -17,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Naavbar/>
+      <body className={mont.className}>
+        <Navbar/>
         {children}
         </body>
     </html>

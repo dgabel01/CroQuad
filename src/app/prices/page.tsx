@@ -2,7 +2,7 @@ import React from 'react'
 
 const PriceList = () => {
   return (
-    <div>PriceList</div>
+    <div>Tour pricing page</div>
   )
 }
 
