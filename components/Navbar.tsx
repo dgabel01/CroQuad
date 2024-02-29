@@ -88,7 +88,7 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
   );
 }
 
-export default function Naavbar() {
+export default function Navbar() {
   
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -104,11 +104,11 @@ export default function Naavbar() {
 
   return (
     <MaterialNavbar
-      className="w-full bg-white"
+      className="w-full bg-red-100"
       style={{
         maxWidth: "100%",
-      // backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/009/948/926/original/red-and-white-checkers-checkerboard-gingham-aesthetic-checkered-background-illustration-perfect-for-wallpaper-backdrop-postcard-background-vector.jpg")',
-       //backgroundPosition:"60%"
+      //  backgroundImage: 'url("https://cdn.wallpapersafari.com/7/51/B48rdx.png")',
+      //  backgroundBlendMode:'color-dodge',
 
       }}
       placeholder={""}
@@ -121,7 +121,7 @@ export default function Naavbar() {
           className="mr-4 cursor-pointer py-1.5"
           placeholder=""
         >
-          <Logo/>
+          <Logo height={75}/>
         </Typography>
         <div className="hidden lg:block">
           <NavList onCloseMenu={undefined} />

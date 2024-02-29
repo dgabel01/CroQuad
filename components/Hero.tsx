@@ -42,7 +42,7 @@ const Hero = () => {
       <p className='text-2xl mx-4'>Business run by friends who know the best of island Hvar</p>
       <p className='text-2xl mx-12'>We are dedicated to delivering unforgettable experiences that allow you to explore the island of Hvar like never before</p>
       <Link href={"/about"}>
-        <Button variant="outlined" className="rounded-full" placeholder={""} color='red'>
+        <Button variant="outlined" className="rounded-full" placeholder={""} color='black'>
           About Us
         </Button>
       </Link>

@@ -21,6 +21,7 @@ export default function RootLayout({
       <body className={mont.className}>
         <Navbar/>
         {children}
+        <Footer/>
         </body>
     </html>
   );
