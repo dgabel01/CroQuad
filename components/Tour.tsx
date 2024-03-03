@@ -68,7 +68,8 @@ const Tour = ({ title, description, images, tourCardsData }: Props) => {
             </div>
           </div>
         </div>
-        <hr className="w-5/6 h-1 mx-auto my-8 bg-red-500 file:border-0 rounded md:my-10 dark:bg-gray-700" />
+        <hr className="w-5/6 h-1 mx-auto my-8 bg-red-500 file:border-0 rounded md:my-10 dark:bg-gray-700"/>
+        <div className='mb-36'></div>
       </>
     );
   };

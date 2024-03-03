@@ -9,7 +9,7 @@ const Hero = () => {
     <>
     <div className="relative overflow-hidden bg-cover bg-no-repeat" style={{
         backgroundPosition: '50%',
-        backgroundImage: 'url("https://www.hencroatia.com/images/gallery/jet-boat-ride/21369454-702852553247306-5968257749193317240-n.jpeg")',
+        backgroundImage: 'url("/heroimage.jpeg")', 
         height: '600px'}}>
       <div
         className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.45)] bg-fixed">
