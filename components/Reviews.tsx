@@ -227,7 +227,7 @@ const Reviews = () => {
                 <div className="mt-4">
                   <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Amazing experience</p>
                   <p className="mt-4 leading-relaxed text-gray-700">
-                  From the moment I arrived, the staff was friendly and knowledgeable, providing a quick and efficient check-in process. The selection of quads was impressive, ranging from beginner-friendly models to more advanced options for seasoned riders. The staff took the time to ensure I felt comfortable and confident operating the quad before setting off on my adventur
+                  From the moment I arrived, the staff was friendly and knowledgeable, providing a quick and efficient check-in process. The selection of quads was impressive, ranging from beginner-friendly models to more advanced options for seasoned riders. The staff took the time to ensure I felt comfortable and confident operating the quad before setting off on my adventure.
                   </p>
                 </div>
               </div>
@@ -303,7 +303,7 @@ const Reviews = () => {
                   <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Great equipment</p>
 
                   <p className="mt-4 leading-relaxed text-gray-700">
-                    The quads were in excellent condition, well-maintained, and provided a smooth and powerful ride. Whether cruising through forested paths, conquering challenging hills, or enjoying the breathtaking views, every moment was filled with excitement. The rental site's attention to safety was commendable, with clear guidelines and safety gear provided. 
+                    The quads were in excellent condition, well-maintained, and provided a smooth and powerful ride. Whether cruising through forested paths, conquering challenging hills, or enjoying the breathtaking views, every moment was filled with excitement. The rental site&apos;s attention to safety was commendable, with clear guidelines and safety gear provided. 
                   </p>
                 </div>
               </div>
