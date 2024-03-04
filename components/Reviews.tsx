@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import '../public/keen-slider.min.css'
-import KeenSlider from 'keen-slider'; 
+import KeenSlider from 'keen-slider';
+import Image from 'next/image';
+import quadIcon from '../public/quadicon.jpeg'
+import routeIcon from '../public/routeicon.png'
+import sceneryIcon from '../public/sceneryicon.png'
 
 
 const Reviews = () => {
@@ -10,14 +14,14 @@ const Reviews = () => {
       loop: true,
       slides: {
         origin: 'center',
-        perView: 1.25,
+        perView: 1,
         spacing: 16,
       },
       breakpoints: {
         '(min-width: 1024px)': {
           slides: {
             origin: 'auto',
-            perView: 1.5,
+            perView: 1.25,
             spacing: 64,
           },
         },
@@ -53,7 +57,49 @@ const Reviews = () => {
 
   return (
     <>
-    <section>
+    
+    <div className='flex flex-col gap-8 mb-20'>
+      <div>
+          <p className=' text-3xl text-center font-bold mb-12'>Why Choose CroQuad?</p>
+      </div>
+      <div>
+        <p className='text-center text-3xl mx-4'>We craft <span className='text-red-600 font-semibold underline'>experiences</span>, not just journeys!</p>
+      </div>
+      <div className='sm:flex sm:flex-col md:flex md:flex-row items-center justify-evenly gap-16 mt-12'>
+        <div className='flex flex-col gap-4 sm:text-center'>
+          <p className='m-auto text-xl'>Modern equipment</p>
+          <Image
+            src={quadIcon}
+            alt='quad-icon'
+            width={90}
+            height={50}
+            className='m-auto'
+          />
+        </div>
+        <div className='flex flex-col gap-4 sm:text-center'>
+          <p className='text-xl text-center my-8'>Exciting routes</p>
+          <Image
+            src={routeIcon}
+            alt='route-icon'
+            width={90}
+            height={50}
+            className='m-auto mb-8'
+          />
+        </div>
+        <div className='flex flex-col gap-4 sm:text-center'>
+          <p className='m-auto text-xl my-8'>Unforgettable scenery</p>
+          <Image
+            src={sceneryIcon}
+            alt='scenery-icon'
+            width={90}
+            height={50}
+            className='m-auto'
+          />
+        </div>
+      </div>  
+    </div>
+
+ <section>
   <div className="mx-auto px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
       <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
@@ -66,14 +112,14 @@ const Reviews = () => {
         </p>
 
         <p className="mt-4 text-gray-700">
-          More reviews on Google
+          More reviews on <a href={"https://www.google.com"} target="_blank" className="text-blue-400 after:content-['_↗']">Google</a>
         </p>
 
-        <div className="hidden lg:mt-8 lg:flex lg:gap-4">
+        <div className="hidden lg:mt-8 lg:flex lg:gap-4 ml-24">
           <button
             aria-label="Previous slide"
             id="keen-slider-previous-desktop"
-            className="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+            className="rounded-full border border-red-600 p-3 text-red-600 transition hover:bg-red-600 hover:text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +140,7 @@ const Reviews = () => {
           <button
             aria-label="Next slide"
             id="keen-slider-next-desktop"
-            className="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+            className="rounded-full border border-red-600 p-3 text-red-600 transition hover:bg-red-600 hover:text-white"
           >
             <svg
               className="size-5 rtl:rotate-180"
@@ -114,7 +160,7 @@ const Reviews = () => {
         </div>
       </div>
 
-      <div className="-mx-6 lg:col-span-2 lg:mx-0">
+      <div className="mx-6 lg:col-span-2 lg:mx-0">
         <div id="keen-slider" className="keen-slider">
           <div className="keen-slider__slide">
             <blockquote
@@ -179,12 +225,9 @@ const Reviews = () => {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Staying Alive1</p>
-
+                  <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Amazing experience</p>
                   <p className="mt-4 leading-relaxed text-gray-700">
-                    No, Rose, they are not breathing. And they have no arms or legs … Where are
-                    they? You know what? If we come across somebody with no arms or legs, do we
-                    bother resuscitating them? I mean, what quality of life do we have there?
+                  From the moment I arrived, the staff was friendly and knowledgeable, providing a quick and efficient check-in process. The selection of quads was impressive, ranging from beginner-friendly models to more advanced options for seasoned riders. The staff took the time to ensure I felt comfortable and confident operating the quad before setting off on my adventur
                   </p>
                 </div>
               </div>
@@ -257,18 +300,16 @@ const Reviews = () => {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Staying Alive2</p>
+                  <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Great equipment</p>
 
                   <p className="mt-4 leading-relaxed text-gray-700">
-                    No, Rose, they are not breathing. And they have no arms or legs … Where are
-                    they? You know what? If we come across somebody with no arms or legs, do we
-                    bother resuscitating them? I mean, what quality of life do we have there?
+                    The quads were in excellent condition, well-maintained, and provided a smooth and powerful ride. Whether cruising through forested paths, conquering challenging hills, or enjoying the breathtaking views, every moment was filled with excitement. The rental site's attention to safety was commendable, with clear guidelines and safety gear provided. 
                   </p>
                 </div>
               </div>
 
               <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                &mdash; Michael Scott
+                &mdash; John Smith
               </footer>
             </blockquote>
           </div>
@@ -337,18 +378,16 @@ const Reviews = () => {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Staying Alive3</p>
+                  <p className="text-2xl font-bold text-rose-600 sm:text-3xl">Staff were excepetional</p>
 
                   <p className="mt-4 leading-relaxed text-gray-700">
-                    No, Rose, they are not breathing. And they have no arms or legs … Where are
-                    they? You know what? If we come across somebody with no arms or legs, do we
-                    bother resuscitating them? I mean, what quality of life do we have there?
+                  The staff was not only passionate about quad riding but also eager to share their knowledge and recommendations for the best routes. Their commitment to ensuring a positive experience was evident throughout the rental period. Additionally, the online booking process was seamless, making it convenient to secure a quad for the desired date and time.
                   </p>
                 </div>
               </div>
 
               <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                &mdash; Michael Scott
+                &mdash; John Doe
               </footer>
             </blockquote>
           </div>
@@ -360,7 +399,7 @@ const Reviews = () => {
       <button
         aria-label="Previous slide"
         id="keen-slider-previous"
-        className="rounded-full border border-rose-600 p-4 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+        className="rounded-full border border-red-600 p-4 text-red-600 transition hover:bg-red-600 hover:text-white"
       >
         <svg
           className="size-5 -rotate-180 transform"
@@ -376,7 +415,7 @@ const Reviews = () => {
       <button
         aria-label="Next slide"
         id="keen-slider-next"
-        className="rounded-full border border-rose-600 p-4 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+        className="rounded-full border border-red-600 p-4 text-red-600 transition hover:bg-red-600 hover:text-white"
       >
         <svg
           className="h-5 w-5"

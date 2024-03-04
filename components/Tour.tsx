@@ -56,7 +56,7 @@ const Tour = ({ title, description, images, tourCardsData }: Props) => {
           </div>
   
           <div className='ml-8 flex flex-col gap-4 items-center justify-center'>
-            <div className='flex flex-row gap-4'>
+            <div className='flex flex-row gap-4 mt-8'>
                {tourCardsData.slice(0, 2).map((tourCard, index) => (
                 <TourCard key={index} image={tourCard.image} description={tourCard.description} />
               ))}
