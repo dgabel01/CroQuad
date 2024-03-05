@@ -18,7 +18,7 @@ const Hero = () => {
             <h1 className="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-5xl xl:text-6xl">
               Rev up your Hvar quad adventure with CroQuad
             </h1>
-            <p className='mt-4 mb-8 xs:text-lg md:text-xl'>The best quad experience on the island of Hvar</p>
+            <p className='mt-4 mb-8 xs:text-lg md:text-xl font-semibold'>The best quad experience on the island of Hvar</p>
             <Link href={"/tours"}>
                 <button type="button"
                       className="text-white rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-white hover:bg-opacity-10  focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200">

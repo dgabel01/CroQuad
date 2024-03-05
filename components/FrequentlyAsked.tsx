@@ -10,6 +10,10 @@ interface FAQItem {
   question: string;
   answer: string;
 }
+const CUSTOM_ANIMATION = {
+  mount: { scale: 1 },
+  unmount: { scale: 0.9 },
+};
 
 function Icon({ id, open }: { id: number; open: number }) {
   return (
@@ -62,9 +66,11 @@ export default function FrequentlyAsked() {
     <>
       <h1 className="text-3xl text-center font-bold my-16">Frequently Asked Questions</h1>
       {faqData.map((faq) => (
-        <Accordion placeholder="" key={faq.id} open={open === faq.id} icon={<Icon id={faq.id} open={open} />}>
-          <AccordionHeader placeholder="" onClick={() => handleOpen(faq.id)}>{faq.question}</AccordionHeader>
-          <AccordionBody><p className="text-lg">{faq.answer}</p></AccordionBody>
+        <Accordion animate={CUSTOM_ANIMATION} className="bg-gray-50 mb-4 rounded-lg border border-blue-gray-100 px-4" placeholder="" key={faq.id} open={open === faq.id} icon={<Icon id={faq.id} open={open} />}>
+          <AccordionHeader className={`border-b-0 transition-colors ${
+            open === faq.id ? "text-blue-500 hover:!text-blue-700" : ""
+          }`} placeholder="" onClick={() => handleOpen(faq.id)}>{faq.question}</AccordionHeader>
+          <AccordionBody className="pt-0 text-base font-normal"><p className="text-lg font-semibold">{faq.answer}</p></AccordionBody>
         </Accordion>
       ))}
     </>

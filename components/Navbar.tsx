@@ -104,7 +104,7 @@ export default function Navbar() {
 
   return (
     <MaterialNavbar
-      className="w-full bg-red-100"
+      className="w-full"
       style={{
         maxWidth: "100%",
       //  backgroundImage: 'url("https://cdn.wallpapersafari.com/7/51/B48rdx.png")',
@@ -121,7 +121,7 @@ export default function Navbar() {
           className="mr-4 cursor-pointer py-1.5"
           placeholder=""
         >
-          <Logo height={85}/>
+          <Logo height={150} mixBlendMode=""/>
         </Typography>
         <div className="hidden lg:block">
           <NavList onCloseMenu={undefined} />
@@ -143,14 +143,14 @@ export default function Navbar() {
       <Collapse open={openNav}>
         <NavList onCloseMenu={() => setOpenNav(false)} />
         <div className="flex flex-col gap-4 items-center justify-center mt-4">
-          <div className="flex flex-row gap-2">
-            <MdOutlineEmail className="text-black"/>
-            <FaWhatsapp  className="text-black"/>
-            <FaFacebook  className="text-black"/>
-            <FaInstagram  className="text-black"/>
+          <div className="flex flex-row gap-4 mt-2">
+            <MdOutlineEmail size={24} className="text-black"/>
+            <FaWhatsapp  size={24} className="text-black"/>
+            <FaFacebook  size={24} className="text-black"/>
+            <FaInstagram size={24}  className="text-black"/>
           </div>
           <div>
-            <p className="text-black">Ulica</p>
+            <p className="text-black">Hvar, Ulica</p>
           </div>
         </div>
       </Collapse>

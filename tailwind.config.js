@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const withMT = require("@material-tailwind/react/utils/withMT");
+const colors = require('tailwindcss/colors')
 
 module.exports = withMT({
   content: [
@@ -8,7 +9,12 @@ module.exports = withMT({
  "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        //just add this below and your all other tailwind colors willwork
+     ...colors
+ }
+    },
   },
   plugins: [],
 });
