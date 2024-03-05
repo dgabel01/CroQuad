@@ -12,20 +12,20 @@ export const metadata:Metadata={
 export default function NotFound() {
   return (
     <>
-    <h1 className='text-center text-2xl font-semibold mt-8'>Ooops!</h1>
+    <h1 className='text-center text-2xl font-semibold mt-8'>Ooops! Error 404 😕</h1>
       <div className='flex flex-col items-center justify-center'>
         <Image
           src={errorImage}
           alt='errorimage'
-          width={500}
+          width={400}
           height={300}
         />
         <div className='flex flex-col items-center justify-center gap-12 text-xl text-center'>
-          <p className='font-bold'>The page you were looking for was moved or doesn&apos;t exist.</p>
-          <p>Let&apos;s get you back.</p>
+          <p className='font-bold mb-8'>The page you were looking for was moved or doesn&apos;t exist.</p>
+          <p className='mb-8'>Let&apos;s get you back.</p>
           <div className="flex items-center">
           <IoReturnUpBackOutline className="inline-block mb-2 mr-2 text-green-500"  size={34}/>
-            <Link href={`/`} className='hover:text-green-500'>Go back</Link>
+            <Link href={`/`} className=':text-green-500'><p className='text-green-500 ml-4'>Go back</p></Link>
           </div>
         </div>
       </div>

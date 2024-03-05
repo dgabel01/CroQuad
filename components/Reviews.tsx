@@ -58,16 +58,16 @@ const Reviews = () => {
   return (
     <>
     
-    <div className='flex flex-col gap-8 mb-20'>
+    <div className='flex flex-col gap-8 mb-12'>
       <div>
           <p className=' text-3xl text-center font-bold mb-12'>Why Choose CroQuad?</p>
       </div>
       <div>
-        <p className='text-center text-3xl mx-4'>We craft <span className='text-red-600 font-semibold underline'>experiences</span>, not just journeys!</p>
+        <p className='text-center text-3xl mx-4'>We craft <span className='text-red-600 font-semibold underline italic'>experiences</span>, not just journeys!</p>
       </div>
       <div className='sm:flex sm:flex-col md:flex md:flex-row items-center justify-evenly gap-16 mt-12'>
         <div className='flex flex-col gap-4 sm:text-center'>
-          <p className='m-auto text-xl'>Modern equipment</p>
+          <p className='m-auto text-xl font-semibold'>Modern equipment</p>
           <Image
             src={quadIcon}
             alt='quad-icon'
@@ -77,7 +77,7 @@ const Reviews = () => {
           />
         </div>
         <div className='flex flex-col gap-4 sm:text-center'>
-          <p className='text-xl text-center my-8'>Exciting routes</p>
+          <p className='text-xl text-center my-8 font-semibold'>Exciting routes</p>
           <Image
             src={routeIcon}
             alt='route-icon'
@@ -87,7 +87,7 @@ const Reviews = () => {
           />
         </div>
         <div className='flex flex-col gap-4 sm:text-center'>
-          <p className='m-auto text-xl my-8'>Unforgettable scenery</p>
+          <p className='m-auto text-xl my-8 font-semibold'>Unforgettable scenery</p>
           <Image
             src={sceneryIcon}
             alt='scenery-icon'

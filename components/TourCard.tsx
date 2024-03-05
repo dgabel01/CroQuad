@@ -24,7 +24,7 @@ const TourCard = ({image,description}:Props) => {
         <div className='flex flex-col justify-between items-stretch'>
             <p className='font-bold mt-1 text-lg'>{description.num}</p>
             <p className='text-lg'>{description.unit}</p>
-            <p className='text-red-600 mt-1 text-lg'>{description.type}</p>
+            <p className='text-red-600 font-bold mt-1 text-lg'>{description.type}</p>
         </div>
 
     </div>

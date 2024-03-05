@@ -121,7 +121,7 @@ export default function Navbar() {
           className="mr-4 cursor-pointer py-1.5"
           placeholder=""
         >
-          <Logo height={75}/>
+          <Logo height={85}/>
         </Typography>
         <div className="hidden lg:block">
           <NavList onCloseMenu={undefined} />

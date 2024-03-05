@@ -11,7 +11,7 @@ const Footer = () => {
           <div className='sm:flex flex-col md:flex-row justify-evenly items-center gap-24'>
             <div className='flex flex-col gap-8'>
               <div className='flex flex-col items-center text-center mt-2'>
-                  <Logo height={45}/>
+                  <Logo height={95}/>
                   <h1 className='font-bold text-xl mt-4'> Contact CroQuad</h1>
                   <p className='text-lg my-8'>Find us on any of these platforms</p>
 
