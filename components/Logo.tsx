@@ -1,15 +1,16 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import logoImage from '../public/logored.jpg';
 
 interface LogoProps {
   height: number;
-  mixBlendMode?:string | any;
+  mixBlendMode?: string | any;
 }
 
 const Logo: React.FC<LogoProps> = ({ height, mixBlendMode }) => {
-  const imageStyle= {
+  
+
+  const imageStyle = {
     mixBlendMode: mixBlendMode || 'normal',
   };
 
@@ -18,7 +19,7 @@ const Logo: React.FC<LogoProps> = ({ height, mixBlendMode }) => {
       alt="logo"
       src={logoImage}
       height={height}
-      className="rounded-md"
+      className="m-0 p-0"
       style={imageStyle}
     />
   );

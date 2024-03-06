@@ -64,7 +64,7 @@ export default function FrequentlyAsked() {
 
   return (
     <>
-      <h1 className="text-3xl text-center font-bold my-16">Frequently Asked Questions</h1>
+      <h1 className="text-3xl text-center font-bold my-16" id="faq">Frequently Asked Questions</h1>
       {faqData.map((faq) => (
         <Accordion animate={CUSTOM_ANIMATION} className="bg-gray-50 mb-4 rounded-lg border border-blue-gray-100 px-4" placeholder="" key={faq.id} open={open === faq.id} icon={<Icon id={faq.id} open={open} />}>
           <AccordionHeader className={`border-b-0 transition-colors ${

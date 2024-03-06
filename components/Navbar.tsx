@@ -104,7 +104,7 @@ export default function Navbar() {
 
   return (
     <MaterialNavbar
-      className="w-full"
+      className="w-full p-0 mb-0"
       style={{
         maxWidth: "100%",
       //  backgroundImage: 'url("https://cdn.wallpapersafari.com/7/51/B48rdx.png")',
@@ -113,7 +113,7 @@ export default function Navbar() {
       }}
       placeholder={""}
     >
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center justify-between w-full m-0">
         <Typography
           as="a"
           href={"/"}
@@ -121,14 +121,14 @@ export default function Navbar() {
           className="mr-4 cursor-pointer py-1.5"
           placeholder=""
         >
-          <Logo height={150} mixBlendMode=""/>
+          <Logo height={125} mixBlendMode=""/>
         </Typography>
         <div className="hidden lg:block">
           <NavList onCloseMenu={undefined} />
         </div>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:text-black focus:text-black active:text-black lg:hidden"
+          className="ml-auto mr-4 h-6 w-6 text-inherit hover:text-black focus:text-black active:text-black lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
           placeholder={""}

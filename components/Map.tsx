@@ -4,7 +4,7 @@ import SocialIcons from './SocialIcons';
 const Map = () => {
   return (
    <>
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white dark:bg-gray-900" id='map'>
       <div className="container px-6 py-12 mx-auto">
         <div className='flex  flex-col gap-4 items-center justify-center'>
           <h1 className=" mt-16 text-center mb-4 text-3xl font-bold text-blue-500 dark:text-blue-400">Contact us</h1>

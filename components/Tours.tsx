@@ -4,7 +4,7 @@ import imageTwo from '../public/145.jpg';
 import lengthIcon from '../public/lenghticon.png';
 import durationIcon from '../public/clockicon.png';
 import peopleIcon from '../public/peopleicon.jpeg';
-import difficultyIcon from '../public/difficultyicon.png';
+import terrainIcon from '../public/terrainicon.png';
 import Tour from './Tour';
 
 const tourData = [
@@ -30,11 +30,10 @@ const tourData = [
         },
       },
       {
-        image: difficultyIcon,
+        image: terrainIcon,
         description: {
-          num: 3,
-          unit: 'Easy',
-          type: 'Difficulty',
+          unit: 'Varied',
+          type: 'Terrain',
         },
       },
       {
@@ -69,11 +68,10 @@ const tourData = [
         },
       },
       {
-        image: difficultyIcon,
+        image: terrainIcon,
         description: {
-          num: 6,
-          unit: 'Hard',
-          type: 'Difficulty',
+          unit: 'Varied',
+          type: 'Terrain',
         },
       },
       {

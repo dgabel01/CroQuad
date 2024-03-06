@@ -15,7 +15,7 @@ const year = date.getFullYear();
           <div className='sm:flex flex-col md:flex-row justify-evenly items-center gap-24'>
             <div className='flex flex-col gap-8'>
               <div className='flex flex-col items-center text-center mt-2'>
-                  <Logo height={120} mixBlendMode="color-burn"/>
+                  <Logo height={150} mixBlendMode="color-burn"/>
                   <h1 className='font-bold text-xl mt-4'>CroQuad Hvar</h1>
                   <p className='text-lg my-8'>Find us on any of these platforms</p>
 
@@ -48,9 +48,15 @@ const year = date.getFullYear();
               </div>
               <div className='md:flex md:flex-col md:gap-4 text-center mt-6 md:mt-0'>
                 <h2 className='text-lg font-semibold'>Useful links</h2>
-                <p className='my-1'>Google Maps</p>
-                <p className='my-1'>Hvar ferries</p>
-                <p className='my-1'>FAQ</p>
+                <Link href={"#map"}>
+                  <p className='my-1'>Google Maps</p>
+                </Link>
+                <Link href={"https://www.jadrolinija.hr/hr/pretrazite-kupite-kartu"} target='_blank' >
+                  <p className='my-1'>Hvar ferries</p>
+                </Link>
+                <Link href={"#faq"}>
+                  <p className='my-1'>FAQ</p>
+                </Link>
               </div>
             </div>
           </div>
