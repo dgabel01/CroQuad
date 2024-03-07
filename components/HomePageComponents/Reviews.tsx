@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import '../public/keen-slider.min.css'
+import '../../public/keen-slider.min.css'
 import KeenSlider from 'keen-slider';
 import Image from 'next/image';
-import quadIcon from '../public/quadicon.jpeg'
-import routeIcon from '../public/routeicon.png'
-import sceneryIcon from '../public/sceneryicon.png'
+import quadIcon from '../../public/quadicon.jpeg'
+import routeIcon from '../../public/routeicon.png'
+import sceneryIcon from '../../public/sceneryicon.png'
 
 
 const Reviews = () => {

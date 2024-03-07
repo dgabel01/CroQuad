@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from 'next/font/google'
 import "./globals.css";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Navbar from "../../components/HomePageComponents/Navbar";
+import Footer from "../../components/HomePageComponents/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const mont= Montserrat({ subsets: ['latin'] });

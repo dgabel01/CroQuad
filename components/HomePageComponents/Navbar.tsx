@@ -7,7 +7,7 @@ import {
   Typography,
   IconButton,
 } from "@material-tailwind/react";
-import Logo from '../components/Logo'
+import Logo from "../HomePageComponents/Logo"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";

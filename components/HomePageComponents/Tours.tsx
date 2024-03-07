@@ -1,10 +1,10 @@
 import React from 'react';
-import imageOne from '../public/ATV-Quad-mountain-tour-Split-Croatia.jpg';
-import imageTwo from '../public/145.jpg';
-import lengthIcon from '../public/lenghticon.png';
-import durationIcon from '../public/clockicon.png';
-import peopleIcon from '../public/peopleicon.jpeg';
-import terrainIcon from '../public/terrainicon.png';
+import imageOne from '../../public/ATV-Quad-mountain-tour-Split-Croatia.jpg';
+import imageTwo from '../../public/145.jpg';
+import lengthIcon from '../../public/lenghticon.png';
+import durationIcon from '../../public/clockicon.png';
+import peopleIcon from '../../public/peopleicon.jpeg';
+import terrainIcon from '../../public/terrainicon.png';
 import Tour from './Tour';
 
 const tourData = [
