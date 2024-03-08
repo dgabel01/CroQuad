@@ -9,14 +9,14 @@ import Tour from './Tour';
 
 const tourData = [
   {
-    title: 'Adventure Tour',
+    title: 'CroQuad Basic Tour',
     images: [imageOne, imageTwo],
-    description: 'The Adventure trail is 21 km long and takes you through beautiful parts of the island of Vir. You will drive on a superb track with wonderful views of the sea, neighboring islands, and Velebit. Great photo locations to capture this unforgettable experience.',
+    description: 'The Basic trail is 15 km long and takes you through beautiful parts of the island of Hvar. You will drive on a superb track with wonderful views of the sea, neighboring islands, and Velebit. Great photo locations to capture this unforgettable experience.',
     tourCardsData: [
       {
         image: lengthIcon,
         description: {
-          num: 25,
+          num: 15,
           unit: 'km',
           type: 'Length',
         },
@@ -47,14 +47,14 @@ const tourData = [
     ],
   },
   {
-    title: 'Extreme Tour',
+    title: 'CroQuad Adrenaline tour',
     images: [imageOne, imageTwo],
-    description: 'The Extreme trail is 30 km long and takes you through beautiful parts of the island of Hvar. You will drive on a superb track with wonderful views of the sea, neighboring islands, and Velebit. Great photo locations to capture this unforgettable experience.',
+    description: 'The Adrenaline trail is 40 km long and takes you through beautiful parts of the island of Hvar. You will drive on a superb track with wonderful views of the sea, neighboring islands, and Velebit. Great photo locations to capture this unforgettable experience.',
     tourCardsData: [
       {
         image: lengthIcon,
         description: {
-          num: 30,
+          num: 40,
           unit: 'km',
           type: 'Length',
         },

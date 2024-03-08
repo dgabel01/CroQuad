@@ -8,7 +8,9 @@ export const metadata: Metadata = {
 
 const Tours = () => {
   return (
-    <div>Tour details page</div>
+    <>
+    <p>Tour details page</p>
+    </>
   )
 }
 

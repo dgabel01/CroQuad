@@ -4,7 +4,7 @@ export interface CustomImage extends Image {
   original: string;
 }
 
-export const images: CustomImage[] = [
+export const aboutimages: CustomImage[] = [
   {
     src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
     original: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
@@ -22,6 +22,10 @@ export const images: CustomImage[] = [
     width: 320,
     height: 212,
     caption: "Boats (Jeshu John - designerspics.com)",
+    tags:[
+      {value:"Basic Tour", title:"Tour"}
+
+    ],
   },
   {
     src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",

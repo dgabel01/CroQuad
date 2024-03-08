@@ -2,9 +2,9 @@
 import { useState,useRef } from "react";
 import { Gallery } from "react-grid-gallery";
 import Lightbox from "yet-another-react-lightbox";
-import { Fullscreen } from "yet-another-react-lightbox/plugins";
+import { Fullscreen, Zoom} from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/styles.css";
-import {CustomImage} from '../AboutComponents/images'
+import {CustomImage} from '../AboutComponents/aboutimages'
 
 interface MyGalleryProps {
   images: CustomImage[];
@@ -22,6 +22,7 @@ const MyGallery: React.FC<MyGalleryProps> = ({ images}) => {
   const fullscreenRef = useRef(null);
 
 
+
   const handleClick = (index: number, item: CustomImage) => setIndex(index);
 
   return (
@@ -34,12 +35,16 @@ const MyGallery: React.FC<MyGalleryProps> = ({ images}) => {
           enableImageSelection={false}
         />
         <Lightbox
-          plugins={[Fullscreen]}
+          plugins={[Fullscreen, Zoom]}
           fullscreen={{ ref: fullscreenRef }}
           slides={slides}
           open={index >= 0}
           index={index}
           close={() => setIndex(-1)}
+          zoom={{
+            scrollToZoom:true,
+            maxZoomPixelRatio:5      
+          }}
         />
       </div>
     </>

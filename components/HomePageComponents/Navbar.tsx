@@ -134,9 +134,9 @@ export default function Navbar() {
           placeholder={""}
         >
           {openNav ? (
-            <XMarkIcon className="h-6 w-6 font-extrabold" strokeWidth={2} style={{ color: 'black' }}/>
+            <XMarkIcon className="h-7 w-7 font-extrabold selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
           ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} style={{ color: 'black' }}/>
+            <Bars3Icon className="h-7 w-7 selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
           )}
         </IconButton>
       </div>

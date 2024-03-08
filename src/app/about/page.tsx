@@ -5,7 +5,7 @@ import Story from '../../../components/AboutComponents/Story';
 import Map from '../../../components/HomePageComponents/Map';
 import Fleet from '../../../components/AboutComponents/Fleet';
 import MyGallery from '../../../components/HomePageComponents/MyGallery';
-import {images} from '../../../components/AboutComponents/images'
+import {aboutimages} from '../../../components/AboutComponents/aboutimages'
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -17,7 +17,7 @@ const About = () => {
     <>
       <AboutHero/>
       <Story/>
-      <MyGallery images={images}/>
+      <MyGallery images={aboutimages}/>
       <Fleet/>
       <Map/>
     </>

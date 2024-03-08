@@ -1,4 +1,5 @@
 import React from 'react'
+import PriceTabs from '../../../components/PricingComponents/PriceTabs';
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Tour prices",
@@ -7,8 +8,12 @@ export const metadata: Metadata = {
 
 
 const PriceList = () => {
+  
   return (
-    <div>Tour pricing page</div>
+    <>
+    <p>Tour prices page</p>
+    <PriceTabs/>
+    </>
   )
 }
 

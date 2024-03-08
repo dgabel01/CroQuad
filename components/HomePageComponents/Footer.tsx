@@ -54,7 +54,7 @@ const year = date.getFullYear();
                 <Link href={"https://www.jadrolinija.hr/hr/pretrazite-kupite-kartu"} target='_blank' >
                   <p className='my-1'>Hvar ferries</p>
                 </Link>
-                <Link href={"#faq"}>
+                <Link href={"/#faq"}>
                   <p className='my-1'>FAQ</p>
                 </Link>
               </div>

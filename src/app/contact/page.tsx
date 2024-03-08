@@ -1,4 +1,8 @@
 import React from 'react'
+import ContactHero from '../../../components/ContactUsCompnents/ContactHero';
+import SocialIcons from '../../../components/HomePageComponents/SocialIcons';
+import ContactsInfo from '../../../components/ContactUsCompnents/ContactsInfo';
+
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -7,8 +11,13 @@ export const metadata: Metadata = {
 
 
 const ContactUs = () => {
+  
   return (
-    <div>Contact Us page</div>
+    <>
+      <ContactHero/>
+      <ContactsInfo/>
+      <SocialIcons/>
+    </>
   )
 }
 
