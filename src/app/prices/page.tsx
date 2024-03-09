@@ -11,7 +11,6 @@ const PriceList = () => {
   
   return (
     <>
-    <p>Tour prices page</p>
     <PriceTabs/>
     </>
   )

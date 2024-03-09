@@ -27,7 +27,9 @@ import {
     ];
    
     return (
-      <Tabs value="html">
+     <>
+     <h1 className="text-3xl text-center font-bold mt-16 mb-8">Browse through our tour prices</h1>
+      <Tabs value="tura1" id="custom-animation">
         <TabsHeader placeholder={""}>
           {data.map(({ label, value }) => (
             <Tab key={value} value={value} placeholder={""}>
@@ -35,7 +37,11 @@ import {
             </Tab>
           ))}
         </TabsHeader>
-        <TabsBody placeholder={""}>
+        <TabsBody placeholder={""} animate={{
+          initial: { y: 250 },
+          mount: { y: 0 },
+          unmount: { y: 250 },
+        }}>
           {data.map(({ value, desc }) => (
             <TabPanel key={value} value={value}>
               {desc}
@@ -43,5 +49,6 @@ import {
           ))}
         </TabsBody>
       </Tabs>
+     </>
     );
   }
