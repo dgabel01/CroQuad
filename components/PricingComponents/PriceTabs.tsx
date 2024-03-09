@@ -6,13 +6,20 @@ import {
     Tab,
     TabPanel,
   } from "@material-tailwind/react";
+  import TourPricesCard from "./TourPricesCard";
    
   export default function PriceTabs() {
+    {/*komponenta za svaku turu u desc */}
     const data = [
       {
-        label: "Tura 1",
-        value: "tura1",
-        desc: `Kartice cijena za turu 1`,
+        label: "Basic Tour",
+        value: "basictour",
+        desc: (
+            <>
+              <TourPricesCard items={[{title:"CroQuad Basic Tour", riders:"1 person", price:"80", personsperquad:"One person one quad bike"}]} />
+              <TourPricesCard items={[{title:"CroQuad Basic Tour", riders:"2 persons", price:"120", personsperquad:"Two persons one quad bike"}]} />
+            </>
+        )
       },
       {
         label: "Tura 2",
@@ -29,7 +36,7 @@ import {
     return (
      <>
      <h1 className="text-3xl text-center font-bold mt-16 mb-8">Browse through our tour prices</h1>
-      <Tabs value="tura1" id="custom-animation">
+      <Tabs value="basictour" id="custom-animation">
         <TabsHeader placeholder={""}>
           {data.map(({ label, value }) => (
             <Tab key={value} value={value} placeholder={""}>
@@ -43,9 +50,9 @@ import {
           unmount: { y: 250 },
         }}>
           {data.map(({ value, desc }) => (
-            <TabPanel key={value} value={value}>
-              {desc}
-            </TabPanel>
+            <TabPanel key={value} value={value} className="flex flex-col sm:flex-row gap-16 items-center justify-center mt-16">
+            {desc}
+          </TabPanel>          
           ))}
         </TabsBody>
       </Tabs>

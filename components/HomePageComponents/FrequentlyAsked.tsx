@@ -35,25 +35,25 @@ const faqData: FAQItem[] = [
     id: 1,
     question: "What are the requirements to rent a quad?",
     answer:
-      "We're not always in the position that we want to be at. We're constantly growing. We're constantly making mistakes. We're constantly trying to express ourselves and actualize our dreams.",
+    "Person must be at least 18 years old, with a valid driver's licence."
   },
   {
     id: 2,
     question: "Are reservations required, and how can I book a quad rental?",
     answer:
-      "We're not always in the position that we want to be at. We're constantly growing. We're constantly making mistakes. We're constantly trying to express ourselves and actualize our dreams.",
+    "Reservations are required, you can book the ride through our social media platforms, or through our email or phone numbers. Check the contact us page for more information."
   },
   {
     id: 3,
     question: "What is included in the rental fee?",
     answer:
-      "We're not always in the position that we want to be at. We're constantly growing. We're constantly making mistakes. We're constantly trying to express ourselves and actualize our dreams.",
+    "The fee includes a guide, helmet, mask and gloves for the best quad experience."
   },
   {
     id: 4,
     question: "Can I take the quad off-site or only ride in designated areas?",
     answer:
-      "We're not always in the position that we want to be at. We're constantly growing. We're constantly making mistakes. We're constantly trying to express ourselves and actualize our dreams.",
+    "For on-site tour specifics, consult your quad guide."
   },
 ];
 
