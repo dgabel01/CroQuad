@@ -27,7 +27,7 @@ const MyGallery: React.FC<MyGalleryProps> = ({ images}) => {
 
   return (
     <>
-      <h1 className="my-24 text-3xl text-center font-bold">Check Out Our Gallery</h1>
+      <h1 className="my-24 text-3xl text-center font-bold">Check Out Our Interactive Gallery</h1>
       <div>
         <Gallery
           images={images}

@@ -18,9 +18,9 @@ const TourPricesCard = ({items}:TourPricesCardProps) => {
     <>
      {items.map((item, index) => (
         <div key={index} className='flex flex-col gap-6 rounded-x shadow-lg w-fit mx-4 p-4 bg-stone-50'>
-          <h1 className='text-xl font-bold'>{item.title}</h1>
+          <h1 className='text-xl font-extrabold'>{item.title}</h1>
           <p className='text-lg font-semibold'> {item.riders}</p>
-          <p className='text-sky-600 text-xl font-semibold'>{item.price}&euro;</p>
+          <p className='text-sky-600 text-2xl font-extrabold'>{item.price}&euro;<sub className='text-lg'>/per person</sub></p>
           <p className='text-lg font-semibold'>{item.personsperquad}</p>
           <Link href={"/tours"}><Button placeholder="" color="blue">Book Now</Button></Link>
         </div>

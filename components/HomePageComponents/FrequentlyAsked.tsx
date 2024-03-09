@@ -55,6 +55,11 @@ const faqData: FAQItem[] = [
     answer:
     "For on-site tour specifics, consult your quad guide."
   },
+  {
+    id:5,
+    question:"Do you offer pick up to the quad starting spot?",
+    answer:"Yes, we offer free pick up for our guests."
+  },
 ];
 
 export default function FrequentlyAsked() {
