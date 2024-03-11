@@ -18,8 +18,8 @@ const Tour = ({ title, description, images, tourCardsData }: Props) => {
       <>
         <div className='mx-24 justify-between sm:flex sm:flex-col lg:flex lg:flex-row gap-8'>
           <div className='flex flex-col gap-4'>
-            <h2 className='sm:text-center md:text-left font-bold text-2xl ml-4'>{title}</h2>
-            <p className='sm:text-pretty md:text-left ml-4'>{description}</p>
+            <h2 className='sm:text-center md:text-left font-bold text-3xl ml-4'>{title}</h2>
+            <p className='sm:text-pretty md:text-left ml-4 text-lg'>{description}</p>
             <div className='sm:mx-auto md:m-0'>
               <Link href={"/tours"}>
                 <Button placeholder="" variant="text" className="flex items-center gap-2">

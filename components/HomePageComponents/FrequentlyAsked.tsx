@@ -71,7 +71,7 @@ export default function FrequentlyAsked() {
     <>
       <h1 className="text-3xl text-center font-bold my-16" id="faq">Frequently Asked Questions</h1>
       {faqData.map((faq) => (
-        <Accordion animate={CUSTOM_ANIMATION} className="bg-gray-50 mb-4 rounded-lg border border-blue-gray-100 px-4" placeholder="" key={faq.id} open={open === faq.id} icon={<Icon id={faq.id} open={open} />}>
+        <Accordion animate={CUSTOM_ANIMATION} className="bg-gray-50 mb-5 rounded-lg border border-blue-gray-100 px-4" placeholder="" key={faq.id} open={open === faq.id} icon={<Icon id={faq.id} open={open} />}>
           <AccordionHeader className={`border-b-0 transition-colors ${
             open === faq.id ? "text-blue-500 hover:!text-blue-700" : ""
           }`} placeholder="" onClick={() => handleOpen(faq.id)}>{faq.question}</AccordionHeader>

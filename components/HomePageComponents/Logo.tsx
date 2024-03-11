@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import logoImage from '../../public/logored.jpg'
+import logoImage from '../../public/logored.webp'
 
 interface LogoProps {
   height: number;

@@ -4,11 +4,11 @@ import SocialIcons from './SocialIcons';
 const Map = () => {
   return (
    <>
-    <section className="bg-white dark:bg-gray-900" id='map'>
+    <section className="bg-white dark:bg-gray-900">
       <div className="container px-6 py-12 mx-auto">
         <div className='flex  flex-col gap-4 items-center justify-center'>
-          <h1 className=" mt-16 text-center mb-4 text-3xl font-bold text-blue-500 dark:text-blue-400">Contact us</h1>
-          <p className="mt-3 text-xl text-gray-500 dark:text-gray-400">Find us here to book your ride now</p>
+          <h1 className=" mt-16 text-center mb-4 text-3xl font-bold text-blue-500 dark:text-blue-400">Contact Us</h1>
+          <p className="mt-3 text-xl text-gray-500 font-medium dark:text-gray-400">Find us here to book your ride now</p>
         </div>
 
         <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
@@ -20,8 +20,8 @@ const Map = () => {
                 </svg>
               </span>
               <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Email</h2>
-              <p className="mt-2 text-sm text-gray-500 dark:text-blue-400">Send us an e-mail and we&apos;ll get back to you</p>
-              <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">croquad@gmail.com</p>
+              <p className="mt-2 text-md text-gray-500 dark:text-blue-400">Send us an e-mail and we&apos;ll get back to you</p>
+              <p className="mt-2 text-md text-blue-500 dark:text-blue-400">croquad@gmail.com</p>
             </div>
 
            
@@ -34,8 +34,8 @@ const Map = () => {
               </span>
               
               <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Location</h2>
-              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Our quads are located here</p>
-              <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">Stari Grad Hvar</p>
+              <p className="mt-2 text-md text-gray-500 dark:text-gray-400">Our quads are located here</p>
+              <p className="mt-2 text-md text-blue-500 dark:text-blue-400">Stari Grad Hvar</p>
             </div>
 
            
@@ -47,13 +47,13 @@ const Map = () => {
               </span>
               
               <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Phone</h2>
-              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Mon-Fri from 8am to 5pm</p>
-              <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">+1 (555) 000-0000</p>
+              <p className="mt-2 text-md text-gray-500 dark:text-gray-400">Mon-Fri from 8am to 5pm</p>
+              <p className="mt-2 text-md text-blue-500 dark:text-blue-400">+1 (555) 000-0000</p>
             </div>
           </div>
 
           {/* Map */}
-          <div className="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto">
+          <div className="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto" id='map'>
             <iframe
               width="100%"
               height="100%"

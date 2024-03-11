@@ -90,7 +90,7 @@ const tourData = [
 const Tours = () => {
   return (
     <>
-      <h1 className='mt-36 mb-12 text-center text-3xl font-bold'>Our quad rides</h1>
+      <h1 className='mt-36 mb-12 text-center text-3xl font-bold'>Our Quad Rides</h1>
       {tourData.map((tour, index) => (
         <Tour
           key={index}

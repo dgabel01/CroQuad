@@ -14,6 +14,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { usePathname } from 'next/navigation'
 
 
+
 function NavList({ onCloseMenu }: { onCloseMenu: any }) {
   const pathname = usePathname()
   const isActiveRoute = (route: string) => pathname === route;
