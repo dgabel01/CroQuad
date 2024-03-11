@@ -8,6 +8,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Tour prices",
   description: "CroQuad tours pricing details page",
+  authors:[
+    { name: 'Dominik Gabela', url: 'https://github.com/dgabel01' }
+  ]
 };
 
 

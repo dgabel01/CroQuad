@@ -19,8 +19,9 @@ const Fleet = () => {
           height={250}
         />
         <p className='text-xl font-semibold text-center'>Segway Snarler AT5</p>
+        <p className='text-lg font-semibold text-center'>T3b category, 499cc EFI, 39hp, Auto Transmission, 4x4, Diff Lock</p>
         <p className='text-lg font-semibold text-center'>5 vehicles</p>
-        <Link href={"/tours"}><Button placeholder="" color="blue">Book Now</Button></Link>
+        <Link href={"/contact"}><Button placeholder="" color="blue">Book Now</Button></Link>
       </div>
     </>
   )

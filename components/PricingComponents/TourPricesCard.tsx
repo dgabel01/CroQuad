@@ -22,7 +22,10 @@ const TourPricesCard = ({items}:TourPricesCardProps) => {
           <p className='text-lg font-semibold'> {item.riders}</p>
           <p className='text-sky-600 text-2xl font-extrabold'>{item.price}&euro;<sub className='text-lg'>/per person</sub></p>
           <p className='text-lg font-semibold'>{item.personsperquad}</p>
-          <Link href={"/tours"}><Button placeholder="" color="blue">Book Now</Button></Link>
+          <div className='flex flex-row gap-4'>
+            <Link href={"/contact"}><Button placeholder="" color="blue">Book Now</Button></Link>
+            <Link href={"/tours"}><Button placeholder="" color="blue">Tour details</Button></Link>
+          </div>
         </div>
       ))}
     

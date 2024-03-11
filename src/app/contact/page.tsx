@@ -7,6 +7,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us",
   description: "CroQuad contacts page",
+  authors:[
+    { name: 'Dominik Gabela', url: 'https://github.com/dgabel01' }
+  ]
 };
 
 

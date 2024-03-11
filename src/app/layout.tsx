@@ -10,6 +10,9 @@ const mont= Montserrat({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: "Cro Quad",
   description: "CroQuad official website",
+  authors:[
+    { name: 'Dominik Gabela', url: 'https://github.com/dgabel01' }
+  ]
 };
 
 export default function RootLayout({
@@ -19,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name='author' content='Dominik Gabela, gabela.dominik@gmail.com' />
       <SpeedInsights/>
       <body className={mont.className}>
         <Navbar/>

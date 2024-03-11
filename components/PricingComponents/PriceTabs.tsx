@@ -36,11 +36,11 @@ import {
    
     return (
      <>
-       <h1 className="text-3xl text-center font-bold mt-16 mb-12">Browse through our tour prices</h1>
+       <h1 className="text-3xl text-center font-bold mt-16 mb-12 mx-2">Browse through our tour prices</h1>
       <Tabs value="basictour" id="custom-animation">
         <TabsHeader placeholder={""}>
           {data.map(({ label, value }) => (
-            <Tab key={value} value={value} placeholder={""}>
+            <Tab key={value} value={value} placeholder={""} className="text-lg text-nowrap font-semibold">
               {label}
             </Tab>
           ))}
