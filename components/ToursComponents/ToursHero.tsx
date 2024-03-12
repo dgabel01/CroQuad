@@ -15,7 +15,7 @@ const ToursHero = () => {
         <div className="flex h-full items-center justify-center">
           <div className="px-6 text-center text-white md:px-12">
             <h1 className="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-5xl xl:text-6xl">
-              Tour prices
+              Adventure Awaits
             </h1>
             <p className='text-2xl font-bold'>Embark on unforgettable journeys with CroQuad</p>
             <p>

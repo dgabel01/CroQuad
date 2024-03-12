@@ -9,7 +9,7 @@ const mont= Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Cro Quad",
-  description: "CroQuad official website",
+  description: "CroQuad Hvar official website",
   authors:[
     { name: 'Dominik Gabela', url: 'https://github.com/dgabel01' }
   ]

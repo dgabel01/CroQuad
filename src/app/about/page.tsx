@@ -9,7 +9,7 @@ import {aboutimages} from '../../../components/AboutComponents/aboutimages'
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "CroQuad company deatils page",
+  description: "CroQuad Hvar company deatils page",
   authors:[
     { name: 'Dominik Gabela', url: 'https://github.com/dgabel01' }
   ]

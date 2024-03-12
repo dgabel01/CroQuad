@@ -7,7 +7,7 @@ import peopleIcon from '../../public/peopleicon.jpeg';
 import terrainIcon from '../../public/terrainicon.png';
 import Tour from './Tour';
 
-const tourData = [
+export const tourData = [
   {
     title: 'CroQuad Basic Tour',
     images: [imageOne, imageTwo],
