@@ -10,7 +10,7 @@ import cameraIcon from '../../public/cameraicon.jpeg';
 const WhatsIncluded = () => {
   return (
     <>
-      <h1 className='text-center text-2xl font-bold my-20'>What's Included</h1>
+      <h1 className='text-center text-2xl font-bold my-20'>What&apos;s Included</h1>
 
       <div className='flex flex-col items-center m-auto rounded-lg gap-12 w-9/12  bg-sky-100 p-4 md:gap-24 md:p-8'>
         
