@@ -10,12 +10,12 @@ const year = date.getFullYear();
 
   return (
     <>
-      <footer className='bg-stone-200'>
+      <footer className='bg-stone-100'>
         <div className='mt-24 flex flex-col border-2 rounded-md'>
           <div className='sm:flex flex-col md:flex-row justify-evenly items-center gap-24'>
             <div className='flex flex-col gap-8'>
               <div className='flex flex-col items-center text-center mt-2'>
-                  <Logo height={170} mixBlendMode="color-burn"/>
+                  <Logo height={170} mixBlendMode="multiply"/>
                   <h1 className='font-bold text-xl mt-4'>CroQuad Hvar</h1>
                   <p className='text-lg my-8'>Find us on any of these platforms</p>
 
@@ -60,9 +60,9 @@ const year = date.getFullYear();
               </div>
             </div>
           </div>
-          <hr className="my-8 h-0.5 border-t-0 bg-white opacity-100 dark:opacity-50" />
-          <div className='flex flex-row items-center justify-center gap-4'>
-            <p>Copyright © {year} CroQuad</p>
+          <hr className="my-8 h-1 border-t-0 bg-white opacity-100 dark:opacity-50" />
+          <div className='flex flex-row items-center justify-center '>
+            <p className='font-bold'>Copyright © {year} CroQuad</p>
           </div>
         </div>
       </footer>

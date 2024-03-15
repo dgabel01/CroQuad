@@ -3,7 +3,7 @@ import React from 'react'
 const ContactsInfo = () => {
   return (
     <>
-    <p>Add contact form with resend email functionality when www.croquad.com is set up</p>
+    <p className='text-2xl font-bold text-center mt-12'>We are working on our Contact form, meanwhile book your ride in the following ways:</p>
     <div className='flex flex-col gap-8 items-center justify-center my-16'>
         <p className='text-2xl font-bold'>Our phone numbers:</p>
         <p className='text-2xl text-blue-400 font-bold'>+385 99 123 4567</p>

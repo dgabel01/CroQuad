@@ -4,7 +4,7 @@ import Image, { StaticImageData } from 'next/image';
 interface Props{
     image:StaticImageData;
     description:{
-        num:number,
+        num?:number,
         unit:string,
         type:string;
     }

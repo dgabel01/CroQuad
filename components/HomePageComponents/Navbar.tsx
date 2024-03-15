@@ -85,6 +85,21 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
           Contact Us
         </Link>
       </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+        placeholder={""}
+      >
+        <Link
+          href={"/blog"}
+          className={`text-black font-bold text-lg ${isActiveRoute('/blog') ? ' transition-colors font-extrabold text-white bg-black p-2 rounded-md' : ''}`}           
+          onClick={handleItemClick}
+        >
+          Blog
+        </Link>
+      </Typography>
     </ul>
   );
 }
@@ -105,7 +120,7 @@ export default function Navbar() {
 
   return (
     <MaterialNavbar
-      className="w-full p-0 mb-0"
+      className="w-full p-0 mb-0 bg-stone-100"
       style={{
         maxWidth: "100%",
       //  backgroundImage: 'url("https://cdn.wallpapersafari.com/7/51/B48rdx.png")',
@@ -122,7 +137,7 @@ export default function Navbar() {
           className="mr-4 cursor-pointer py-1.5"
           placeholder=""
         >
-          <Logo height={125} mixBlendMode=""/>
+          <Logo height={125} mixBlendMode="multiply"/>
         </Typography>
         <div className="hidden lg:block">
           <NavList onCloseMenu={undefined} />

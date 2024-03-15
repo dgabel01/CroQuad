@@ -20,7 +20,7 @@ const About = () => {
     <>
       <AboutHero/>
       <Story/>
-      <MyGallery images={aboutimages}/>
+      <MyGallery images={aboutimages} title={"Check Out Our Interactive Gallery"}/>
       <Fleet/>
       <Map/>
     </>

@@ -11,9 +11,10 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 interface MyGalleryProps {
   images: CustomImage[];
+  title:string;
 }
 
-const MyGallery: React.FC<MyGalleryProps> = ({ images}) => {
+const MyGallery: React.FC<MyGalleryProps> = ({ images, title}) => {
   const [index, setIndex] = useState(-1);
 
   const slides = images.map(({ original, width, height }) => ({
@@ -30,7 +31,7 @@ const MyGallery: React.FC<MyGalleryProps> = ({ images}) => {
 
   return (
     <>
-      <h1 className="my-24 text-3xl text-center font-bold">Check Out Our Interactive Gallery</h1>
+      <h1 className="my-24 text-3xl text-center font-bold">{title}</h1>
       <div>
         <Gallery
           images={images}
