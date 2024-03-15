@@ -22,9 +22,9 @@ const TourCard = ({image,description}:Props) => {
             height={40}
         />
         <div className='flex flex-col justify-between items-stretch'>
-            <p className='font-bold mt-1 text-lg'>{description.num}</p>
-            <p className='text-lg'>{description.unit}</p>
-            <p className='text-red-600 font-bold mt-1 text-lg'>{description.type}</p>
+            <p className='font-bold mt-1 text-xl'>{description.num}</p>
+            <p className='text-xl'>{description.unit}</p>
+            <p className='text-red-600 font-bold mt-1 text-xl'>{description.type}</p>
         </div>
 
     </div>

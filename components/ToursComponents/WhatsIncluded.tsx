@@ -12,7 +12,7 @@ const WhatsIncluded = () => {
     <>
       <h1 className='text-center text-2xl font-bold my-20'>What&apos;s Included</h1>
 
-      <div className='flex flex-col items-center m-auto rounded-lg gap-12 w-9/12  bg-sky-100 p-4 md:gap-24 md:p-8'>
+      <div className='flex flex-col items-center m-auto rounded-xl gap-12 w-9/12 bg-cyan-200 p-4 md:gap-24 md:p-8'>
         
         {/* First Row */}
         <div className='flex flex-col md:flex-row md:justify-between w-full'>
@@ -21,12 +21,12 @@ const WhatsIncluded = () => {
             <Image
               src={guideIcon}
               alt='guide-icon'
-              width={120}
+              width={140}
               className='mix-blend-multiply'
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-lg font-semibold text-center'>Best vehicles</p>
+            <p className='text-lg mt-9 md:m-0 font-semibold text-center'>Best vehicles</p>
             <Image
               src={quadIcon}
               alt='quad-icon'
@@ -35,7 +35,7 @@ const WhatsIncluded = () => {
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-lg my-4 font-semibold text-center'>Helmet</p>
+            <p className='text-lg mt-9 md:m-0 font-semibold text-center'>Helmet</p>
             <Image
               src={helmetIcon}
               alt='helmet-icon'
@@ -48,7 +48,7 @@ const WhatsIncluded = () => {
         {/* Second Row */}
         <div className='flex flex-col md:flex-row md:justify-between w-full'>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-lg font-semibold text-center'>Mask</p>
+            <p className='text-lg  mt-9 md:m-0 font-semibold text-center'>Mask</p>
             <Image
               src={maskIcon}
               alt='mask-icon'
@@ -57,7 +57,7 @@ const WhatsIncluded = () => {
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-lg font-semibold text-center'>Gloves</p>
+            <p className='text-lg  mt-9 md:m-0 font-semibold text-center'>Gloves</p>
             <Image
               src={glovesIcon}
               alt='gloves-icon'
@@ -66,7 +66,7 @@ const WhatsIncluded = () => {
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-lg my-4 font-semibold text-center'>Camera</p>
+            <p className='text-lg mt-9 md:m-0 font-semibold text-center'>Photo and video stops</p>
             <Image
               src={cameraIcon}
               alt='camera-icon'
