@@ -112,7 +112,7 @@ const Reviews = () => {
         </p>
 
         <p className="mt-4 text-lg text-gray-700">
-          More reviews on <a href={"https://www.google.com"} target="_blank" className="text-blue-400 after:content-['_↗']">Google</a>
+          More reviews on <a href={"https://www.google.com"} target="_blank" className="text-blue-600 font-semibold after:content-['_↗']">Google</a>
         </p>
 
         <div className="hidden lg:mt-8 lg:flex lg:gap-4 ml-24">

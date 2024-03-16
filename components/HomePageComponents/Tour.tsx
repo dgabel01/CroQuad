@@ -21,9 +21,9 @@ const Tour = ({ title, description, images, tourCardsData }: Props) => {
             <h2 className='sm:text-center md:text-left font-bold text-3xl ml-4'>{title}</h2>
             <p className='sm:text-pretty md:text-left ml-4 text-lg'>{description}</p>
             <div className='sm:mx-auto md:m-0'>
-              <Link href={"/tours"}>
+              <Link href={"/tours/#tour-details"}>
                 <Button placeholder="" variant="text" className="flex items-center gap-2">
-                  Read More{" "}
+                  Tour Details{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

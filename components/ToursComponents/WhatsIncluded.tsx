@@ -17,7 +17,7 @@ const WhatsIncluded = () => {
         {/* First Row */}
         <div className='flex flex-col md:flex-row md:justify-between w-full'>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-lg font-semibold text-center'>Guide</p>
+            <p className='text-xl font-semibold text-center'>Guide</p>
             <Image
               src={guideIcon}
               alt='guide-icon'
@@ -26,7 +26,7 @@ const WhatsIncluded = () => {
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-lg mt-9 md:m-0 font-semibold text-center'>Best vehicles</p>
+            <p className='text-xl mt-9 md:m-0 font-semibold text-center'>Best vehicles</p>
             <Image
               src={quadIcon}
               alt='quad-icon'
@@ -35,7 +35,7 @@ const WhatsIncluded = () => {
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-lg mt-9 md:m-0 font-semibold text-center'>Helmet</p>
+            <p className='text-xl mt-9 md:m-0 font-semibold text-center'>Helmet</p>
             <Image
               src={helmetIcon}
               alt='helmet-icon'
@@ -48,7 +48,7 @@ const WhatsIncluded = () => {
         {/* Second Row */}
         <div className='flex flex-col md:flex-row md:justify-between w-full'>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-lg  mt-9 md:m-0 font-semibold text-center'>Mask</p>
+            <p className='text-xl  mt-9 md:m-0 font-semibold text-center'>Mask</p>
             <Image
               src={maskIcon}
               alt='mask-icon'
@@ -57,7 +57,7 @@ const WhatsIncluded = () => {
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-lg  mt-9 md:m-0 font-semibold text-center'>Gloves</p>
+            <p className='text-xl mt-9 md:m-0 font-semibold text-center'>Gloves</p>
             <Image
               src={glovesIcon}
               alt='gloves-icon'
@@ -66,7 +66,7 @@ const WhatsIncluded = () => {
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-lg mt-9 md:m-0 font-semibold text-center'>Photo and video stops</p>
+            <p className='text-xl mt-9 md:m-0 font-semibold text-center'>Photo and video stops</p>
             <Image
               src={cameraIcon}
               alt='camera-icon'

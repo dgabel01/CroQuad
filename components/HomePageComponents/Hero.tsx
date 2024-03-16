@@ -1,5 +1,4 @@
 import React from 'react'
-import heroImg from '../public/Fotografija_1-2.jpg'
 import Link from 'next/link'
 import { Button } from "@material-tailwind/react";
 

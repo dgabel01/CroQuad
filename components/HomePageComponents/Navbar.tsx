@@ -152,7 +152,7 @@ export default function Navbar() {
           {openNav ? (
             <XMarkIcon className="h-7 w-7 font-extrabold selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
           ) : (
-            <Bars3Icon className="h-7 w-7 selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
+            <Bars3Icon role="button" aria-label="Mobile navigation dropdown menu button" className="h-7 w-7 selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
           )}
         </IconButton>
       </div>
@@ -160,10 +160,22 @@ export default function Navbar() {
         <NavList onCloseMenu={() => setOpenNav(false)} />
         <div className="flex flex-col gap-4 items-center justify-center mt-4">
           <div className="flex flex-row gap-4 mt-2">
-            <MdOutlineEmail size={24} className="text-black"/>
-            <FaWhatsapp  size={24} className="text-black"/>
-            <FaFacebook  size={24} className="text-black"/>
-            <FaInstagram size={24}  className="text-black"/>
+            
+            <Link href={"/"} aria-label="Email link">
+              <MdOutlineEmail size={24} className="text-black"/>
+            </Link>
+
+            <Link href={"/"} aria-label="WhatsApp link">
+              <FaWhatsapp  size={24} className="text-black"/>
+            </Link>
+
+            <Link href={"/"} aria-label="Facebook link">
+              <FaFacebook  size={24} className="text-black"/>
+            </Link>
+
+            <Link href={"/"} aria-label="Instagram link">
+              <FaInstagram size={24}  className="text-black"/>
+            </Link>
           </div>
           <div>
             <p className="text-black">Hvar, Ulica</p>

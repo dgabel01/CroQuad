@@ -22,7 +22,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta name='author' content='Dominik Gabela, gabela.dominik@gmail.com' />
       <SpeedInsights/>
       <body className={mont.className}>
         <Navbar/>
