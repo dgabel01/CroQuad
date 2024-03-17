@@ -10,14 +10,14 @@ import cameraIcon from '../../public/cameraicon.jpeg';
 const WhatsIncluded = () => {
   return (
     <>
-      <h1 className='text-center text-2xl font-bold my-20'>What&apos;s Included</h1>
+      <h1 className='text-center text-3xl font-bold my-24'>What&apos;s Included</h1>
 
-      <div className='flex flex-col items-center m-auto rounded-xl gap-12 w-9/12 bg-cyan-200 p-4 md:gap-24 md:p-8'>
+      <div className='flex flex-col items-center m-auto rounded-xl gap-12 w-10/12 bg-sky-100 p-4 md:gap-24 md:p-8'>
         
         {/* First Row */}
         <div className='flex flex-col md:flex-row md:justify-between w-full'>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-xl font-semibold text-center'>Guide</p>
+            <p className='text-2xl font-semibold text-center'>Guide</p>
             <Image
               src={guideIcon}
               alt='guide-icon'
@@ -26,7 +26,7 @@ const WhatsIncluded = () => {
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-xl mt-9 md:m-0 font-semibold text-center'>Best vehicles</p>
+            <p className='text-2xl mt-9 md:m-0 font-semibold text-center'>Best vehicles</p>
             <Image
               src={quadIcon}
               alt='quad-icon'
@@ -35,7 +35,7 @@ const WhatsIncluded = () => {
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-xl mt-9 md:m-0 font-semibold text-center'>Helmet</p>
+            <p className='text-2xl mt-9 md:m-0 font-semibold text-center'>Helmet</p>
             <Image
               src={helmetIcon}
               alt='helmet-icon'
@@ -48,7 +48,7 @@ const WhatsIncluded = () => {
         {/* Second Row */}
         <div className='flex flex-col md:flex-row md:justify-between w-full'>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-xl  mt-9 md:m-0 font-semibold text-center'>Mask</p>
+            <p className='text-2xl  mt-9 md:m-0 font-semibold text-center'>Riding Mask</p>
             <Image
               src={maskIcon}
               alt='mask-icon'
@@ -57,7 +57,7 @@ const WhatsIncluded = () => {
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-xl mt-9 md:m-0 font-semibold text-center'>Gloves</p>
+            <p className='text-2xl mt-9 md:m-0 font-semibold text-center'>Riding Gloves</p>
             <Image
               src={glovesIcon}
               alt='gloves-icon'
@@ -66,7 +66,7 @@ const WhatsIncluded = () => {
             />
           </div>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-xl mt-9 md:m-0 font-semibold text-center'>Photo and video stops</p>
+            <p className='text-2xl mt-9 md:m-0 font-semibold text-center'>Photo and video stops</p>
             <Image
               src={cameraIcon}
               alt='camera-icon'
@@ -76,7 +76,7 @@ const WhatsIncluded = () => {
           </div>
         </div>
 
-        <p className='font-bold text-xl text-center'>We offer free pick up for our guests to the tour starting point!</p>
+        <p className='font-bold text-2xl text-center'>We offer free pick up for our guests to the tour starting point!</p>
       </div>
     </>
   );

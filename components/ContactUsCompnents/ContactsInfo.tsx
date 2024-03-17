@@ -3,7 +3,7 @@ import React from 'react'
 const ContactsInfo = () => {
   return (
     <>
-    <p className='text-2xl font-bold text-center mt-12'>We are working on our Contact form, meanwhile book your ride in the following ways:</p>
+    <p className='text-2xl font-bold text-center mt-12 mx-4'>We are working on our Contact form, meanwhile book your ride in the following ways:</p>
     <div className='flex flex-col gap-8 items-center justify-center my-16'>
         <p className='text-2xl font-bold'>Our phone numbers:</p>
         <p className='text-2xl text-blue-400 font-bold'>+385 99 123 4567</p>

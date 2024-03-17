@@ -22,11 +22,11 @@ const SingleTour = ({ items }: SingleTourProps) => {
       <div className='flex flex-col'>
         {items.map((item, index) => (
           <div key={index} className='w-full flex flex-col gap-8'>
-            <h1 className='text-center text-2xl text-sky-700 font-semibold'>
+            <h1 className='text-center text-3xl font-semibold '>
               {item.title}
             </h1>
-            <h2 className='text-xl font-semibold my-4 text-sky-500'>{item.intro}</h2>
-            <h2 className='text-xl text-center font-semibold mt-4 mb-2'>Tour highlights:</h2>
+            <h2 className='text-xl font-semibold my-4'>{item.intro}</h2>
+            <h2 className='text-3xl text-center font-semibold mt-24 mb-2'>Tour highlights:</h2>
             <ol className="list-decimal pl-6">
               {item.steps.split('\n\n').map((step, stepIndex) => {
                 const stepParts = step.split(':');
@@ -42,7 +42,7 @@ const SingleTour = ({ items }: SingleTourProps) => {
           </div>
         ))}
         {/* Basic info cards */}
-        <h2 className='text-2xl font-bold text-center mt-16 mb-4'>Tour Information</h2>
+        <h2 className='text-3xl font-bold text-center mt-24 mb-8'>Tour Information</h2>
         <div className='ml-8 flex flex-col gap-4 items-center justify-center mb-12'>
           <div className='flex flex-row gap-4 mt-8'>
             {items.map((item, index) => (

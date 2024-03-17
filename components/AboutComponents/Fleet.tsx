@@ -11,7 +11,7 @@ const Fleet = () => {
   return (
     <>
       <div className='flex flex-col items-center justify-center gap-4 mt-24'>
-        <h1 className='text-3xl text-center font-bold mb-4'>Our Fleet</h1>    
+        <h1 className='text-3xl text-center font-bold mb-4'>Our Vehicles</h1>    
         <Image
           src={quadImage}
           alt='quad-image'

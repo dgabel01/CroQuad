@@ -107,11 +107,11 @@ const Reviews = () => {
           Don&apos;t just take our word for it...
         </h2>
 
-        <p className="mt-4 text-lg text-gray-700">
+        <p className="mt-4 text-xl text-gray-700">
           See what our customers say about the experience
         </p>
 
-        <p className="mt-4 text-lg text-gray-700">
+        <p className="mt-4 text-xl text-gray-700">
           More reviews on <a href={"https://www.google.com"} target="_blank" className="text-blue-600 font-semibold after:content-['_↗']">Google</a>
         </p>
 

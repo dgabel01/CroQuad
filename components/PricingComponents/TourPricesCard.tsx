@@ -24,7 +24,7 @@ const TourPricesCard = ({items}:TourPricesCardProps) => {
           <p className='text-xl font-semibold'>{item.personsperquad}</p>
           <div className='flex flex-row gap-4'>
             <Link href={"/contact"}><Button placeholder="" color="blue">Book Now</Button></Link>
-            <Link href={"/tours"}><Button placeholder="" color="blue">Tour details</Button></Link>
+            <Link href={"/tours/#tour-details"}><Button placeholder="" color="blue">Tour details</Button></Link>
           </div>
         </div>
       ))}

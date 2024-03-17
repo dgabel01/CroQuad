@@ -3,22 +3,22 @@ import Link from 'next/link';
 
 const SocialIcons = () => {
   return (
-    <div className='mx-4 flex flex-col gap-8 rounded-lg p-8 bg-blue-200 text-center'>
+    <div className='mx-4 flex flex-col gap-8 rounded-lg p-8 bg-sky-300 text-center'>
 
-      <h1 className='text-white font-extrabold text-3xl mb-2'>Our Socials</h1>
-      <h2 className='text-white font-extrabold text-2xl'>Get in Touch!</h2>
+      <h1 className='text-white font-extrabold text-4xl mb-8'>Our Socials</h1>
+      <h2 className='text-white font-extrabold text-4xl mb-8'>Get in Touch!</h2>
 
-      <div className='flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-6 md:gap-24'>
-        <Link href={""}>
+      <div className='flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-14 md:gap-24'>
+        <Link href={""} aria-label='WhatsApp link'>
           <FaWhatsapp size={36} color='white' />
         </Link>
-        <Link href={""}>
+        <Link href={""} aria-label='Facebook link'>
           <FaFacebook size={36} color='white' />
         </Link>
-        <Link href={""}>
+        <Link href={""} aria-label='Instagram link'>
           <FaInstagram size={36} color='white' />
         </Link>
-        <Link href={""}>
+        <Link href={""} aria-label='Google business link'>
           <FaGoogle size={36} color='white' />
         </Link>
       </div>

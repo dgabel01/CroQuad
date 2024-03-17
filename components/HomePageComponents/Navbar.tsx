@@ -150,9 +150,9 @@ export default function Navbar() {
           placeholder={""}
         >
           {openNav ? (
-            <XMarkIcon className="h-7 w-7 font-extrabold selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
+            <XMarkIcon role="button"  aria-label="Mobile navigation dropdown menu open button" className="h-7 w-7 font-extrabold selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
           ) : (
-            <Bars3Icon role="button" aria-label="Mobile navigation dropdown menu button" className="h-7 w-7 selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
+            <Bars3Icon role="button" aria-label="Mobile navigation dropdown menu close button" className="h-7 w-7 selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
           )}
         </IconButton>
       </div>

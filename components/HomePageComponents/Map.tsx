@@ -21,7 +21,7 @@ const Map = () => {
               </span>
               <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Email</h2>
               <p className="mt-2 text-md text-gray-500 dark:text-blue-400">Send us an e-mail and we&apos;ll get back to you</p>
-              <p className="mt-2 text-md text-blue-500 dark:text-blue-400">croquad@gmail.com</p>
+              <p className="mt-2 text-md font-semibold text-blue-500 dark:text-blue-400">croquad@gmail.com</p>
             </div>
 
            
@@ -35,7 +35,7 @@ const Map = () => {
               
               <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Location</h2>
               <p className="mt-2 text-md text-gray-500 dark:text-gray-400">Our quads are located here</p>
-              <p className="mt-2 text-md text-blue-500 dark:text-blue-400">Stari Grad Hvar</p>
+              <p className="mt-2 text-md font-semibold text-blue-500 dark:text-blue-400">Stari Grad, Hvar</p>
             </div>
 
            
@@ -48,7 +48,7 @@ const Map = () => {
               
               <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Phone</h2>
               <p className="mt-2 text-md text-gray-500 dark:text-gray-400">Mon-Fri from 8am to 5pm</p>
-              <p className="mt-2 text-md text-blue-500 dark:text-blue-400">+1 (555) 000-0000</p>
+              <p className="mt-2 font-semibold text-md text-blue-500 dark:text-blue-400">+1 (555) 000-0000</p>
             </div>
           </div>
 
