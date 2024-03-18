@@ -1,5 +1,5 @@
 import { Image } from "react-grid-gallery";
-
+import logoImage from '../../public/logoblack.jpg'
 export interface CustomImage extends Image {
   original: string;
 }
@@ -15,6 +15,16 @@ export const aboutimages: CustomImage[] = [
       { value: "Flora", title: "Flora" },
     ],
     caption: "After Rain (Jeshu John - designerspics.com)",
+  },
+  {
+    src: logoImage.src, // Use the src property of the imported local image
+    original: logoImage.src, 
+    width: 300, 
+    height: 200, 
+    tags: [
+      { value: "Logo", title: "Logo" }, 
+    ],
+    caption: "Your Logo Caption Here", 
   },
   {
     src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
