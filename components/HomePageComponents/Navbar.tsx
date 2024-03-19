@@ -148,11 +148,12 @@ export default function Navbar() {
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
           placeholder={""}
+          aria-label="Dropdown menu button"
         >
           {openNav ? (
-            <XMarkIcon role="button"  aria-label="Mobile navigation dropdown menu open button" className="h-7 w-7 font-extrabold selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
+            <XMarkIcon role="button"  aria-label="Mobile navigation dropdown menu open button" className="h-8 w-8 font-extrabold selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
           ) : (
-            <Bars3Icon role="button" aria-label="Mobile navigation dropdown menu close button" className="h-7 w-7 selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
+            <Bars3Icon role="button" aria-label="Mobile navigation dropdown menu close button" className="h-8 w-8 selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
           )}
         </IconButton>
       </div>

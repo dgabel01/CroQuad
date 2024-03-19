@@ -23,7 +23,7 @@ const AboutHero = () => {
               <p className='mt-4 mb-8 text-2xl font-semibold'> Our commitment goes beyond providing top-notch vehicles. Join us, and let&apos;s turn moments into memories together.</p>
               <Link href={"/tours"}>
                 <button type="button"
-                      className="text-white rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-semibold uppercase leading-normal transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-white hover:bg-opacity-10  focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200">
+                      className="text-white rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-bold uppercase leading-normal transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-white hover:bg-opacity-10  focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200">
                   Tours We Offer
                 </button>
             </Link>

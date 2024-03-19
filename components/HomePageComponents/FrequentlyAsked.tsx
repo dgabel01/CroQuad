@@ -10,12 +10,13 @@ interface FAQItem {
   question: string;
   answer: string;
 }
+
 const CUSTOM_ANIMATION = {
   mount: { scale: 1 },
   unmount: { scale: 0.9 },
 };
 
-function Icon({ id, open }: { id: number; open: number }) {
+function Icon({ id, openIds }: { id: number; openIds: number[] }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +24,7 @@ function Icon({ id, open }: { id: number; open: number }) {
       viewBox="0 0 24 24"
       strokeWidth={2}
       stroke="currentColor"
-      className={`${id === open ? "rotate-180" : ""} h-5 w-5 transition-transform`}
+      className={`${openIds.includes(id) ? "rotate-180" : ""} h-5 w-5 transition-transform`}
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
     </svg>
@@ -63,17 +64,23 @@ const faqData: FAQItem[] = [
 ];
 
 export default function FrequentlyAsked() {
-  const [open, setOpen] = useState<number>(1); 
+  const [openIds, setOpenIds] = useState<number[]>([1]); 
 
-  const handleOpen = (value: number) => setOpen((prevState) => (prevState === value ? 0 : value)); 
+  const handleOpen = (value: number) => {
+    if (openIds.includes(value)) {
+      setOpenIds(openIds.filter(id => id !== value));
+    } else {
+      setOpenIds([...openIds, value]);
+    }
+  };
 
   return (
     <>
       <h1 className="text-3xl text-center font-bold my-16" id="faq">Frequently Asked Questions</h1>
       {faqData.map((faq) => (
-        <Accordion animate={CUSTOM_ANIMATION} className="bg-stone-100 mb-5 rounded-lg border border-blue-gray-100 px-4" placeholder="" key={faq.id} open={open === faq.id} icon={<Icon id={faq.id} open={open} />}>
+        <Accordion animate={CUSTOM_ANIMATION} className="bg-stone-100 mb-5 rounded-lg border border-blue-gray-100 px-4" placeholder="" key={faq.id} open={openIds.includes(faq.id)} icon={<Icon id={faq.id} openIds={openIds} />}>
           <AccordionHeader className={`border-b-0 transition-colors ${
-            open === faq.id ? "text-blue-700  hover:!text-blue-700" : ""
+            openIds.includes(faq.id) ? "text-blue-700  hover:!text-blue-700" : ""
           }`} placeholder="" onClick={() => handleOpen(faq.id)}>{faq.question}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-extrabold">

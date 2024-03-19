@@ -22,7 +22,7 @@ const PricingHero = () => {
 
             </p>
             <Link href={"/contact"}>
-                <button type="button"  className="m-7 text-white rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-semibold uppercase leading-normal transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-white hover:bg-opacity-10  focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200">
+                <button type="button"  className="m-7 text-white rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-bold uppercase leading-normal transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-white hover:bg-opacity-10  focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200">
                   Book Now
                 </button>
             </Link>

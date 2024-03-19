@@ -20,7 +20,7 @@ const AllTours = () => {
     const data = [
         
         {
-            label: "Basic",
+            label: "Basic Tour",
             value: "basictour",
             tourintro: "Discover the thrill of exploring off-road terrain on a quad bike while soaking in the breathtaking scenery around you. Whether you're a seasoned adventurer or a first-time rider, this tour promises an unforgettable experience filled with excitement and discovery.",
             desc:
@@ -81,13 +81,13 @@ const AllTours = () => {
           />
 },
         {
-          label: "Advanced ",
+          label: "Advanced Tour ",
           value: "tura2",
           desc:"Detalji ture 2",
         },
 
         {
-            label: "Extreme",
+            label: "Extreme Tour",
             value: "tura3",
             desc: `Detalji ture 3`,
           },
@@ -100,7 +100,7 @@ const AllTours = () => {
       <Tabs value="basictour" id="custom-animation2">
         <TabsHeader placeholder={""}>
           {data.map(({ label, value }) => (
-            <Tab key={value} value={value} placeholder={""} className="text-lg text-nowrap font-semibold">
+            <Tab key={value} value={value} placeholder={""} className="text-lg font-semibold">
               {label}
             </Tab>
           ))}

@@ -14,7 +14,7 @@ interface Props{
 const TourCard = ({image,description}:Props) => {
   return (
    <>
-    <div className='sm:flex sm:justify-center sm:items-center md:flex md:flex-col rounded-lg shadow-lg px-4 py-2 sm:w-32 md:w-40'>
+    <div className='sm:flex sm:justify-center sm:items-center md:flex md:flex-col rounded-lg shadow-lg p-4 sm:w-32 md:w-40'>
         <Image
             src = {image}
             alt='card-image'

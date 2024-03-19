@@ -14,8 +14,6 @@ export type BlogItem = {
             }
         }; 
         author:string;
-        //video
-        //code
     }
 }
 export type BlogItems = ReadonlyArray<BlogItem>;
