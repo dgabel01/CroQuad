@@ -27,7 +27,7 @@ export default async function  Blog(){
 
   return (
     <>
-      <div className="flex items-center justify-center font-extrabold text-3xl mt-8 text-center xs:text-xl md:text-3xl">
+      <div className="flex items-center justify-center font-extrabold text-3xl mt-12  mb-24  mx-4 text-center xs:text-xl md:text-3xl">
         <h1>Check out our latest blog posts</h1>
       </div>
 
@@ -42,7 +42,7 @@ export default async function  Blog(){
         
           return (
             <div
-              className=" xs:w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/4 m-4"
+              className="sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/4 m-4"
               key={slug}
             >
               <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg">
@@ -54,7 +54,7 @@ export default async function  Blog(){
                   className="w-full h-48 object-cover"
                 />
                 <div className="px-6 py-4">
-                  <p className="tracking-widest text-sm title-font font-medium text-gray-400 mb-2">
+                  <p className="tracking-widest text-md title-font font-medium text-gray-400 mb-2">
                     {title}
                   </p>
                   <p>
@@ -82,9 +82,6 @@ export default async function  Blog(){
           );
         })}
       </main>
-
-   
-    
     </>
   )
 };

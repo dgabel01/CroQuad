@@ -1,10 +1,8 @@
 import React from 'react';
 import { Button } from "@material-tailwind/react";
 import Link from 'next/link';
-import Image, { StaticImageData } from 'next/image';;
+import Image, { StaticImageData } from 'next/image';
 import TourCard from './TourCard';
-
-
 
 interface Props{
     title:string;
@@ -16,7 +14,7 @@ interface Props{
 const Tour = ({ title, description, images, tourCardsData }: Props) => {
     return (
       <>
-        <div className='mx-24 justify-between sm:flex sm:flex-col lg:flex lg:flex-row gap-8'>
+        <div className='mx-4 sm:mx-24 justify-between sm:flex sm:flex-col lg:flex lg:flex-row gap-8'>
           <div className='flex flex-col gap-4'>
             <h2 className='sm:text-center md:text-left font-bold text-3xl ml-4'>{title}</h2>
             <p className='sm:text-pretty md:text-left ml-4 text-lg'>{description}</p>
@@ -41,7 +39,7 @@ const Tour = ({ title, description, images, tourCardsData }: Props) => {
                 </Button>
               </Link>
             </div>
-            <div className='w-content sm:flex sm:flex-col sm:items-center sm:justify-center md:flex md:flex-row md:items-center md:justify-center gap-8'>
+            <div className='flex flex-col md:flex-row items-center justify-center gap-8'>
               {images.map((image, index) => (
                 <Image
                   key={index}
@@ -54,14 +52,14 @@ const Tour = ({ title, description, images, tourCardsData }: Props) => {
               ))}
             </div>
           </div>
-  
-          <div className='ml-8 flex flex-col gap-4 items-center justify-center'>
-            <div className='flex flex-row gap-4 mt-8'>
+
+          <div className='ml-0 sm:ml-8 flex flex-col gap-4 items-center justify-center'>
+            <div className='flex flex-col sm:flex-row gap-4 mt-8'>
                {tourCardsData.slice(0, 2).map((tourCard, index) => (
                 <TourCard key={index} image={tourCard.image} description={tourCard.description} />
               ))}
             </div>
-            <div className='flex flex-row gap-4'>
+            <div className='flex flex-col sm:flex-row gap-4'>
               {tourCardsData.slice(2, 4).map((tourCard, index) => (
                 <TourCard key={index} image={tourCard.image} description={tourCard.description} />
               ))}
@@ -75,4 +73,3 @@ const Tour = ({ title, description, images, tourCardsData }: Props) => {
   };
   
   export default Tour;
-  

@@ -42,16 +42,16 @@ const SingleTour = ({ items }: SingleTourProps) => {
           </div>
         ))}
         {/* Basic info cards */}
-        <h2 className='text-3xl font-bold text-center mt-24 mb-8'>Tour Information</h2>
-        <div className='ml-8 flex flex-col gap-4 items-center justify-center mb-12'>
-          <div className='flex flex-row gap-4 mt-8'>
+        <h2 className='text-3xl font-bold text-center mt-24 mb-12'>Tour Information</h2>
+        <div className='flex flex-col sm:gap-8 md:gap-16 items-center justify-center mb-12'>
+          <div className='flex flex-row gap-8 sm:gap-16 md:gap-32 mt-8'> 
             {items.map((item, index) => (
               item.tourCardsData.slice(0, 2).map((tourCard, cardIndex) => (
                 <TourCard key={cardIndex} image={tourCard.image} description={tourCard.description} />
               ))
             ))}
           </div>
-          <div className='flex flex-row gap-4'>
+          <div className='flex flex-row gap-8 sm:gap-16 md:gap-32 mt-8'> 
             {items.map((item, index) => (
               item.tourCardsData.slice(2, 4).map((tourCard, cardIndex) => (
                 <TourCard key={cardIndex} image={tourCard.image} description={tourCard.description} />
@@ -59,6 +59,7 @@ const SingleTour = ({ items }: SingleTourProps) => {
             ))}
           </div>
         </div>
+
         <WhatsIncluded/>
         <MyGallery images={aboutimages} title={"Basic Tour Gallery"} />
       </div>

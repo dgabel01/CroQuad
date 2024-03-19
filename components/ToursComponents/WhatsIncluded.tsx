@@ -12,7 +12,7 @@ const WhatsIncluded = () => {
     <>
       <h1 className='text-center text-3xl font-bold my-24'>What&apos;s Included</h1>
 
-      <div className='flex flex-col items-center m-auto rounded-xl gap-12 w-10/12 bg-sky-100 p-4 md:gap-24 md:p-8'>
+      <div className='flex flex-col items-center m-auto rounded-xl gap-12 w-10/12 bg-neutral-100 p-4 md:gap-24 md:p-8'>
         
         {/* First Row */}
         <div className='flex flex-col md:flex-row md:justify-between w-full'>

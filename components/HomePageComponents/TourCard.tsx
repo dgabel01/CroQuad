@@ -14,7 +14,7 @@ interface Props{
 const TourCard = ({image,description}:Props) => {
   return (
    <>
-    <div className='sm:flex sm:justify-center sm:items-center md:flex md:flex-col rounded-lg shadow-lg px-4 py-2 w-32'>
+    <div className='sm:flex sm:justify-center sm:items-center md:flex md:flex-col rounded-lg shadow-lg px-4 py-2 sm:w-32 md:w-40'>
         <Image
             src = {image}
             alt='card-image'
@@ -22,9 +22,9 @@ const TourCard = ({image,description}:Props) => {
             height={40}
         />
         <div className='flex flex-col justify-between items-stretch'>
-            <p className='font-bold mt-1 text-xl'>{description.num}</p>
-            <p className='text-xl'>{description.unit}</p>
-            <p className='text-red-600 font-bold mt-1 text-xl'>{description.type}</p>
+            <p className='font-bold mt-1 md:text-xl sm:text-lg'>{description.num}</p>
+            <p className='md:text-xl sm:text-lg'>{description.unit}</p>
+            <p className='text-red-600 font-bold mt-1 md:text-xl sm:text-lg'>{description.type}</p>
         </div>
 
     </div>

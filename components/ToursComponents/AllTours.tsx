@@ -20,7 +20,7 @@ const AllTours = () => {
     const data = [
         
         {
-            label: "Basic Tour",
+            label: "Basic",
             value: "basictour",
             tourintro: "Discover the thrill of exploring off-road terrain on a quad bike while soaking in the breathtaking scenery around you. Whether you're a seasoned adventurer or a first-time rider, this tour promises an unforgettable experience filled with excitement and discovery.",
             desc:
@@ -81,13 +81,13 @@ const AllTours = () => {
           />
 },
         {
-          label: "Tura 2",
+          label: "Advanced ",
           value: "tura2",
           desc:"Detalji ture 2",
         },
 
         {
-            label: "Tura 3",
+            label: "Extreme",
             value: "tura3",
             desc: `Detalji ture 3`,
           },
