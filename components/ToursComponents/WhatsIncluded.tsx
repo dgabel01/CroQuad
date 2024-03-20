@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import guideIcon from '../../public/guideicon.jpeg';
 import quadIcon from '../../public/quadicon.jpeg';
@@ -77,6 +78,7 @@ const WhatsIncluded = () => {
         </div>
 
         <p className='font-bold text-2xl text-center'>We offer free pick up for our guests to the tour starting point!</p>
+        <Link href={"/prices/#prices-header"} className="font-bold text-2xl text-center text-blue-600 after:content-['_↗'] "> Tour prices</Link>
       </div>
     </>
   );

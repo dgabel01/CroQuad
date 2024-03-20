@@ -20,27 +20,28 @@ const SingleTour = ({ items }: SingleTourProps) => {
   return (
     <>
       <div className='flex flex-col'>
-        {items.map((item, index) => (
-          <div key={index} className='w-full flex flex-col gap-8'>
-            <h1 className='text-center text-3xl font-semibold '>
-              {item.title}
-            </h1>
-            <h2 className='text-xl font-semibold my-4'>{item.intro}</h2>
-            <h2 className='text-3xl text-center font-semibold mt-24 mb-2'>Tour highlights:</h2>
+      {items.map((item, index) => (
+        <div key={index} className='w-full flex flex-col gap-8 items-center'>
+          <h1 className='text-center text-3xl font-bold text-sky-600'>{item.title}</h1>
+          <h2 className='text-xl font-semibold my-4 italic'>,,{item.intro}''</h2>
+          <div className='border border-gray-300 rounded-lg p-6'>
+            <h2 className='text-3xl text-center font-semibold mb-4'>Tour highlights:</h2>
             <ol className="list-decimal pl-6">
               {item.steps.split('\n\n').map((step, stepIndex) => {
                 const stepParts = step.split(':');
                 const stepNumber = stepParts[0];
                 const stepContent = stepParts.slice(1).join(':'); // Join the remaining parts as content
                 return (
-                  <li key={stepIndex} className="my-6 text-lg">
+                  <li key={stepIndex} className="my-4 text-lg">
                     <p className='font-semibold'>{stepNumber}:</p> {stepContent}
                   </li>
                 );
               })}
             </ol>
           </div>
-        ))}
+        </div>
+      ))}
+
         {/* Basic info cards */}
         <h2 className='text-3xl font-bold text-center mt-24 mb-12'>Tour Information</h2>
         <div className='flex flex-col sm:gap-8 md:gap-16 items-center justify-center mb-12'>

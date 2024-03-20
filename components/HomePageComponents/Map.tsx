@@ -19,8 +19,8 @@ const Map = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
               </span>
-              <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Email</h2>
-              <p className="mt-2 text-md text-gray-500 dark:text-blue-400">Send us an e-mail and we&apos;ll get back to you</p>
+              <h2 className="mt-4 text-base font-bold text-gray-800 dark:text-white">Email</h2>
+              <p className="mt-2 text-md font-medium text-gray-500 dark:text-blue-400">Send us an e-mail and we&apos;ll get back to you</p>
               <p className="mt-2 text-md font-semibold text-blue-500 dark:text-blue-400">croquad@gmail.com</p>
             </div>
 
@@ -33,8 +33,8 @@ const Map = () => {
                 </svg>
               </span>
               
-              <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Location</h2>
-              <p className="mt-2 text-md text-gray-500 dark:text-gray-400">Our quads are located here</p>
+              <h2 className="mt-4 text-base font-bold text-gray-800 dark:text-white">Location</h2>
+              <p className="mt-2 text-md font-medium text-gray-500 dark:text-gray-400">Our quads are located here</p>
               <p className="mt-2 text-md font-semibold text-blue-500 dark:text-blue-400">Stari Grad, Hvar</p>
             </div>
 
@@ -46,8 +46,8 @@ const Map = () => {
                 </svg>
               </span>
               
-              <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Phone</h2>
-              <p className="mt-2 text-md text-gray-500 dark:text-gray-400">Mon-Fri from 8am to 5pm</p>
+              <h2 className="mt-4 text-base font-bold text-gray-800 dark:text-white">Phone</h2>
+              <p className="mt-2 text-md font-medium text-gray-500 dark:text-gray-400">Mon-Fri from 8am to 5pm</p>
               <p className="mt-2 font-semibold text-md text-blue-500 dark:text-blue-400">+1 (555) 000-0000</p>
             </div>
           </div>
