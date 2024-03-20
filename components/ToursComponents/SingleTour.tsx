@@ -23,7 +23,7 @@ const SingleTour = ({ items }: SingleTourProps) => {
       {items.map((item, index) => (
         <div key={index} className='w-full flex flex-col gap-8 items-center'>
           <h1 className='text-center text-3xl font-bold text-sky-600'>{item.title}</h1>
-          <h2 className='text-xl font-semibold my-4 italic'>,,{item.intro}''</h2>
+          <h2 className='text-xl font-semibold my-4 italic'>&ldquo;{item.intro}&ldquo;</h2>
           <div className='border border-gray-300 rounded-lg p-6'>
             <h2 className='text-3xl text-center font-semibold mb-4'>Tour highlights:</h2>
             <ol className="list-decimal pl-6">
