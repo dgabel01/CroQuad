@@ -8,11 +8,16 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: '/',
     scope:'/',
     lang:'en',
-    categories: ['quad bikes', 'internet', 'renting', 'hvar', 'croquad'],
+    categories: ['quad bikes', 'internet', 'renting', 'hvar', 'croquad', 'tours'],
     display: 'standalone',
     background_color: '#fff',
     theme_color: '#fff',
     icons: [
+      {
+        src: '/public/android-chrome-192x192.png',
+        sizes: 'any',
+        type: 'image/x-icon',
+      },
       {
         src: '/src/app/favicon.ico',
         sizes: 'any',

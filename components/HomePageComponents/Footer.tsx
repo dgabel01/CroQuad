@@ -71,6 +71,9 @@ const year = date.getFullYear();
                 <Link href={"/#faq"}>
                   <p className='my-1 font-medium'>FAQ</p>
                 </Link>
+                <Link href={""}>
+                  <p className='my-1 font-medium'>Terms and Conditions</p>
+                </Link>
               </div>
             </div>
           </div>

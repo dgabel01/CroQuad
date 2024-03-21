@@ -81,7 +81,7 @@ const Reviews = () => {
     
     <div className='flex flex-col gap-8 mb-12'>
       <div>
-          <p className=' text-3xl text-center font-bold mb-12'>Why Choose CroQuad?</p>
+          <p className=' text-3xl text-center mx-4 font-bold mb-12'>Why Choose CroQuad?</p>
       </div>
       <div>
         <p className='text-center text-3xl mx-4'>We craft <span className='text-red-600 font-semibold underline italic'>experiences</span>, not just journeys!</p>
