@@ -32,8 +32,8 @@ export default async function  Blog(){
       <BlogHero/>
       <div className='flex flex-col flex-auto mt-16 gap-8 items-center justify-center'>
           <p className='font-bold text-xl mx-4 text-center mb-24'>
-            Welcome to the CroQuad blog where we will be posting our thoughts, tips and tricks, aswell as customer experiences. If you're someone who relishes the adrenaline rush of exploring the great outdoors on four wheels, then you've come to the right place. At CroQuad, we're passionate about providing you with the means to unlock exhilarating experiences and create unforgettable memories.
-            Whether you're seeking tips for conquering challenging trails, recommendations for scenic routes, or simply a dose of inspiration to fuel your wanderlust, you'll find it all right here.
+            Welcome to the CroQuad blog where we will be posting our thoughts, tips and tricks, aswell as customer experiences. If you&apos;re someone who relishes the adrenaline rush of exploring the Hvar island on four wheels, then you&apos;ve come to the right place. At CroQuad, we&apos;re passionate about providing you with the means to unlock exhilarating experiences and create unforgettable memories.
+            Whether you&apos;re seeking tips for conquering challenging trails, recommendations for scenic routes, or simply a dose of inspiration to fuel your wanderlust, you&apos;ll find it all right here.
           </p>
       </div>
 
