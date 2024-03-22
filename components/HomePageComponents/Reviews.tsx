@@ -24,7 +24,8 @@ const reviews = [
     title: "The sights were incredible",
     content: "Overall, my experience was amazing. The staff was friendly, and the equipment was fine, and I especially loved the stops to take in the beautiful Hvar scenery.",
     author: "John Smith"
-  }
+  },
+  
 ];
 
 

@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "../../components/HomePageComponents/Navbar";
 import Footer from "../../components/HomePageComponents/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import WhatsappButton from "../../components/HomePageComponents/WhatsappButton";
+
 
 const mont= Montserrat({ subsets: ['latin'] });
 
@@ -26,6 +28,7 @@ export default function RootLayout({
       <body className={mont.className}>
         <Navbar/>
         {children}
+        <WhatsappButton/>
         <Footer/>
         </body>
     </html>
