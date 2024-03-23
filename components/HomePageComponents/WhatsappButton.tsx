@@ -7,8 +7,10 @@ const WhatsappButton = () => {
 return (
     <>
         <FloatingWhatsApp 
-            avatar={logo.src}
+             avatar={logo.src}
+            onSubmit={() => window.open('whatsapp://send?phone=+385953770460')}
             accountName='Cro Quad'
+            chatboxHeight={350}
             phoneNumber='+385 95 702 1991'
             chatMessage='Hello there! 🤝 
             How can we help?
