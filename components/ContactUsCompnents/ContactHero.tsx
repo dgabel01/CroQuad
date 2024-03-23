@@ -6,8 +6,8 @@ const ContactHero = () => {
   return (
     <>
       <div className="relative overflow-hidden bg-cover bg-no-repeat" style={{
-        backgroundPosition: '100%',
         backgroundImage: 'url("/contacthero.webp")', 
+        backgroundPosition:'10%',
         height: '600px',
         marginTop:'0',
         }}>

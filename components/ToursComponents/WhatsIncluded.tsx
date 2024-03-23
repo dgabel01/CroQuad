@@ -18,7 +18,7 @@ const WhatsIncluded = () => {
         {/* First Row */}
         <div className='flex flex-col md:flex-row md:justify-between w-full'>
           <div className='flex flex-col gap-6 items-center'>
-            <p className='text-2xl font-semibold text-center'>Guide</p>
+            <p className='text-2xl font-semibold text-center'>Licenced Guide</p>
             <Image
               src={guideIcon}
               alt='guide-icon'
@@ -47,21 +47,12 @@ const WhatsIncluded = () => {
         </div>
         
         {/* Second Row */}
-        <div className='flex flex-col md:flex-row md:justify-between w-full'>
+        <div className='flex flex-col md:flex-row md:justify-evenly w-full'>
           <div className='flex flex-col gap-6 items-center'>
             <p className='text-2xl  mt-9 md:m-0 font-semibold text-center'>Riding Mask</p>
             <Image
               src={maskIcon}
               alt='mask-icon'
-              width={120}
-              className='mix-blend-multiply'
-            />
-          </div>
-          <div className='flex flex-col gap-6 items-center'>
-            <p className='text-2xl mt-9 md:m-0 font-semibold text-center'>Riding Gloves</p>
-            <Image
-              src={glovesIcon}
-              alt='gloves-icon'
               width={120}
               className='mix-blend-multiply'
             />
@@ -76,9 +67,7 @@ const WhatsIncluded = () => {
             />
           </div>
         </div>
-
-        <p className='font-bold text-2xl text-center'>We offer free pick up for our guests to the tour starting point!</p>
-        <Link href={"/prices/#prices-header"} className="font-bold text-2xl text-center text-blue-600 after:content-['_↗'] "> Tour prices</Link>
+        <Link href={"/prices/#prices-header"} className="font-bold text-3xl text-center text-blue-600 after:content-['_↗'] "> Tour prices</Link>
       </div>
     </>
   );

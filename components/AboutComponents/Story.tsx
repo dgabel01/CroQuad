@@ -20,7 +20,7 @@ const Story = () => {
 
 
       <h1 className='text-3xl font-bold text-center my-24'>CroQuad&apos;s Story</h1>
-      <ol className="ml-4 relative border-s border-gray-300 dark:border-gray-700">
+      <ol className="ml-4 relative border-s-2 border-gray-300 dark:border-gray-700">
       <li className="mb-10 ms-4 relative">
         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
         <time className="mb-1 ml-4 text-sm font-extrabold leading-none text-gray-400  dark:text-gray-500">February 2024</time>

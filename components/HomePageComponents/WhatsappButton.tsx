@@ -4,6 +4,9 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import logo from '../../public/logoblack.jpg'
 
 const WhatsappButton = () => {
+const chatMessage = 'Hello there! 🤝 \nHow can we help?\n';
+const customMessage = 'Chat with us';
+
 return (
     <>
         <FloatingWhatsApp 
@@ -12,10 +15,7 @@ return (
             accountName='Cro Quad'
             chatboxHeight={350}
             phoneNumber='+385953770460'
-            chatMessage='Hello there! 🤝 
-            How can we help?
-            Note for Apple users: please use the WhatsApp icon on the page bottom to message us, thanks!
-            '
+            chatMessage={chatMessage}   
         />    
     </>
 )
