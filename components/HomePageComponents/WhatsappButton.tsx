@@ -10,6 +10,10 @@ return (
             avatar={logo.src}
             accountName='Cro Quad'
             phoneNumber='+385 95 702 1991'
+            chatMessage='Hello there! 🤝 
+            How can we help?
+            Note for Apple users: please use the WhatsApp icon on the page bottom to message us, thanks!
+            '
         />    
     </>
 )
