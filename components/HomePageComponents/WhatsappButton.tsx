@@ -5,7 +5,7 @@ import logo from '../../public/logoblack.jpg'
 
 const WhatsappButton = () => {
 const chatMessage = 'Hello there! 🤝 \nHow can we help?\n';
-const customMessage = 'Chat with us';
+
 
 return (
     <>
@@ -16,6 +16,8 @@ return (
             chatboxHeight={350}
             phoneNumber='+385953770460'
             chatMessage={chatMessage}   
+            notificationDelay={10}
+            
         />    
     </>
 )
