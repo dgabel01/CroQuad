@@ -18,7 +18,7 @@ const Hero = () => {
         layout="fill"
         objectFit="cover"
         objectPosition="55% 50%"
-        priority
+        priority={true}
       />
       <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.53)] bg-fixed">
         <div className="flex h-full items-center justify-center">
