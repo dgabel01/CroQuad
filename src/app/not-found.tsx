@@ -19,7 +19,7 @@ export default function NotFound() {
           alt='errorimage'
           width={400}
           height={300}
-          priority
+          priority={true}
         />
         <div className='flex flex-col items-center justify-center gap-12 text-xl text-center'>
           <p className='font-bold mb-8'>The page you were looking for was moved or doesn&apos;t exist.</p>
