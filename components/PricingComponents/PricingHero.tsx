@@ -13,9 +13,8 @@ const PricingHero = () => {
       <Image
         src="/pricinghero.webp"
         alt="Hero Background"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="55% 50%"
+        fill={true}
+        style={{ objectFit: 'cover', objectPosition: '55% 50%' }}
         priority={true}
       />
       <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.53)] bg-fixed">

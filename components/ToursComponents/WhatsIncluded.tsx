@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React,{useEffect} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import guideIcon from '../../public/guideicon.jpeg';
@@ -7,13 +8,20 @@ import helmetIcon from '../../public/helmeticon.png';
 import maskIcon from '../../public/maskicon.png';
 import glovesIcon from '../../public/glovesicon.jpeg';
 import cameraIcon from '../../public/cameraicon.jpeg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const WhatsIncluded = () => {
+  useEffect(()=>{
+    AOS.init();
+  },[])
+
+
   return (
     <>
       <h1 className='text-center text-3xl font-bold my-24'>What&apos;s Included</h1>
 
-      <div className='flex flex-col items-center m-auto rounded-xl gap-12 w-10/12 bg-neutral-100 p-4 md:gap-24 md:p-8'>
+      <div  data-aos="fade-down" data-aos-duration="2000" className='flex flex-col items-center m-auto rounded-xl gap-12 w-10/12 bg-neutral-100 p-4 md:gap-24 md:p-8'>
         
         {/* First Row */}
         <div className='flex flex-col md:flex-row md:justify-between w-full'>
