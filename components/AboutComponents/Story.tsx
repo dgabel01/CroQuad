@@ -1,11 +1,17 @@
-//cro quad story
-import React from 'react'
+"use client"
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Link from 'next/link';
 
 const Story = () => {
+  useEffect(()=>{
+    AOS.init();
+  },[]);
+
   return (
     <>
-      <div className='flex flex-col items-center justify-center gap-10 mt-24'>
+      <div data-aos="fade-down" data-aos-duration="2000" className='flex flex-col items-center justify-center gap-10 mt-24'>
         <h1 className='text-3xl font-bold text-center mx-4'>Discover Hvar&apos;s Essence with CroQuad </h1>
         <p className='text-xl mx-8'>
           Welcome to CroQuad, where the gateway to thrilling escapades on Hvar Island unfolds! Our passion is dedicated to crafting exhilarating experiences that invite you to discover the heart of Hvar in an entirely new light.
@@ -20,14 +26,14 @@ const Story = () => {
 
 
       <h1 className='text-3xl font-bold text-center my-24'>CroQuad&apos;s Story</h1>
-      <ol className="ml-4 relative border-s-2 border-gray-300 dark:border-gray-700">
-      <li className="mb-10 ms-4 relative">
+      <ol data-aos="fade-down" data-aos-duration="2000"  className="ml-4 relative border-s-2 border-gray-300 dark:border-gray-700">
+      <li data-aos="fade-down" data-aos-duration="2000" className="mb-10 ms-4 relative">
         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
         <time className="mb-1 ml-4 text-sm font-extrabold leading-none text-gray-400  dark:text-gray-500">February 2024</time>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">CroQuad idea is born</h3>
         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Our journey started with a vision — to provide not just a mode of transportation but a gateway to exploration, freedom, and unforgettable moments.</p>
       </li>
-      <li className="mb-10 ms-4 relative">
+      <li data-aos="fade-down" data-aos-duration="2000" className="mb-10 ms-4 relative">
         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
         <time className="mb-1 ml-4 text-sm font-extrabold leading-none text-gray-400 dark:text-gray-500">Summer 2024</time>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Growth and innovation</h3>
@@ -36,7 +42,7 @@ const Story = () => {
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
         </svg></Link>
       </li>
-      <li className="mb-10 ms-4 relative">
+      <li data-aos="fade-down" data-aos-duration="2000" className="mb-10 ms-4 relative">
         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
         <time className="mb-1 ml-4 text-sm font-extrabold leading-none text-gray-400 dark:text-gray-500">Continous Connection</time>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Community and connection</h3>

@@ -78,48 +78,49 @@ const Reviews = () => {
   
 
   return (
-    <>
-    
-    <div className='flex flex-col gap-8 mb-12'>
-      <div>
-          <p className=' text-3xl text-center mx-4 font-bold mb-12'>Why Choose CroQuad?</p>
-      </div>
-      <div>
-        <p className='text-center text-3xl mx-4'>We craft <span className='text-red-600 font-semibold underline italic'>experiences</span>, not just journeys!</p>
-      </div>
-      <div className='sm:flex sm:flex-col md:flex md:flex-row items-center justify-evenly gap-16 mt-12'>
-        <div className='flex flex-col gap-4 sm:text-center'>
-          <p className='m-auto text-xl font-semibold'>Modern equipment</p>
-          <Image
-            src={quadIcon}
-            alt='quad-icon'
-            width={90}
-            height={50}
-            className='m-auto'
-          />
-        </div>
-        <div className='flex flex-col gap-4 sm:text-center'>
-          <p className='text-xl text-center my-8 font-semibold'>Exciting routes</p>
-          <Image
-            src={routeIcon}
-            alt='route-icon'
-            width={90}
-            height={50}
-            className='m-auto mb-8'
-          />
-        </div>
-        <div className='flex flex-col gap-4 sm:text-center'>
-          <p className='m-auto text-xl my-8 font-semibold'>Unforgettable scenery</p>
-          <Image
-            src={sceneryIcon}
-            alt='scenery-icon'
-            width={90}
-            height={50}
-            className='m-auto'
-          />
-        </div>
-      </div>  
+  <>
+
+  <div className='flex flex-col gap-8 mb-12'>
+    <div>
+      <p className='text-3xl text-center mx-4 font-bold mb-12'>Why Choose CroQuad?</p>
     </div>
+    <div>
+      <p className='text-center text-3xl mx-4 my-16'>We craft <span className='text-red-600 font-semibold underline italic'>experiences</span>, not just journeys!</p>
+    </div>
+    <div className='flex flex-col sm:flex-row justify-evenly gap-16 mt-12'>
+      <div className='flex flex-col items-center gap-6 sm:text-center'>
+        <p className='text-xl font-semibold'>Modern equipment</p>
+        <Image
+          src={quadIcon}
+          alt='quad-icon'
+          width={90}
+          height={50}
+          className='m-auto'
+        />
+      </div>
+      <div className='flex flex-col items-center gap-6 sm:text-center'>
+        <p className='text-xl font-semibold'>Exciting routes</p>
+        <Image
+          src={routeIcon}
+          alt='route-icon'
+          width={90}
+          height={50}
+          className='m-auto mb-8'
+        />
+      </div>
+      <div className='flex flex-col items-center gap-6 sm:text-center'>
+        <p className='text-xl font-semibold'>Unforgettable scenery</p>
+        <Image
+          src={sceneryIcon}
+          alt='scenery-icon'
+          width={90}
+          height={50}
+          className='m-auto'
+        />
+      </div>
+    </div>  
+</div>
+
 
  <section>
   <div className="mx-auto px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">

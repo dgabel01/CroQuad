@@ -2,6 +2,7 @@
 import React from 'react'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import logo from '../../public/logoblack.jpg'
+import './styles.css'
 
 const WhatsappButton = () => {
 const chatMessage = 'Hello there! 🤝 \nHow can we help?\n';
@@ -16,8 +17,6 @@ return (
             chatboxHeight={350}
             phoneNumber='+385953770460'
             chatMessage={chatMessage}   
-            notificationDelay={10}
-            
         />    
     </>
 )
