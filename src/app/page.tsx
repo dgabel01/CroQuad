@@ -7,7 +7,7 @@ import Tours from '../../components/HomePageComponents/Tours'
 import Reviews from '../../components/HomePageComponents/Reviews';
 import FrequentlyAsked from '../../components/HomePageComponents/FrequentlyAsked';
 import Map from '../../components/HomePageComponents/Map';
-import { Helmet } from 'react-helmet-async'; 
+import Head from 'next/head'
 
 
 
@@ -15,10 +15,10 @@ export default function Home (){
 
   return (
     <>
-     <Helmet>
-        <link rel="icon" href="/src/app/favicon.ico" /> 
-      </Helmet>
-      
+    <Head>
+      <link rel="icon" href="../app/favicon.ico" />
+    </Head>
+
     <Hero/>
     <Tours/>
     <Reviews/>
