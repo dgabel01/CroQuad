@@ -16,7 +16,10 @@ export default function Home (){
   return (
     <>
     <Head>
-      <link rel="icon" href="../app/favicon.ico" />
+      <link rel="icon" type='image/x-icon' href="../../public/favicon.ico" />ž
+      <link rel="icon" type='image/x-icon' href="../../public/android-chrome-192x192.png" />
+      <link rel="icon" type='image/x-icon' href="../../public/android-chrome-512x512.png" />
+      <link rel="icon" type='image/x-icon' href="../../public/apple-touch-icon.png" />
     </Head>
 
     <Hero/>
