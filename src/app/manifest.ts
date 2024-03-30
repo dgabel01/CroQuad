@@ -8,7 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: '/',
     scope:'/',
     lang:'en',
-    categories: ['quad bikes', 'internet', 'renting', 'hvar', 'croquad', 'tours', 'rent','adventures', 'safari', 'lunch', 'explore', 'nature'],
+    categories: ['quad bikes', 'internet', 'renting', 'hvar', 'croquad', 'cro quad', 'tours', 'rent','adventures', 'safari', 'lunch', 'explore', 'nature'],
     display: 'standalone',
     background_color: '#fff',
     theme_color: '#fff',
