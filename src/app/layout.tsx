@@ -6,7 +6,7 @@ import Footer from "../../components/HomePageComponents/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import WhatsappButton from "../../components/HomePageComponents/WhatsappButton";
-
+import UnderDevelopmentAlert from "../../components/HomePageComponents/UnderDevelopmentAlert";
 
 const mont= Montserrat({ subsets: ['latin'] });
 
@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={mont.className}>
+        <UnderDevelopmentAlert/>
         <Navbar/>
         {children}
         <SpeedInsights/>

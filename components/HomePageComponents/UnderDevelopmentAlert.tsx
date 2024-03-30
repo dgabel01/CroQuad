@@ -1,0 +1,18 @@
+"use client"
+import React from 'react'
+import { Alert } from "@material-tailwind/react";
+
+
+
+const UnderDevelopmentAlert = () => {
+  return (
+
+    <Alert color='blue'>
+            
+      <p className='font-bold'>Website under development, use the WhatsappButton to get the actual info on tours, prices and quads.</p>
+
+    </Alert>
+  )
+}
+
+export default UnderDevelopmentAlert
