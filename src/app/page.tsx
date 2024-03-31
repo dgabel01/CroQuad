@@ -16,10 +16,10 @@ export default function Home (){
   return (
     <>
     <Head>
-      <link rel="icon" type='image/x-icon' href="../../public/favicon.ico" />ž
-      <link rel="icon" type='image/x-icon' href="../../public/android-chrome-192x192.png" />
-      <link rel="icon" type='image/x-icon' href="../../public/android-chrome-512x512.png" />
-      <link rel="icon" type='image/x-icon' href="../../public/apple-touch-icon.png" />
+      <link rel="icon" type='image/x-icon' sizes='96x96' href="/public/favicon.ico" />
+      <link rel="icon" type='image/x-icon' sizes='192x192' href="/public/android-chrome-192x192.png" />
+      <link rel="icon" type='image/x-icon' sizes='512x512' href="/public/android-chrome-512x512.png" />
+      <link rel="icon" type='image/x-icon' href="/public/apple-touch-icon.png" />
     </Head>
 
     <Hero/>

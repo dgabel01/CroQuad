@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
- 
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'CroQuad',
@@ -14,35 +14,34 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: '#fff',
     icons: [
       {
-        src: '/public/android-chrome-192x192.png',
+        src: '/android-chrome-192x192.png',
+        sizes: 'any',
+        type: 'image/png',
+      },
+      {
+        src: '/favicon.ico',
         sizes: 'any',
         type: 'image/x-icon',
       },
       {
-        src: '/src/app/favicon.ico',
-        sizes: 'any',
-        type: 'image/x-icon',
+        src:'/favicon-16x16.png',
+        sizes:'any',
+        type: 'image/png'
       },
       {
-        src:'/public/favicon-16x16.png',
+        src:'/favicon-32x32.png',
         sizes:'any',
-        type: 'image/x-icon'
+        type: 'image/png'
       },
       {
-        src:'/public/favicon-32x32.png',
+        src:'/apple-touch-icon.png',
         sizes:'any',
-        type: 'image/x-icon'
-      },
-
-      {
-        src:'/public/apple-touch-icon.png',
-        sizes:'any',
-        type: 'image/x-icon'
+        type: 'image/png'
       },
       {
-        src:'/public/android-chrome-512x512.png',
+        src:'/android-chrome-512x512.png',
         sizes:'any',
-        type: 'image/x-icon'
+        type: 'image/png'
       },
     ],
   }
