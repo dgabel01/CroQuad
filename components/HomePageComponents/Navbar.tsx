@@ -166,7 +166,7 @@ export default function Navbar() {
               <MdOutlineEmail size={24} className="text-black"/>
             </Link>
 
-            <Link href={"whatsapp://send?phone=1234567890"} aria-label="WhatsApp link">
+            <Link href={"whatsapp://send?phone=+385957021991"} aria-label="WhatsApp link">
               <FaWhatsapp  size={24} className="text-black"/>
             </Link>
 
