@@ -1,5 +1,6 @@
 import React from 'react'
 import SocialIcons from './SocialIcons';
+import Link from 'next/link';
 
 const Map = () => {
   return (
@@ -21,7 +22,9 @@ const Map = () => {
               </span>
               <h2 className="mt-4 text-base font-bold text-gray-800 dark:text-white">Email</h2>
               <p className="mt-2 text-md font-medium text-gray-500 dark:text-blue-400">Send us an e-mail and we&apos;ll get back to you</p>
-              <p className="mt-2 text-md font-semibold text-blue-500 dark:text-blue-400">croquad@gmail.com</p>
+              <Link href={"mailto:croquad01@gmail.com"}>
+                <p className="mt-2 text-md font-semibold text-blue-500 dark:text-blue-400">croquad01@gmail.com</p>
+              </Link>
             </div>
 
            
@@ -47,8 +50,8 @@ const Map = () => {
               </span>
               
               <h2 className="mt-4 text-base font-bold text-gray-800 dark:text-white">Phone</h2>
-              <p className="mt-2 text-md font-medium text-gray-500 dark:text-gray-400">Mon-Fri from 8am to 5pm</p>
-              <p className="mt-2 font-semibold text-md text-blue-500 dark:text-blue-400">+1 (555) 000-0000</p>
+              <p className="mt-2 text-md font-medium text-gray-500 dark:text-gray-400">Call to book</p>
+              <p className="mt-2 font-semibold text-md text-blue-500 dark:text-blue-400">+385 95 702 1991</p>
             </div>
           </div>
 

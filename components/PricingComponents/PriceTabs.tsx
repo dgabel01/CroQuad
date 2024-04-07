@@ -13,8 +13,8 @@ import {
     {/*komponenta za svaku turu u desc */}
     const data = [
       {
-        label: "Basic Tour",
-        value: "basictour",
+        label: "To be announced",
+        value: "tura1",
         desc: (
             <>
               <TourPricesCard items={[{title:"CroQuad Basic Tour", riders:"1 person", price:"N/A", personsperquad:"One person, one quad bike"}]} />
@@ -23,21 +23,21 @@ import {
         )
       },
       {
-        label: "Tura 2",
+        label: "To be announced",
         value: "tura2",
-        desc: `Kartice cijena za turu 2`,
+        desc: `TBA`,
       },
       {
-        label: "Tura 3",
+        label: "To be announced",
         value: "tura3",
-        desc: `Kartice cijena za turu 3`,
+        desc: `TBA`,
       },
     ];
    
     return (
      <>
        <h1 id ="prices-header" className="text-3xl text-center font-bold mt-16 mb-12 mx-2">Browse through our tour prices</h1>
-      <Tabs value="basictour" id="custom-animation">
+      <Tabs value="tura1" id="custom-animation">
         <TabsHeader placeholder={""}>
           {data.map(({ label, value }) => (
             <Tab key={value} value={value} placeholder={""} className="text-lg font-semibold">
