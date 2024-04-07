@@ -12,16 +12,16 @@ const AboutHero = () => {
       marginTop: '0',
     }}>
       <Image
-        src="/abouthero.jpg"
+        src="/abouthero.jpeg"
         alt="Hero Background"
         fill={true}
         style={{ objectFit: 'cover', objectPosition: '55% 50%' }}
         priority={true}
       />
-      <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.50)] bg-fixed">
+      <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.40)] bg-fixed">
         <div className="flex h-full items-center justify-center">
           <div className="px-6 text-center text-white md:px-12">
-            <h1 className="mt-2 mb-16 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
+            <h1 className="mb-40 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
               Get to know Us better
             </h1>
             <p className='mt-4 mb-8 text-2xl font-semibold'> Our commitment goes beyond providing top-notch vehicles. Join us, and let&apos;s turn moments into memories together.</p>

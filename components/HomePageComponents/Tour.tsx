@@ -54,12 +54,12 @@ const Tour = ({ title, description, images, tourCardsData }: Props) => {
   </div>
 
   <div className='flex flex-col sm:gap-8 md:gap-16 items-center justify-center mb-12'>
-    <div className='flex flex-row gap-8 sm:gap-16 md:gap-32 mt-8'> 
+    <div className='flex flex-row gap-8 sm:gap-16 md:gap-32 mt-8 w-34'> 
       {tourCardsData.slice(0, 2).map((tourCard, index) => (
         <TourCard key={index} image={tourCard.image} description={tourCard.description} />
       ))}
     </div>
-    <div className='flex flex-row gap-8 sm:gap-16 md:gap-32 mt-8'> 
+    <div className='flex flex-row gap-8 sm:gap-16 md:gap-32 mt-8 ml-2 w-34'> 
       {tourCardsData.slice(2, 4).map((tourCard, index) => (
         <TourCard key={index} image={tourCard.image} description={tourCard.description} />
       ))}

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../../public/keen-slider.min.css'
+import './keen-slider.min.css'
 import KeenSlider from 'keen-slider';
 import Image from 'next/image';
 import quadIcon from '../../public/quadicon.jpeg'
@@ -85,7 +85,7 @@ const Reviews = () => {
       <p className='text-3xl text-center mx-4 font-bold mb-12'>Why Choose CroQuad?</p>
     </div>
     <div>
-      <p className='text-center text-3xl mx-4 my-16'>We craft <span className='text-red-600 font-semibold underline italic'>experiences</span>, not just journeys!</p>
+      <p className='text-center text-3xl mx-4 my-16 font-medium'>We craft <span className=' text-red-600 font-semibold underline italic'>experiences</span>, not just journeys!</p>
     </div>
     <div className='flex flex-col sm:flex-row justify-evenly gap-16 mt-12'>
       <div className='flex flex-col items-center gap-6 sm:text-center'>
@@ -211,7 +211,7 @@ const Reviews = () => {
               <p className="mt-4 leading-relaxed text-gray-700">{review.content}</p>
             </div>
           </div>
-          <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+          <footer className="mt-4 text-sm font-medium text-gray-700 ">
             &mdash; {review.author}
           </footer>
         </blockquote>
@@ -228,36 +228,39 @@ const Reviews = () => {
 
     <div className="mt-8 flex justify-center gap-4 lg:hidden">
       <button
-        aria-label="Previous slide"
-        id="keen-slider-previous"
-        className="rounded-full border border-red-600 p-4 text-red-600 transition hover:bg-red-600 hover:text-white"
-      >
-        <svg
-          className="size-5 -rotate-180 transform"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-        </svg>
-      </button>
+    aria-label="Previous slide"
+    id="keen-slider-previous"
+    className="rounded-full border border-red-600 p-4 text-red-600 transition hover:bg-red-600 hover:text-white focus:bg-transparent focus:text-red-600 focus:outline-none"
+  >
+    <svg
+      className="size-5 -rotate-180 transform"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+    </svg>
+  </button>
 
-      <button
-        aria-label="Next slide"
-        id="keen-slider-next"
-        className="rounded-full border border-red-600 p-4 text-red-600 transition hover:bg-red-600 hover:text-white"
-      >
-        <svg
-          className="h-5 w-5"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-        </svg>
-      </button>
+  <button
+    aria-label="Next slide"
+    id="keen-slider-next"
+    className="rounded-full border border-red-600 p-4 text-red-600 transition hover:bg-red-600 hover:text-white focus:bg-transparent focus:text-red-600 focus:outline-none"
+  >
+    <svg
+      className="h-5 w-5"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+    </svg>
+  </button>
+
+
+     
     </div>
   </div>
 </section>

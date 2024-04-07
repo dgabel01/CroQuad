@@ -24,7 +24,7 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
   };
 
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ml-8">
       <Typography
         as="li"
         variant="small"
@@ -94,7 +94,7 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
       >
         <Link
           href={"/blog"}
-          className={`text-black font-bold text-lg ${isActiveRoute('/blog') ? ' transition-colors font-extrabold text-white bg-black p-2 rounded-md' : ''}`}           
+          className={`text-black font-bold text-lg mr-4 ${isActiveRoute('/blog') ? ' transition-colors font-extrabold text-white bg-black p-2 rounded-md' : ''}`}           
           onClick={handleItemClick}
         >
           Blog
@@ -120,7 +120,7 @@ export default function Navbar() {
 
   return (
     <MaterialNavbar
-      className="w-full p-0 mb-0 bg-stone-100"
+      className="w-full p-0 mb-0 bg-stone-200"
       style={{
         maxWidth: "100%",
       //  backgroundImage: 'url("https://cdn.wallpapersafari.com/7/51/B48rdx.png")',
