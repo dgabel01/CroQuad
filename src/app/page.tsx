@@ -8,6 +8,7 @@ import Reviews from '../../components/HomePageComponents/Reviews';
 import FrequentlyAsked from '../../components/HomePageComponents/FrequentlyAsked';
 import Map from '../../components/HomePageComponents/Map';
 import Head from 'next/head'
+import Video from '../../components/HomePageComponents/Video';
 
 
 
@@ -23,8 +24,9 @@ export default function Home (){
     </Head>
 
     <Hero/>
-    <Tours/>
+    <Video/>
     <Reviews/>
+    <Tours/>
     <FrequentlyAsked/>
     <Map/>
     </>
