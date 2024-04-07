@@ -17,8 +17,8 @@ import {
         value: "basictour",
         desc: (
             <>
-              <TourPricesCard items={[{title:"CroQuad Basic Tour", riders:"1 person", price:"120", personsperquad:"One person, one quad bike"}]} />
-              <TourPricesCard items={[{title:"CroQuad Basic Tour", riders:"2 persons", price:"80", personsperquad:"Two persons, one quad bike"}]} />
+              <TourPricesCard items={[{title:"CroQuad Basic Tour", riders:"1 person", price:"N/A", personsperquad:"One person, one quad bike"}]} />
+              <TourPricesCard items={[{title:"CroQuad Basic Tour", riders:"2 persons", price:"N/A", personsperquad:"Two persons, one quad bike"}]} />
             </>
         )
       },

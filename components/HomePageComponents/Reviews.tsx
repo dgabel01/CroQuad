@@ -6,25 +6,25 @@ import quadIcon from '../../public/quadicon.jpeg'
 import routeIcon from '../../public/routeicon.png'
 import sceneryIcon from '../../public/sceneryicon.png'
 
-const reviews = [
-  {
-    rating: 5,
-    title: "Amazing experience",
-    content: "From the moment I arrived, the staff was friendly and knowledgeable, providing a quick and efficient check-in process. The selection of quads was impressive, ranging from beginner-friendly models to more advanced options for seasoned riders. The staff took the time to ensure I felt comfortable and confident operating the quad before setting off on my adventure.",
-    author: "Michael Scott"
-  },
-  {
-    rating: 5,
-    title: "Great service",
-    content: "The staff was very helpful and accommodating. I had a fantastic time exploring the area with their quad rentals. The equipment was in excellent condition, and the instructions provided were clear and easy to follow.",
-    author: "Jane Doe"
-  },
-  {
-    rating: 5,
-    title: "The sights were incredible",
-    content: "Overall, my experience was amazing. The staff was friendly, and the equipment was fine, and I especially loved the stops to take in the beautiful Hvar scenery.",
-    author: "John Smith"
-  },
+const reviews: any[] = [
+  // {
+  //   rating: 5,
+  //   title: "Amazing experience",
+  //   content: "From the moment I arrived, the staff was friendly and knowledgeable, providing a quick and efficient check-in process. The selection of quads was impressive, ranging from beginner-friendly models to more advanced options for seasoned riders. The staff took the time to ensure I felt comfortable and confident operating the quad before setting off on my adventure.",
+  //   author: "Michael Scott"
+  // },
+  // {
+  //   rating: 5,
+  //   title: "Great service",
+  //   content: "The staff was very helpful and accommodating. I had a fantastic time exploring the area with their quad rentals. The equipment was in excellent condition, and the instructions provided were clear and easy to follow.",
+  //   author: "Jane Doe"
+  // },
+  // {
+  //   rating: 5,
+  //   title: "The sights were incredible",
+  //   content: "Overall, my experience was amazing. The staff was friendly, and the equipment was fine, and I especially loved the stops to take in the beautiful Hvar scenery.",
+  //   author: "John Smith"
+  // },
   
 ];
 
@@ -56,23 +56,31 @@ const Reviews = () => {
     const keenSliderPrevious = document.getElementById('keen-slider-previous');
     const keenSliderNext = document.getElementById('keen-slider-next');
 
-    if (keenSliderPrevious) {
-      keenSliderPrevious.addEventListener('click', () => keenSlider.prev());
-    }
-    if (keenSliderNext) {
-      keenSliderNext.addEventListener('click', () => keenSlider.next());
-    }
-    if (keenSliderPreviousDesktop) {
-      keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev());
-    }
-    if (keenSliderNextDesktop) {
-      keenSliderNextDesktop.addEventListener('click', () => keenSlider.next());
+    if(reviews.length>0){
+      if (keenSliderPrevious) {
+        keenSliderPrevious.addEventListener('click', () => keenSlider.prev());
+      }
+      if (keenSliderNext) {
+        keenSliderNext.addEventListener('click', () => keenSlider.next());
+      }
+      if (keenSliderPreviousDesktop) {
+        keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev());
+      }
+      if (keenSliderNextDesktop) {
+        keenSliderNextDesktop.addEventListener('click', () => keenSlider.next());
+      }
+
     }
 
+  
+
     // Cleanup function
-    return () => {
-      keenSlider.destroy();
-    };
+    if(reviews.length>0){
+      return () => {
+        keenSlider.destroy();
+      };
+    }
+    
   }, []); // Empty dependency array ensures useEffect runs only once after the initial render
 
   
@@ -183,43 +191,48 @@ const Reviews = () => {
         </div>
       </div>
 
-
-
-  <div className="mx-6 lg:col-span-2 lg:mx-0">
-  <div id="keen-slider" className="keen-slider">
-    {reviews.map((review, index) => (
-      <div key={index} className="keen-slider__slide">
-        <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
-          <div>
-            <div className="flex gap-0.5 text-green-500">
-              {[...Array(review.rating)].map((_, i) => (
-                <svg
-                  key={i}
-                  className="h-5 w-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-              ))}
-            </div>
-            <div className="mt-4">
-              <p className="text-2xl font-bold text-rose-600 sm:text-3xl">{review.title}</p>
-              <p className="mt-4 leading-relaxed text-gray-700">{review.content}</p>
-            </div>
+    {reviews.length>0 ? (
+      <div className="mx-6 lg:col-span-2 lg:mx-0">
+      <div id="keen-slider" className="keen-slider">
+        {reviews.map((review, index) => (
+          <div key={index} className="keen-slider__slide">
+            <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+              <div>
+                <div className="flex gap-0.5 text-green-500">
+                  {[...Array(review.rating)].map((_, i) => (
+                    <svg
+                      key={i}
+                      className="h-5 w-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  ))}
+                </div>
+                <div className="mt-4">
+                  <p className="text-2xl font-bold text-rose-600 sm:text-3xl">{review.title}</p>
+                  <p className="mt-4 leading-relaxed text-gray-700">{review.content}</p>
+                </div>
+              </div>
+              <footer className="mt-4 text-sm font-medium text-gray-700 ">
+                &mdash; {review.author}
+              </footer>
+            </blockquote>
           </div>
-          <footer className="mt-4 text-sm font-medium text-gray-700 ">
-            &mdash; {review.author}
-          </footer>
-        </blockquote>
+        ))}
       </div>
-    ))}
+    </div>
+    
+    ):(
+      <p className='font-bold text-center text-xl text-red-600'>No customer reviews yet. Book your quad ride now and be the first to write the epic tale of your CroQuad adventure!</p>
+    )}
+
+    
   </div>
-</div>
-</div>
 
 
     

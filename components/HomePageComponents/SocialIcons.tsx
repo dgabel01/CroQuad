@@ -9,7 +9,7 @@ const SocialIcons = () => {
       <h2 className='text-white font-extrabold text-4xl mb-8'>Get in Touch!</h2>
 
       <div className='flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-14 md:gap-24'>
-        <Link href={""} aria-label='WhatsApp link'>
+        <Link href={"whatsapp://send?phone=+385957021991"} aria-label='WhatsApp link'>
           <FaWhatsapp size={36} color='white' />
         </Link>
         <Link href={""} aria-label='Facebook link'>

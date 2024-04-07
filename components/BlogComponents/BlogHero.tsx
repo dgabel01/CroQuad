@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link';
 import Image from 'next/image';
 
 
@@ -12,7 +11,7 @@ const BlogHero = () => {
       marginTop: '0',
     }}>
       <Image
-        src="/bloghero.avif"
+        src="/bloghero.webp"
         alt="Hero Background"
         fill={true}
         style={{ objectFit: 'cover', objectPosition: '55% 50%' }}
