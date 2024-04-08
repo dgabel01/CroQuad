@@ -120,7 +120,7 @@ export default function Navbar() {
 
   return (
     <MaterialNavbar
-      className="w-full p-0 mb-0 bg-stone-200"
+      className="w-full p-0 mb-0 bg-zinc-100"
       style={{
         maxWidth: "100%",
       //  backgroundImage: 'url("https://cdn.wallpapersafari.com/7/51/B48rdx.png")',
@@ -162,7 +162,7 @@ export default function Navbar() {
         <div className="flex flex-col gap-4 items-center justify-center mt-4">
           <div className="flex flex-row gap-4 mt-2">
             
-            <Link href={"/"} aria-label="Email link">
+            <Link href={"mailto:croquad01@gmail.com"} aria-label="Email link">
               <MdOutlineEmail size={24} className="text-black"/>
             </Link>
 
@@ -174,12 +174,12 @@ export default function Navbar() {
               <FaFacebook  size={24} className="text-black"/>
             </Link>
 
-            <Link href={"/"} aria-label="Instagram link">
+            <Link href={"https://www.instagram.com/cro_quad?igsh=MXN1MHA4aWp3ZHJwaQ=="} aria-label="Instagram link" target="_blank">
               <FaInstagram size={24}  className="text-black"/>
             </Link>
           </div>
           <div>
-            <p className="text-black">Hvar, Ulica</p>
+            <p className="text-black font-medium">Stari Grad, Hvar</p>
           </div>
         </div>
       </Collapse>

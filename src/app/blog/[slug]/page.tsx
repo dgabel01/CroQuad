@@ -70,7 +70,7 @@ const client = createClient({
     
   
     return (
-      <main className="min-h-screen p-24 flex justify-center">
+      <main className="min-h-screen p-24 flex justify-center mt-24">
         <div className="max-w-2xl text-center flex flex-col items-center justify-center">
           <Image
             src={imageURL}

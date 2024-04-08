@@ -23,7 +23,7 @@ const PricingHero = () => {
             <h1 className="mt-2 mb-16 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
               Tour prices
             </h1>
-            <p className='text-2xl mb-8 font-bold'>Explore the thrill without breaking the bank</p>
+            <p className='text-3xl mb-8 font-bold'>Explore the thrill without breaking the bank</p>
             <Link href={"/contact"}>
               <button type="button"
                 className="text-white rounded border-2 border-neutral-50 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-bold uppercase leading-normal transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-white hover:bg-opacity-10  focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200">

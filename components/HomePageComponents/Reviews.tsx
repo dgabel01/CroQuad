@@ -5,6 +5,7 @@ import Image from 'next/image';
 import quadIcon from '../../public/quadicon.jpeg'
 import routeIcon from '../../public/routeicon.png'
 import sceneryIcon from '../../public/sceneryicon.png'
+import { rating } from '@material-tailwind/react';
 
 const reviews: any[] = [
   // {
@@ -25,6 +26,12 @@ const reviews: any[] = [
   //   content: "Overall, my experience was amazing. The staff was friendly, and the equipment was fine, and I especially loved the stops to take in the beautiful Hvar scenery.",
   //   author: "John Smith"
   // },
+    {
+      rating:0,
+       title: "No customer reviews yet!",
+       content:"Book your quad ride now and be the first to write the epic tale of your CroQuad adventure!",
+       author: "CroQuad"
+     },
   
 ];
 
@@ -32,6 +39,9 @@ const reviews: any[] = [
 const Reviews = () => {
   useEffect(() => {
     // Initialize KeenSlider in the useEffect hook
+    if(reviews.length>0){
+      
+    }
     const keenSlider = new KeenSlider('#keen-slider', {
       loop: true,
       slides: {
@@ -56,7 +66,7 @@ const Reviews = () => {
     const keenSliderPrevious = document.getElementById('keen-slider-previous');
     const keenSliderNext = document.getElementById('keen-slider-next');
 
-    if(reviews.length>0){
+   
       if (keenSliderPrevious) {
         keenSliderPrevious.addEventListener('click', () => keenSlider.prev());
       }
@@ -70,16 +80,15 @@ const Reviews = () => {
         keenSliderNextDesktop.addEventListener('click', () => keenSlider.next());
       }
 
-    }
+  
 
   
 
     // Cleanup function
-    if(reviews.length>0){
       return () => {
         keenSlider.destroy();
       };
-    }
+    
     
   }, []); // Empty dependency array ensures useEffect runs only once after the initial render
 
@@ -90,7 +99,7 @@ const Reviews = () => {
 
   <div className='flex flex-col gap-8 mb-12'>
     <div>
-      <p className='text-3xl text-center mx-4 font-bold mb-12'>Why Choose CroQuad?</p>
+      <p className='text-3xl text-center mx-4 font-extrabold mb-12'>Why Choose CroQuad?</p>
     </div>
     <div>
       <p className='text-center text-3xl mx-4 my-16 font-medium'>We craft <span className=' text-red-600 font-semibold underline italic'>experiences</span>, not just journeys!</p>
@@ -191,7 +200,7 @@ const Reviews = () => {
         </div>
       </div>
 
-    {reviews.length>0 ? (
+
       <div className="mx-6 lg:col-span-2 lg:mx-0">
       <div id="keen-slider" className="keen-slider">
         {reviews.map((review, index) => (
@@ -227,10 +236,7 @@ const Reviews = () => {
       </div>
     </div>
     
-    ):(
-      <p className='font-bold text-center text-xl text-red-600'>No customer reviews yet. Book your quad ride now and be the first to write the epic tale of your CroQuad adventure!</p>
-    )}
-
+  
     
   </div>
 

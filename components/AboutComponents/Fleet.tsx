@@ -17,7 +17,7 @@ const Fleet = () => {
   return (
     <>
       <div data-aos="fade-down" data-aos-duration="2000"  className='flex flex-col items-center justify-center gap-4 mt-24'>
-        <h1 data-aos="fade-down" data-aos-duration="2000" className='text-3xl text-center font-bold mb-4'>Our Vehicles</h1>    
+        <h1 data-aos="fade-down" data-aos-duration="2000" className='text-3xl text-center font-extrabold mb-4'>Our Vehicles</h1>    
         <Image
           src={quadImage}
           alt='quad-image'
@@ -25,9 +25,9 @@ const Fleet = () => {
           height={250}
           data-aos="fade-down" data-aos-duration="2000" 
         />
-        <p data-aos="fade-down" data-aos-duration="2000"  className='text-2xl font-bold text-center'>Segway Snarler AT5</p>
-        <p data-aos="fade-down" data-aos-duration="2000"  className='text-lg font-semibold text-center'>T3b category, 499cc EFI, 39hp, Auto Transmission, 4x4, Diff Lock</p>
-        <p data-aos="fade-down" data-aos-duration="2000"  className='text-lg font-semibold text-center'>5 vehicles</p>
+        <p data-aos="fade-down" data-aos-duration="2000"  className='text-2xl mx-4 font-bold text-center'>Segway Snarler AT5</p>
+        <p data-aos="fade-down" data-aos-duration="2000"  className='text-lg mx-4 font-semibold text-center'>T3b category, 499cc EFI, 39hp, Auto Transmission, 4x4, Diff Lock</p>
+        <p data-aos="fade-down" data-aos-duration="2000"  className='text-l gmx-4 font-semibold text-center'>5 vehicles</p>
         <Link  data-aos="fade-down" data-aos-duration="2000"  href={"/contact"}><Button placeholder="" color="blue">Book Now</Button></Link>
       </div>
     </>

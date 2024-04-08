@@ -20,6 +20,7 @@ const TourCard = ({image,description}:Props) => {
             alt='card-image'
             width={34}
             height={34}
+            className='mb-2'
         />
         <div className='flex flex-col p-1 '>
             <p className='font-bold mt-1 md:text-xl sm:text-lg'>{description.num}</p>

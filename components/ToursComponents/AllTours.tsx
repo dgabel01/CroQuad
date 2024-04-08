@@ -72,7 +72,7 @@ const AllTours = () => {
                     image: peopleIcon,
                     description: {
                       num: 6,
-                      unit: 'Max.people',
+                      unit: 'People',
                       type: 'Tour size',
                     },
                   },
@@ -96,7 +96,7 @@ const AllTours = () => {
       
     return (
       <>
-      <h1 id="tour-details" className="text-3xl text-center font-bold mt-36 mb-16 mx-2">Start Your Quad Journey Here: Browse Our Tour Selection</h1>
+      <h1 id="tour-details" className="text-3xl text-center font-extrabold mt-36 mb-16 mx-2">Start Your Quad Journey Here: Browse Our Tour Selection</h1>
       <Tabs value="basictour" id="custom-animation2">
         <TabsHeader placeholder={""}>
           {data.map(({ label, value }) => (

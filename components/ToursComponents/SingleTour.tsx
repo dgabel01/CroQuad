@@ -51,7 +51,9 @@ useEffect(()=>{
       ))}
 
         {/* Basic info cards */}
-        <h2 className='text-3xl font-bold text-center mt-24 mb-12'>Tour Information</h2>
+        <div data-aos="fade-down" data-aos-duration="2000" className='flex items-center justify-center'>
+          <h1 className='text-3xl font-extrabold  mt-24 mb-12'>Tour Information</h1>
+        </div>
         <div className='flex flex-col sm:gap-8 md:gap-16 items-center justify-center mb-12'>
           <div data-aos="fade-down" data-aos-duration="2000"  className='flex flex-row gap-8 sm:gap-16 md:gap-32 mt-8'> 
             {items.map((item, index) => (

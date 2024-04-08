@@ -8,7 +8,7 @@ const Map = () => {
     <section className="bg-white dark:bg-gray-900">
       <div className="container px-6 py-12 mx-auto">
         <div className='flex  flex-col gap-4 items-center justify-center'>
-          <h1 className=" mt-16 text-center mb-4 text-3xl font-bold text-blue-500 dark:text-blue-400">Contact Us</h1>
+          <h1 className=" mt-16 text-center mb-4 text-3xl font-extrabold text-blue-500 dark:text-blue-400">Contact Us</h1>
           <p className="mt-3 text-xl text-gray-500 font-medium dark:text-gray-400">Find us here to book your ride now</p>
         </div>
 

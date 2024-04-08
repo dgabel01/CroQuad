@@ -17,6 +17,7 @@ return (
             chatboxHeight={400}
             phoneNumber='+385957021991'
             chatMessage={chatMessage}   
+            notificationDelay={15}
         />    
     </>
 )

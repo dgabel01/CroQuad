@@ -10,7 +10,7 @@ const year = date.getFullYear();
 
   return (
     <>
-      <footer className='bg-stone-200'>
+      <footer className='bg-zinc-100'>
         <div className='mt-24 flex flex-col border-2 rounded-md'>
           <div className='sm:flex flex-col md:flex-row justify-evenly items-center gap-24'>
             <div className='flex flex-col gap-8'>
@@ -24,7 +24,7 @@ const year = date.getFullYear();
                     <FaFacebook size={30} className='rounded-lg bg-white p-1' />
                   </Link>
 
-                  <Link href={"/"} aria-label='Instagram link'>
+                  <Link href={"https://www.instagram.com/cro_quad?igsh=MXN1MHA4aWp3ZHJwaQ=="} aria-label="Instagram link" target="_blank">
                     <FaInstagram size={30} className='rounded-lg bg-white p-1' />
                   </Link>
 
@@ -32,7 +32,7 @@ const year = date.getFullYear();
                     <FaGoogle size={30} className='rounded-lg bg-white p-1' />
                   </Link>
 
-                  <Link href={"/"} aria-label='WhatsApp link'>
+                  <Link href={"whatsapp://send?phone=+385957021991"} aria-label="WhatsApp link">
                     <FaWhatsapp size={30} className='rounded-lg bg-white p-1' />
                   </Link>
                 </div>

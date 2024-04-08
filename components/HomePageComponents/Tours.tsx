@@ -9,9 +9,9 @@ import Tour from './Tour';
 
 export const tourData = [
   {
-    title: 'CroQuad Basic Tour',
+    title: 'CroQuad Example Tour',
     images: [imageOne, imageTwo],
-    description: 'The Basic trail is 15 km long and takes you through beautiful parts of the island of Hvar. You will drive on a superb track with wonderful views of the sea, neighboring islands, and Velebit. Great photo locations to capture this unforgettable experience.',
+    description: 'The trail is 15 km long and takes you through beautiful parts of the island of Hvar. You will drive on a superb track with wonderful views of the sea, neighboring islands, and Velebit. Great photo locations to capture this unforgettable experience.',
     tourCardsData: [
       {
         image: lengthIcon,
@@ -40,16 +40,16 @@ export const tourData = [
         image: peopleIcon,
         description: {
           num: 10,
-          unit: 'Max.people',
+          unit: 'People',
           type: 'Tour size',
         },
       },
     ],
   },
   {
-    title: 'CroQuad Adrenaline tour',
+    title: 'CroQuad Example Tour 2',
     images: [imageOne, imageTwo],
-    description: 'The Adrenaline trail is 40 km long and takes you through beautiful parts of the island of Hvar. You will drive on a superb track with wonderful views of the sea, neighboring islands, and Velebit. Great photo locations to capture this unforgettable experience.',
+    description: 'The trail is 40 km long and takes you through beautiful parts of the island of Hvar. You will drive on a superb track with wonderful views of the sea, neighboring islands, and Velebit. Great photo locations to capture this unforgettable experience.',
     tourCardsData: [
       {
         image: lengthIcon,
@@ -78,7 +78,7 @@ export const tourData = [
         image: peopleIcon,
         description: {
           num: 6,
-          unit: 'Max.people',
+          unit: 'People',
           type: 'Tour size',
         },
       },
@@ -90,7 +90,7 @@ export const tourData = [
 const Tours = () => {
   return (
     <>
-      <h1 className='mt-36 mb-12 text-center text-3xl font-bold'>Our Quad Rides</h1>
+      <h1 className='mt-36 mb-12 text-center text-3xl font-extrabold'>Our Quad Rides</h1>
       {tourData.map((tour, index) => (
         <Tour
           key={index}

@@ -36,7 +36,7 @@ import {
    
     return (
      <>
-       <h1 id ="prices-header" className="text-3xl text-center font-bold mt-16 mb-12 mx-2">Browse through our tour prices</h1>
+       <h1 id ="prices-header" className="text-3xl text-center font-extrabold mt-16 mb-12 mx-2">Browse through our tour prices</h1>
       <Tabs value="tura1" id="custom-animation">
         <TabsHeader placeholder={""}>
           {data.map(({ label, value }) => (

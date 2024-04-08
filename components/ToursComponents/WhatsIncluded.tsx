@@ -19,9 +19,11 @@ const WhatsIncluded = () => {
 
   return (
     <>
-      <h1 className='text-center text-3xl font-bold my-24'>What&apos;s Included</h1>
+      <div data-aos="fade-down" data-aos-duration="2000" className='flex items-center justify-center'>
+        <h1 className=' text-3xl p-4 font-extrabold my-24'>What&apos;s Included</h1>
+      </div>
 
-      <div  data-aos="fade-down" data-aos-duration="2000" className='flex flex-col items-center m-auto rounded-xl gap-12 w-10/12 bg-neutral-100 p-4 md:gap-24 md:p-8'>
+      <div  data-aos="fade-down" data-aos-duration="2000" className='flex flex-col items-center m-auto rounded-xl gap-12 w-10/12 bg-zinc-100 p-4 md:gap-24 md:p-8'>
         
         {/* First Row */}
         <div className='flex flex-col md:flex-row md:justify-between w-full'>
@@ -75,7 +77,7 @@ const WhatsIncluded = () => {
             />
           </div>
         </div>
-        <Link href={"/prices/#prices-header"} className="font-bold text-3xl text-center text-blue-600 after:content-['_↗'] "> Tour prices</Link>
+        <Link href={"/prices/#prices-header"} className="font-extrabold text-2xl text-center text-blue-700 after:content-['→']"> Tour prices</Link>
       </div>
     </>
   );

@@ -42,7 +42,7 @@ const faqData: FAQItem[] = [
     id: 2,
     question: "Are reservations required, and how can I book a quad rental?",
     answer:
-    "Reservations are required, you can book the ride through our social media platforms, or through our email or phone numbers. Check the contact us page for more information."
+    "Reservations are required, you can book the ride through our social media platforms, or through our email or phone numbers. The easiest way is to use the WhatsApp button which is always present on screen. Check the contact us page for more information."
   },
   {
     id: 3,

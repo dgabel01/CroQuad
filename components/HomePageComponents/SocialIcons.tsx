@@ -15,7 +15,7 @@ const SocialIcons = () => {
         <Link href={""} aria-label='Facebook link'>
           <FaFacebook size={36} color='white' />
         </Link>
-        <Link href={""} aria-label='Instagram link'>
+        <Link href={"https://www.instagram.com/cro_quad?igsh=MXN1MHA4aWp3ZHJwaQ=="} aria-label="Instagram link" target="_blank">
           <FaInstagram size={36} color='white' />
         </Link>
         <Link href={""} aria-label='Google business link'>

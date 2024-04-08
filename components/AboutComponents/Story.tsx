@@ -12,7 +12,7 @@ const Story = () => {
   return (
     <>
       <div data-aos="fade-down" data-aos-duration="2000" className='flex flex-col items-center justify-center gap-10 mt-24'>
-        <h1 className='text-3xl font-bold text-center mx-4'>Discover Hvar&apos;s Essence with CroQuad </h1>
+        <h1 className='text-3xl font-extrabold text-center mx-4'>Discover Hvar&apos;s Essence with CroQuad </h1>
         <p className='text-xl mx-8'>
           Welcome to CroQuad, where the gateway to thrilling escapades on Hvar Island unfolds! Our passion is dedicated to crafting exhilarating experiences that invite you to discover the heart of Hvar in an entirely new light.
         </p>
@@ -25,7 +25,7 @@ const Story = () => {
       </div>
 
 
-      <h1 className='text-3xl font-bold text-center my-24'>CroQuad&apos;s Story</h1>
+      <h1 className='text-3xl font-extrabold text-center my-24'>CroQuad&apos;s Story</h1>
       <ol data-aos="fade-down" data-aos-duration="2000"  className="ml-4 relative border-s-2 border-gray-300 dark:border-gray-700">
       <li data-aos="fade-down" data-aos-duration="2000" className="mb-10 ms-4 relative">
         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>

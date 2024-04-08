@@ -24,7 +24,7 @@ const ContactHero = () => {
             <h1 className="mt-2 mb-16 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
             Contact Us
             </h1>
-            <p className='mt-4 mb-8 text-2xl font-semibold'> Connect with Us through the following platforms and book your ride now</p>
+            <p className='mt-4 mb-8 sm:text-3xl text-2xl font-semibold'> Connect with Us through the following platforms and book your ride now</p>
           </div>
         </div>
       </div>

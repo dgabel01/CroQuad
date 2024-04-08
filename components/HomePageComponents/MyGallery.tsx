@@ -36,7 +36,9 @@ const MyGallery: React.FC<MyGalleryProps> = ({ images, title}) => {
 
   return (
     <>
-      <h1 className="my-24 mx-4 text-3xl text-center font-bold">{title}</h1>
+      <div data-aos="fade-down" data-aos-duration="2000" className="flex items-center justify-center">
+        <h1 className="my-24 mx-4 text-3xl font-extrabold text-center">{title}</h1>
+      </div>
       <div data-aos="fade-down" data-aos-duration="2000">
         <Gallery
           images={images}
