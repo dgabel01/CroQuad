@@ -61,7 +61,7 @@ const Terms = () => {
               <li  className='ml-8'>-By use of the uniform resource locator being linked to; or</li>
               <li  className='ml-8'>-By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party&apos;s site.</li>
           </ul>
-          <p className='ml-4'>No use of Cro Quad's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+          <p className='ml-4'>No use of Cro Quad&apos;s logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
           <h3 className='mt-16 mb-8 text-center text-xl'><strong>iFrames</strong></h3>
           <p className='ml-4'>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.</p>
           <h3 className='mt-16 mb-8 text-center text-xl'><strong>Content Liability</strong></h3>
