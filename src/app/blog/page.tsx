@@ -8,7 +8,7 @@ import cardPicture from '../../../public/jason-goodman-Oalh2MojUuk-unsplash.jpg'
 import BlogHero from '../../../components/BlogComponents/BlogHero';
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'CroQuad Blog',
   description: 'Page where the CroQuad team adds posts about quads and experiences',
 }
 

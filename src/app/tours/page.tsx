@@ -6,7 +6,7 @@ import Map from '../../../components/HomePageComponents/Map';
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Our Tours",
+  title: "Our Quad Tours",
   description: "CroQuad Hvar quadbike tours details page",
   authors:[
     { name: 'Dominik Gabela', url: 'https://github.com/dgabel01' }
