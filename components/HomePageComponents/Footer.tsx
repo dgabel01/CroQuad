@@ -21,19 +21,19 @@ const year = date.getFullYear();
 
                 <div className='flex flex-row gap-4 justify-center mb-8'>
                   <Link href={"/"} aria-label='Facebook link'>
-                    <FaFacebook size={30} className='rounded-lg bg-white p-1' />
+                    <FaFacebook size={36} className='rounded-lg bg-white p-1' />
                   </Link>
 
                   <Link href={"https://www.instagram.com/cro_quad?igsh=MXN1MHA4aWp3ZHJwaQ=="} aria-label="Instagram link" target="_blank">
-                    <FaInstagram size={30} className='rounded-lg bg-white p-1' />
+                    <FaInstagram size={36} className='rounded-lg bg-white p-1' />
                   </Link>
 
                   <Link href={"/"} aria-label='Google business profile'>
-                    <FaGoogle size={30} className='rounded-lg bg-white p-1' />
+                    <FaGoogle size={36} className='rounded-lg bg-white p-1' />
                   </Link>
 
                   <Link href={"whatsapp://send?phone=+385957021991"} aria-label="WhatsApp link">
-                    <FaWhatsapp size={30} className='rounded-lg bg-white p-1' />
+                    <FaWhatsapp size={36} className='rounded-lg bg-white p-1' />
                   </Link>
                 </div>
               </div>
@@ -71,7 +71,7 @@ const year = date.getFullYear();
                 <Link href={"/#faq"}>
                   <p className='my-1 font-medium'>FAQ</p>
                 </Link>
-                <Link href={""}>
+                <Link href={"/terms"}>
                   <p className='my-1 font-medium'>Terms and Conditions</p>
                 </Link>
               </div>

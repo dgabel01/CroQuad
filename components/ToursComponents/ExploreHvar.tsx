@@ -17,9 +17,8 @@ const ExploreHvar = () => {
           <Image
             src={hvarPicture}
             width={900}
-            height={667}
             className="object-cover w-full h-full rounded-md"
-            alt="hvar-image"
+            alt="starigrad-image"
           />
         </div>
       </div>

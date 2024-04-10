@@ -104,7 +104,7 @@ const Reviews = () => {
     <div>
       <p className='text-center text-3xl mx-4 my-16 font-medium'>We craft <span className=' text-red-600 font-semibold underline italic'>experiences</span>, not just journeys!</p>
     </div>
-    <div className='flex flex-col sm:flex-row justify-evenly gap-16 mt-12'>
+    <div className='flex flex-col justify-evenly sm:flex-row gap-32 mt-12'>
       <div className='flex flex-col items-center gap-6 sm:text-center'>
         <p className='text-xl font-semibold'>Modern equipment</p>
         <Image
@@ -114,6 +114,7 @@ const Reviews = () => {
           height={50}
           className='m-auto'
         />
+        <p className='text-center mx-8'>Our state-of-the-art ATV equipment ensures a safe and thrilling adventure.</p>
       </div>
       <div className='flex flex-col items-center gap-6 sm:text-center'>
         <p className='text-xl font-semibold'>Exciting routes</p>
@@ -124,6 +125,7 @@ const Reviews = () => {
           height={50}
           className='m-auto mb-8'
         />
+        <p className='text-center mx-8'>Explore diverse landscapes and challenging trails with our carefully curated routes.</p>
       </div>
       <div className='flex flex-col items-center gap-6 sm:text-center'>
         <p className='text-xl font-semibold'>Unforgettable scenery</p>
@@ -134,9 +136,11 @@ const Reviews = () => {
           height={50}
           className='m-auto'
         />
+        <p className='text-center mx-8'>Immerse yourself in breathtaking natural beauty and picturesque views that will stay with you forever.</p>
       </div>
     </div>  
-</div>
+  </div>
+
 
 
  <section>
