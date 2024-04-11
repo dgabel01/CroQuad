@@ -1,8 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image';
 import { Button } from "@material-tailwind/react";
-
+import Video from './Video';
 
 const Hero = () => {
   return (
@@ -12,13 +11,7 @@ const Hero = () => {
       height: '600px',
       marginTop: '0',
     }}>
-      <Image
-        src="/homehero.jpeg"
-        alt="Hero Background"
-        fill={true}
-        style={{ objectFit: 'cover', objectPosition: '55% 50%' }}
-        priority={true}
-      />
+      <Video/>
       <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.53)] bg-fixed">
         <div className="flex h-full items-center justify-center">
           <div className="px-6 text-center text-white md:px-12">
@@ -44,7 +37,7 @@ const Hero = () => {
     </div>
 
 
-    <div className='flex flex-col items-center justify-center gap-8 text-center mt-36'>
+    <div className='flex flex-col items-center justify-center gap-8 text-center my-36'>
       <h1 className='text-3xl font-extrabold'>Who We Are</h1>
       <p className='text-2xl mx-4 font-medium'>Business run by friends who know the best of island Hvar</p>
       <p className='text-2xl mx-12 font-medium'>We are dedicated to delivering unforgettable quadbike experiences that allow you to explore the island of Hvar like never before</p>

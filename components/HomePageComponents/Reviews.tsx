@@ -104,8 +104,8 @@ const Reviews = () => {
     <div>
       <p className='text-center text-3xl mx-4 my-16 font-medium'>We craft <span className=' text-red-600 font-semibold underline italic'>experiences</span>, not just journeys!</p>
     </div>
-    <div className='flex flex-col justify-evenly sm:flex-row gap-32 mt-12'>
-      <div className='flex flex-col items-center gap-6 sm:text-center'>
+    <div className='flex flex-col items-center justify-center lg:flex-row gap-40 mt-12'>
+      <div className='flex flex-col items-center gap-6 ml-0 lg:ml-16 sm:text-center'>
         <p className='text-xl font-semibold'>Modern equipment</p>
         <Image
           src={quadIcon}
@@ -114,7 +114,7 @@ const Reviews = () => {
           height={50}
           className='m-auto'
         />
-        <p className='text-center mx-8'>Our state-of-the-art ATV equipment ensures a safe and thrilling adventure.</p>
+        <p className='text-center text-lg mx-8'>Our state-of-the-art ATV equipment ensures a safe and thrilling adventure.</p>
       </div>
       <div className='flex flex-col items-center gap-6 sm:text-center'>
         <p className='text-xl font-semibold'>Exciting routes</p>
@@ -125,9 +125,9 @@ const Reviews = () => {
           height={50}
           className='m-auto mb-8'
         />
-        <p className='text-center mx-8'>Explore diverse landscapes and challenging trails with our carefully curated routes.</p>
+        <p className='text-center text-lg mx-8'>Explore diverse landscapes and challenging trails with our carefully curated routes.</p>
       </div>
-      <div className='flex flex-col items-center gap-6 sm:text-center'>
+      <div className='flex flex-col items-center mr-0 lg:mr-8 gap-6 sm:text-center'>
         <p className='text-xl font-semibold'>Unforgettable scenery</p>
         <Image
           src={sceneryIcon}
@@ -136,7 +136,7 @@ const Reviews = () => {
           height={50}
           className='m-auto'
         />
-        <p className='text-center mx-8'>Immerse yourself in breathtaking natural beauty and picturesque views that will stay with you forever.</p>
+        <p className='text-center text-lg mx-8'>Immerse yourself in breathtaking natural beauty and picturesque views that will stay with you forever.</p>
       </div>
     </div>  
   </div>
