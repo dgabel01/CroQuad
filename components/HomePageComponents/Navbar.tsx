@@ -34,7 +34,7 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
       >
         <Link
           href={"/about"}
-          className={`text-black font-bold text-lg ${isActiveRoute('/about') ? 'transition-colors font-extrabold text-white bg-black p-2 rounded-md' : ''}`}           
+          className={`text-black font-bold text-xl ${isActiveRoute('/about') ? 'transition-colors font-extrabold text-white bg-blue-500 p-2 rounded-md' : ''}`}           
           onClick={handleItemClick}
         >
           About Us
@@ -49,7 +49,7 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
       >
         <Link
           href={"/tours"}
-          className={`text-black font-bold text-lg ${isActiveRoute('/tours') ? 'transition-colors font-extrabold text-white bg-black p-2 rounded-md' : ''}`}           
+          className={`text-black font-bold text-xl ${isActiveRoute('/tours') ? 'transition-colors font-extrabold text-white bg-blue-500 p-2 rounded-md' : ''}`}           
           onClick={handleItemClick}
         >
           Tours
@@ -64,7 +64,7 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
       >
         <Link
           href={"/prices"}
-          className={`text-black font-bold text-lg ${isActiveRoute('/prices') ? 'transition-colors font-extrabold text-white bg-black p-2 rounded-md' : ''}`}           
+          className={`text-black font-bold text-xl ${isActiveRoute('/prices') ? 'transition-colors font-extrabold text-white bg-blue-500 p-2 rounded-md' : ''}`}           
           onClick={handleItemClick}
         >
           Price List
@@ -79,7 +79,7 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
       >
         <Link
           href={"/contact"}
-          className={`text-black font-bold text-lg ${isActiveRoute('/contact') ? ' transition-colors font-extrabold text-white bg-black p-2 rounded-md' : ''}`}           
+          className={`text-black font-bold text-xl ${isActiveRoute('/contact') ? ' transition-colors font-extrabold text-white bg-blue-500 p-2 rounded-md' : ''}`}           
           onClick={handleItemClick}
         >
           Contact Us
@@ -94,7 +94,7 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
       >
         <Link
           href={"/blog"}
-          className={`text-black font-bold text-lg mr-4 ${isActiveRoute('/blog') ? ' transition-colors font-extrabold text-white bg-black p-2 rounded-md' : ''}`}           
+          className={`text-black font-bold text-xl mr-4 ${isActiveRoute('/blog') ? ' transition-colors font-extrabold text-white bg-blue-500 p-2 rounded-md' : ''}`}           
           onClick={handleItemClick}
         >
           Blog
@@ -159,23 +159,23 @@ export default function Navbar() {
       </div>
       <Collapse open={openNav}>
         <NavList onCloseMenu={() => setOpenNav(false)} />
-        <div className="flex flex-col gap-4 items-center justify-center mt-4">
+        <div className="flex flex-col gap-4 items-center justify-center my-8">
           <div className="flex flex-row gap-4 mt-2">
             
             <Link href={"mailto:croquad01@gmail.com"} aria-label="Email link">
-              <MdOutlineEmail size={24} className="text-black"/>
+              <MdOutlineEmail size={30} className="text-black"/>
             </Link>
 
             <Link href={"whatsapp://send?phone=+385957021991"} aria-label="WhatsApp link">
-              <FaWhatsapp  size={24} className="text-black"/>
+              <FaWhatsapp  size={30} className="text-black"/>
             </Link>
 
             <Link href={"/"} aria-label="Facebook link">
-              <FaFacebook  size={24} className="text-black"/>
+              <FaFacebook  size={30} className="text-black"/>
             </Link>
 
             <Link href={"https://www.instagram.com/cro_quad?igsh=MXN1MHA4aWp3ZHJwaQ=="} aria-label="Instagram link" target="_blank">
-              <FaInstagram size={24}  className="text-black"/>
+              <FaInstagram size={30}  className="text-black"/>
             </Link>
           </div>
           <div>

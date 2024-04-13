@@ -25,7 +25,9 @@ const Story = () => {
       </div>
 
 
-      <h1 className='text-3xl font-extrabold text-center my-24'>CroQuad&apos;s Story</h1>
+      <div data-aos="fade-down" data-aos-duration="2000"  className='flex items-center justify-center'>
+        <h1 className='text-3xl font-extrabold text-center my-24'>CroQuad&apos;s Story</h1>
+      </div>
       <ol data-aos="fade-down" data-aos-duration="2000"  className="ml-4 relative border-s-2 border-gray-300 dark:border-gray-700">
       <li data-aos="fade-down" data-aos-duration="2000" className="mb-10 ms-4 relative">
         <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>

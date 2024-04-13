@@ -114,7 +114,7 @@ const Reviews = () => {
           height={50}
           className='m-auto'
         />
-        <p className='text-center text-lg mx-8'>Our state-of-the-art ATV equipment ensures a safe and thrilling adventure.</p>
+        <q className='text-center text-lg mx-8'>Our state-of-the-art ATV equipment ensures a safe and thrilling adventure.</q>
       </div>
       <div className='flex flex-col items-center gap-6 sm:text-center'>
         <p className='text-xl font-semibold'>Exciting routes</p>
@@ -125,7 +125,7 @@ const Reviews = () => {
           height={50}
           className='m-auto mb-8'
         />
-        <p className='text-center text-lg mx-8'>Explore diverse landscapes and challenging trails with our carefully curated routes.</p>
+        <q className='text-center text-lg mx-8'>Explore diverse landscapes and challenging trails with our carefully curated routes.</q>
       </div>
       <div className='flex flex-col items-center mr-0 lg:mr-8 gap-6 sm:text-center'>
         <p className='text-xl font-semibold'>Unforgettable scenery</p>
@@ -136,7 +136,7 @@ const Reviews = () => {
           height={50}
           className='m-auto'
         />
-        <p className='text-center text-lg mx-8'>Immerse yourself in breathtaking natural beauty and picturesque views that will stay with you forever.</p>
+        <q className='text-center text-lg mx-8'>Immerse yourself in breathtaking natural beauty and picturesque views that will stay with you forever.</q>
       </div>
     </div>  
   </div>

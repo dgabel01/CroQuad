@@ -10,16 +10,16 @@ const SocialIcons = () => {
 
       <div className='flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-14 md:gap-24'>
         <Link href={"whatsapp://send?phone=+385957021991"} aria-label='WhatsApp link'>
-          <FaWhatsapp size={36} color='white' />
+          <FaWhatsapp size={48} color='white' />
         </Link>
         <Link href={""} aria-label='Facebook link'>
-          <FaFacebook size={36} color='white' />
+          <FaFacebook size={48} color='white' />
         </Link>
         <Link href={"https://www.instagram.com/cro_quad?igsh=MXN1MHA4aWp3ZHJwaQ=="} aria-label="Instagram link" target="_blank">
-          <FaInstagram size={36} color='white' />
+          <FaInstagram size={48} color='white' />
         </Link>
         <Link href={""} aria-label='Google business link'>
-          <FaGoogle size={36} color='white' />
+          <FaGoogle size={48} color='white' />
         </Link>
       </div>
 

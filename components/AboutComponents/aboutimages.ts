@@ -163,6 +163,7 @@ export const aboutimages: CustomImage[] = [
     width:1200,
     height:800,
     tags:[
+      {value:"Scenery", title:"Scenery"}
     ]
 
   },
