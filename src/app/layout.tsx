@@ -8,6 +8,9 @@ import { Analytics } from "@vercel/analytics/react"
 import WhatsappButton from "../../components/HomePageComponents/WhatsappButton";
 import UnderDevelopmentAlert from "../../components/HomePageComponents/UnderDevelopmentAlert";
 import { GoogleAnalytics } from '@next/third-parties/google'
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-D93226M9FT");
 
 
 

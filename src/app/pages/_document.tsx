@@ -1,7 +1,13 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Script from 'next/script';
+import ReactGA from "react-ga4";
 
 class MyDocument extends Document {
+  componentDidMount() {
+    ReactGA.initialize("G-D93226M9FT");
+  }
+
+
   render() {
     return (
       <Html lang='en'>
