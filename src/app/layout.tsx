@@ -52,8 +52,8 @@ export default function RootLayout({
         <Analytics />
         <WhatsappButton/>
         <Footer/>
-        <GoogleAnalytics gaId="G-CREZFYP46K" />
-        </body>
+      </body>
+      <GoogleAnalytics gaId="G-CREZFYP46K" />
     </html>
   );
 }
