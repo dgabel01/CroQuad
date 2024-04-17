@@ -8,7 +8,6 @@ import { Analytics } from "@vercel/analytics/react"
 import WhatsappButton from "../../components/HomePageComponents/WhatsappButton";
 import UnderDevelopmentAlert from "../../components/HomePageComponents/UnderDevelopmentAlert";
 import { GoogleAnalytics } from '@next/third-parties/google'
-import Script from 'next/script'
 
 
 
@@ -31,21 +30,19 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico"/>
-        <Script
+        <script
           id="gtag-script"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-CREZFYP46K">
-        </Script>
-
-        <Script id="google-analytics">
+        </script>
+        <script id="google-analytics">
           {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-CREZFYP46K');
           `}
-        </Script>
-
+        </script>
       </head>
       <body className={mont.className}>
         <UnderDevelopmentAlert/>
@@ -56,7 +53,6 @@ export default function RootLayout({
         <WhatsappButton/>
         <Footer/>
         <GoogleAnalytics gaId="G-CREZFYP46K" />
-
         </body>
     </html>
   );
