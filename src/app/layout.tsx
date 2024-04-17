@@ -33,14 +33,14 @@ export default function RootLayout({
         <script
           id="gtag-script"
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-CREZFYP46K">
+          src="https://www.googletagmanager.com/gtag/js?id=G-D93226M9FT">
         </script>
         <script id="google-analytics">
           {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-CREZFYP46K');
+              gtag('config', 'G-D93226M9FT');
           `}
         </script>
       </head>
@@ -53,7 +53,7 @@ export default function RootLayout({
         <WhatsappButton/>
         <Footer/>
       </body>
-      <GoogleAnalytics gaId="G-CREZFYP46K" />
+      <GoogleAnalytics gaId="G-D93226M9FT" />
     </html>
   );
 }
