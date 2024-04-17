@@ -97,7 +97,7 @@ const Reviews = () => {
   return (
   <>
 
-  <div className='flex flex-col gap-8 mb-12'>
+  <div className='flex flex-col gap-8 mb-24'>
     <div>
       <p className='text-3xl text-center mx-4 font-extrabold mb-12'>Why Choose CroQuad?</p>
     </div>

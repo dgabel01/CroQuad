@@ -7,6 +7,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import WhatsappButton from "../../components/HomePageComponents/WhatsappButton";
 import UnderDevelopmentAlert from "../../components/HomePageComponents/UnderDevelopmentAlert";
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 const mont= Montserrat({ subsets: ['latin'] });
 
@@ -36,6 +38,8 @@ export default function RootLayout({
         <Analytics />
         <WhatsappButton/>
         <Footer/>
+        <GoogleAnalytics gaId="G-CREZFYP46K" />
+
         </body>
     </html>
   );

@@ -90,7 +90,7 @@ export const tourData = [
 const Tours = () => {
   return (
     <>
-      <h1 className='mt-36 mb-12 text-center text-3xl font-extrabold'>Our Quad Rides</h1>
+      <h1 className='mt-36 mb-24 text-center text-3xl font-extrabold'>Our Quad Rides</h1>
       {tourData.map((tour, index) => (
         <Tour
           key={index}

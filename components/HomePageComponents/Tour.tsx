@@ -15,62 +15,62 @@ const Tour = ({ title, description, images, tourCardsData }: Props) => {
     return (
       <>
        <div className='mx-4 sm:mx-24 justify-between sm:flex sm:flex-col lg:flex lg:flex-row gap-8 lg:gap-16'>
-  <div className='flex flex-col gap-4'>
-    <h2 className='sm:text-center md:text-left font-bold text-3xl ml-4'>{title}</h2>
-    <p className='sm:text-pretty md:text-left ml-4 text-lg'>{description}</p>
-    <div className='sm:mx-auto md:m-0 mt-4'>
-      <Link href={"/tours/#tour-details"}>
-        <Button placeholder="" variant="text" className="flex items-center gap-2">
-          Tour Details{" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="h-5 w-5"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+       <div className='flex flex-col gap-4'>
+        <h2 className='sm:text-center md:text-left font-bold text-3xl ml-4'>{title}</h2>
+        <p className='sm:text-pretty md:text-left ml-4 text-lg'>{description}</p>
+        <div className='sm:mx-auto md:m-0 mt-4 w-52'>
+          <Link href={"/tours/#tour-details"} >
+            <Button placeholder="" variant="text" className="flex items-center gap-2" size='lg'>
+              Tour Details{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </Button>
+          </Link>
+        </div>
+        <div className='flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-16 m-auto'>
+          {images.map((image, index) => (
+            <Image
+              key={index}
+              src={image}
+              alt={`tour-image-${index}`}
+              width={250}
+              height={250}
+              className='m-auto rounded-lg overflow-hidden'
             />
-          </svg>
-        </Button>
-      </Link>
-    </div>
-    <div className='flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-16 m-auto'>
-      {images.map((image, index) => (
-        <Image
-          key={index}
-          src={image}
-          alt={`tour-image-${index}`}
-          width={250}
-          height={250}
-          className='m-auto rounded-lg overflow-hidden'
-        />
-      ))}
-    </div>
-  </div>
+          ))}
+        </div>
+      </div>
 
-  <div className='flex flex-col sm:gap-8 md:gap-16 items-center justify-center mb-12'>
-    <div className='flex flex-row gap-8 sm:gap-16 md:gap-32 mt-8 w-34'> 
-      {tourCardsData.slice(0, 2).map((tourCard, index) => (
-        <TourCard key={index} image={tourCard.image} description={tourCard.description} />
-      ))}
+      <div className='flex flex-col sm:gap-8 md:gap-16 items-center justify-center mb-12'>
+        <div className='flex flex-row gap-8 sm:gap-16 md:gap-32 mt-8 w-34'> 
+          {tourCardsData.slice(0, 2).map((tourCard, index) => (
+            <TourCard key={index} image={tourCard.image} description={tourCard.description} />
+          ))}
+        </div>
+        <div className='flex flex-row gap-8 sm:gap-16 md:gap-32 mt-8 ml-2 w-34'> 
+          {tourCardsData.slice(2, 4).map((tourCard, index) => (
+            <TourCard key={index} image={tourCard.image} description={tourCard.description} />
+          ))}
+        </div>
+      </div>
     </div>
-    <div className='flex flex-row gap-8 sm:gap-16 md:gap-32 mt-8 ml-2 w-34'> 
-      {tourCardsData.slice(2, 4).map((tourCard, index) => (
-        <TourCard key={index} image={tourCard.image} description={tourCard.description} />
-      ))}
-    </div>
-  </div>
-</div>
 
 
-        <hr className="w-5/6 h-1 mx-auto my-8 bg-red-500 file:border-0 rounded md:my-10 dark:bg-gray-700"/>
-        <div className='mb-36'></div>
-      </>
+      <hr className="w-5/6 h-1 mx-auto my-8 bg-red-500 file:border-0 rounded md:my-10 dark:bg-gray-700"/>
+      <div className='mb-36'></div>
+    </>
     );
   };
   
