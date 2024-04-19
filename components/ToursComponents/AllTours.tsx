@@ -87,14 +87,8 @@ const AllTours = () => {
               title: "Ager Tour",
               intro: "Enjoy the unique blend of nature and excitement as you explore the magical area of UNESCO World Heritage Site on Hvar.Explore the agricultural landscape that was set up by the ancient Greek colonists in the 4th century BC, and remains in use. The Ager tour runs between our Panorama and Sunset tours.",
               steps: `
-                10:00 AM - 11:00 AM:
-                Introduction to the tour with detailed explanation of quad bike handling and route plan. Departure from Stari Grad to the Lavanda viewpoint with a brief stop and guide's speech.\n\n
-                11:00 AM - 12:00 PM:
-                The journey continues on gravel roads to the top of St. Nicholas where guests have a longer break. Guests can use this time to climb to the top, which takes about 10 minutes. There, they can take photos and hear a detailed story about the island of Hvar and the surrounding islands.\n\n
-                12:00 PM - 1:00 PM:
-                The tour proceeds on gravel roads down to the village of Dol. There, lunch is organized in the traditional Dalmatian tavern "Kokot". Lunch includes: Mixed grill (veal and lamb) or octopus grill, dessert and unlimited drinks of choice.\n
-                1:00 PM - 2:00 PM:
-                Return to Stari Grad through the Stari Grad Plain (Ager), which is under UNESCO protection.
+              The quad tour through the Stari Grad Plain on Hvar lasts about 2 and a half hours and includes a snack (prosciutto and cheese) in a traditional Dalmatian konoba in the heart of the field.\n\n
+              The ride takes place on 90% dirt roads through vineyards, providing an opportunity for a true adventure and exploration of the beautiful landscape of the island of Hvar."
               `,
               tourCardsData: [
                 {
@@ -146,16 +140,12 @@ const AllTours = () => {
           items={[
             {
               title: "Sunset Tour",
-              intro: "Enjoy the unique blend of nature and excitement as you explore the magical area of UNESCO World Heritage Site on Hvar.",
+              intro:"Experience driving through the picturesque landscapes of the island as the sun slowly descends towards the horizon. Enjoy the magic of the colors that flood the sky.",
               steps: `
-                10:00 AM - 11:00 AM:
-                Introduction to the tour with detailed explanation of quad bike handling and route plan. Departure from Stari Grad to the Lavanda viewpoint with a brief stop and guide's speech.\n\n
-                11:00 AM - 12:00 PM:
-                The journey continues on gravel roads to the top of St. Nicholas where guests have a longer break. Guests can use this time to climb to the top, which takes about 10 minutes. There, they can take photos and hear a detailed story about the island of Hvar and the surrounding islands.\n\n
-                12:00 PM - 1:00 PM:
-                The tour proceeds on gravel roads down to the village of Dol. There, lunch is organized in the traditional Dalmatian tavern "Kokot". Lunch includes: Mixed grill (veal and lamb) or octopus grill, dessert and unlimited drinks of choice.\n
-                1:00 PM - 2:00 PM:
-                Return to Stari Grad through the Stari Grad Plain (Ager), which is under UNESCO protection.
+              1st hour: Introduction to the ride with detailed explanation of quad handling and route plan. Departure from Stari Grad towards the island's peak, where we witness the sunset during the ride.\n\n
+              2nd hour: Upon reaching the peak, guests have a longer break. They can use this time to capture photos as the sun touches the sea surface.\n\n
+              3rd hour: The journey continues downhill through dirt roads to the Stari Grad Plain. There, dinner is organized at the traditional Dalmatian tavern Dionis. Dinner includes: mixed grill (veal and lamb) or octopus grill, vegan menu, drinks of choice.\n\n
+              We return to Stari Grad in the dark, adding to the fulfillment of our adventure.
               `,
               tourCardsData: [
                 {
@@ -190,7 +180,7 @@ const AllTours = () => {
                   },
                 },
               ],
-              note: "The tour includes a bottle of cold water, a licenced guide and paid gas for the quad. We have five quads available. Each quad can accommodate two people, which means we can accommodate a maximum of ten people. The tour will proceed with a minimum of six people.",
+              note: "Important - The exact departure and return times depend on the sunset. The tour includes a bottle of cold water, a licenced guide and paid gas for the quad. We have five quads available. Each quad can accommodate two people, which means we can accommodate a maximum of ten people. The tour will proceed with a minimum of six people.",
               food: "Dinner included",
             },
           ]}

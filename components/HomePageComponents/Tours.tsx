@@ -1,6 +1,10 @@
 import React from 'react';
 import imageOne from '../../public/image3.jpeg';
 import imageTwo from '../../public/image2.jpeg';
+import imageThree from '../../public/IMG_6945.webp'
+import imageFour from '../../public/IMG_6835.webp'
+import imageFive from '../../public/image1.jpeg'
+import imageSix from '../../public/image4.jpeg'
 import lengthIcon from '../../public/lenghticon.png';
 import durationIcon from '../../public/clockicon.png';
 import peopleIcon from '../../public/peopleicon.jpeg';
@@ -46,15 +50,16 @@ export const tourData = [
       },
     ],
   },
+
   {
-    title: 'CroQuad Example Tour 2',
-    images: [imageOne, imageTwo],
-    description: 'The trail is 40 km long and takes you through beautiful parts of the island of Hvar. You will drive on a superb track with wonderful views of the sea, neighboring islands, and Velebit. Great photo locations to capture this unforgettable experience.',
+    title: 'CroQuad Ager Tour',
+    images: [imageThree, imageFour],
+    description:" The quad tour through the Stari Grad Plain on Hvar lasts about 2 and a half hours and includes a snack (prosciutto and cheese) in a traditional Dalmatian konoba in the heart of the field.              The ride takes place on 90% dirt roads through vineyards, providing an opportunity for a true adventure and exploration of the beautiful landscape of the island of Hvar.",
     tourCardsData: [
       {
         image: lengthIcon,
         description: {
-          num: 40,
+          num: 15,
           unit: 'km',
           type: 'Length',
         },
@@ -62,8 +67,47 @@ export const tourData = [
       {
         image: durationIcon,
         description: {
-          num: 90,
-          unit: 'min',
+          num: 2.5,
+          unit: 'hours',
+          type: 'Duration',
+        },
+      },
+      {
+        image: terrainIcon,
+        description: {
+          unit: 'Gravel',
+          type: 'Terrain',
+        },
+      },
+      {
+        image: peopleIcon,
+        description: {
+          num: 10,
+          unit: 'People',
+          type: 'Max.size',
+        },
+      },
+    ],
+  },
+
+  {
+    title: 'CroQuad Sunset Tour',
+    images: [imageFive, imageSix],
+    description:"The quad tour begins with an introduction to handling and route plans, departing from Stari Grad towards the island's peak to witness the sunset. At the peak, guests enjoy a longer break for photo opportunities as the sun sets over the sea. Continuing downhill, the journey leads to the Stari Grad Plain for dinner at the traditional Dalmatian tavern Dionis, offering a variety of dishes and drinks. The adventure concludes with a return to Stari Grad under the cover of darkness, adding to the sense of fulfillment.",
+    tourCardsData: [
+      {
+        image: lengthIcon,
+        description: {
+          num: 30,
+          unit: 'km',
+          type: 'Length',
+        },
+      },
+      {
+        image: durationIcon,
+        description: {
+          num: 3,
+          unit: 'hours',
           type: 'Duration',
         },
       },
@@ -77,9 +121,9 @@ export const tourData = [
       {
         image: peopleIcon,
         description: {
-          num: 6,
+          num: 10,
           unit: 'People',
-          type: 'Tour size',
+          type: 'Max. size',
         },
       },
     ],

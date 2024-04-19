@@ -1,12 +1,16 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import logo from '../../public/logoblack.jpg'
 import './styles.css'
 
 const WhatsappButton = () => {
+const [message, setMessage] = useState(false);
 const chatMessage = 'Hello there! 🤝 \nHow can we help?\n'
 
+setTimeout(()=>{
+    setMessage(true);
+},15000)
 
 return (
     <>
@@ -20,9 +24,9 @@ return (
             notificationDelay={15}
             style={{marginBottom:"120px"}}
         />    
-        <div className="fixed bottom-1 right-3">
+        {message && <div className="fixed bottom-1 right-3">
             <p className='font-extrabold text-sm'>Message Us</p>
-        </div>
+        </div>}
     </>
 )
 }

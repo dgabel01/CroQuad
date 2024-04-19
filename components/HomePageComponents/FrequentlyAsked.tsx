@@ -36,7 +36,7 @@ const faqData: FAQItem[] = [
     id: 1,
     question: "What are the requirements to rent a quad?",
     answer:
-      "Person must be at least 18 years old, with a valid driver's licence. It's also required to sign a contract about driving on your own risk."
+      "Person must be at least 18 years old, with a valid driver's licence. It's also required to sign a contract that defines riding on your own risk."
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ const faqData: FAQItem[] = [
     id: 3,
     question: "What is included in the rental fee?",
     answer:
-    "The fee includes a guide, helmet, mask and gloves for the best quad experience."
+    "The fee includes a guide, helmet, gas, food and water for the best quad experience."
   },
   {
     id: 4,
