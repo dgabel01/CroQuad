@@ -6,7 +6,6 @@ import Footer from "../../components/HomePageComponents/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import WhatsappButton from "../../components/HomePageComponents/WhatsappButton";
-import UnderDevelopmentAlert from "../../components/HomePageComponents/UnderDevelopmentAlert";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import ReactGA from "react-ga4";
 
@@ -33,22 +32,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico"/>
-        <script
-          id="gtag-script"
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-D93226M9FT">
-        </script>
-        <script id="google-analytics">
-          {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-D93226M9FT');
-          `}
-        </script>
       </head>
       <body className={mont.className}>
-        <UnderDevelopmentAlert/>
         <Navbar/>
         {children}
         <SpeedInsights/>

@@ -9,14 +9,14 @@ import Tour from './Tour';
 
 export const tourData = [
   {
-    title: 'CroQuad Example Tour',
+    title: 'Panorama Tour',
     images: [imageOne, imageTwo],
-    description: 'The trail is 15 km long and takes you through beautiful parts of the island of Hvar. You will drive on a superb track with wonderful views of the sea, neighboring islands, and Velebit. Great photo locations to capture this unforgettable experience.',
+    description: "Explore the breathtaking landscapes on our panoramic quad bike tour. Our tour runs from 10:00 AM to 2:30 PM, with the possibility of extension until 3:00 PM, depending on the group's preference. During the tour, you'll visit the Lavanda viewpoint, the top of St. Nicholas, the village of Dol, and enjoy lunch at the traditional Dalmatian tavern 'Kokot'.",
     tourCardsData: [
       {
         image: lengthIcon,
         description: {
-          num: 15,
+          num: 27,
           unit: 'km',
           type: 'Length',
         },
@@ -24,8 +24,8 @@ export const tourData = [
       {
         image: durationIcon,
         description: {
-          num: 60,
-          unit: 'min',
+          num: 4.5,
+          unit: 'hours',
           type: 'Duration',
         },
       },
@@ -41,7 +41,7 @@ export const tourData = [
         description: {
           num: 10,
           unit: 'People',
-          type: 'Tour size',
+          type: 'Max. size',
         },
       },
     ],

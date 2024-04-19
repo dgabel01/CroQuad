@@ -12,13 +12,17 @@ return (
     <>
         <FloatingWhatsApp 
             avatar={logo.src}
-            onSubmit={() => window.open('whatsapp://send?phone=+385957021991', '_self')}
+            onSubmit={() => window.open('whatsapp://send?phone=+385915368338', '_self')}
             accountName='Cro Quad'
             chatboxHeight={400}
-            phoneNumber='+385957021991'
+            phoneNumber='+385915368338'
             chatMessage={chatMessage}   
             notificationDelay={15}
+            style={{marginBottom:"120px"}}
         />    
+        <div className="fixed bottom-1 right-3">
+            <p className='font-extrabold text-sm'>Message Us</p>
+        </div>
     </>
 )
 }

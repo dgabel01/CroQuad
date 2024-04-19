@@ -38,7 +38,7 @@ const Map = () => {
               
               <h2 className="mt-4 text-base font-bold text-gray-800 dark:text-white">Location</h2>
               <p className="mt-2 text-md font-medium text-gray-500 dark:text-gray-400">Our quads are located here</p>
-              <p className="mt-2 text-md font-semibold text-blue-500 dark:text-blue-400">Stari Grad, Hvar</p>
+              <p className="mt-2 text-md font-semibold text-blue-500 dark:text-blue-400">Put bana Josipa Jelačića 6, Stari Grad, Hvar</p>
             </div>
 
            
@@ -51,7 +51,7 @@ const Map = () => {
               
               <h2 className="mt-4 text-base font-bold text-gray-800 dark:text-white">Phone</h2>
               <p className="mt-2 text-md font-medium text-gray-500 dark:text-gray-400">Call to book</p>
-              <p className="mt-2 font-semibold text-md text-blue-500 dark:text-blue-400">+385 95 702 1991</p>
+              <p className="mt-2 font-semibold text-md text-blue-500 dark:text-blue-400">+385 91 536 8338</p>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ const Map = () => {
               width="100%"
               height="100%"
               title="map"
-              src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Starigrad,Hvar&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.5768740057246!2d16.5964117!3d43.1841518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134a809eeaf6f391%3A0x29e91cfdfff61dee!2sPut%20bana%20Josipa%20Jela%C4%8Di%C4%87a%206%2C%2021460%2C%20Stari%20Grad!5e0!3m2!1sen!2shr!4v1649915481264!5m2!1sen!2shr"
               referrerPolicy='no-referrer'
               >
             </iframe>

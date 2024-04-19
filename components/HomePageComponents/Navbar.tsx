@@ -166,7 +166,7 @@ export default function Navbar() {
               <MdOutlineEmail size={30} className="text-black"/>
             </Link>
 
-            <Link href={"whatsapp://send?phone=+385957021991"} aria-label="WhatsApp link">
+            <Link href={"whatsapp://send?phone=+385915368338"} aria-label="WhatsApp link">
               <FaWhatsapp  size={30} className="text-black"/>
             </Link>
 
@@ -179,7 +179,7 @@ export default function Navbar() {
             </Link>
           </div>
           <div>
-            <p className="text-black font-medium">Stari Grad, Hvar</p>
+            <p className="text-black font-medium text-center mt-4">Put bana Josipa Jelačića 6, Stari Grad, Hvar</p>
           </div>
         </div>
       </Collapse>

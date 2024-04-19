@@ -1,4 +1,5 @@
-import { FaWhatsapp, FaFacebook, FaInstagram, FaGoogle } from 'react-icons/fa';
+import { FaWhatsapp, FaFacebook, FaInstagram, FaGoogle} from 'react-icons/fa';
+import { MdOutlineEmail } from "react-icons/md";
 import Link from 'next/link';
 
 const SocialIcons = () => {
@@ -20,6 +21,9 @@ const SocialIcons = () => {
         </Link>
         <Link href={""} aria-label='Google business link'>
           <FaGoogle size={48} color='white' />
+        </Link>
+        <Link href={"mailto:croquad01@gmail.com"} aria-label='Mail link'>
+          <MdOutlineEmail  size={48} color='white'/>
         </Link>
       </div>
 

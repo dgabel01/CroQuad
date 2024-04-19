@@ -67,9 +67,12 @@ const Tour = ({ title, description, images, tourCardsData }: Props) => {
       </div>
     </div>
 
-
-      <hr className="w-5/6 h-1 mx-auto my-8 bg-red-500 file:border-0 rounded md:my-10 dark:bg-gray-700"/>
-      <div className='mb-36'></div>
+    <span className="relative flex justify-center">
+      <div className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-900 to-transparent opacity-75">
+      </div>
+      <span className="relative z-10 bg-white px-6"></span>
+    </span>
+    <div className='mb-36'></div>
     </>
     );
   };

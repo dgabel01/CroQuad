@@ -13,31 +13,38 @@ import {
     {/*komponenta za svaku turu u desc */}
     const data = [
       {
-        label: "To be announced",
-        value: "tura1",
+        label: "Panorama Tour",
+        value: "panoramatour",
         desc: (
             <>
-              <TourPricesCard items={[{title:"CroQuad Basic Tour", riders:"1 person", price:"N/A", personsperquad:"One person, one quad bike"}]} />
-              <TourPricesCard items={[{title:"CroQuad Basic Tour", riders:"2 persons", price:"N/A", personsperquad:"Two persons, one quad bike"}]} />
+              <TourPricesCard items={[{title:"CroQuad Panorama Tour", riders:"ATV single / double riding", price:"120", personsperquad:"One or two persons, one quad bike"}]} />
             </>
         )
       },
       {
-        label: "To be announced",
-        value: "tura2",
-        desc: `TBA`,
+        label: "Ager Tour",
+        value: "agertour",
+        desc: (
+          <>
+            <TourPricesCard items={[{title:"CroQuad Ager Tour", riders:"ATV single / double riding", price:"60", personsperquad:"One or two persons, one quad bike"}]} />
+          </>
+      )
       },
       {
-        label: "To be announced",
-        value: "tura3",
-        desc: `TBA`,
+        label: "Sunset Tour",
+        value: "sunsettour",
+        desc: (
+          <>
+            <TourPricesCard items={[{title:"CroQuad Sunset Tour", riders:"ATV single / double riding", price:"110", personsperquad:"One or two persons, one quad bike"}]} />
+          </>
+      )
       },
     ];
    
     return (
      <>
        <h1 id ="prices-header" className="text-3xl text-center font-extrabold mt-16 mb-12 mx-2">Browse through our tour prices</h1>
-      <Tabs value="tura1" id="custom-animation">
+      <Tabs value="panoramatour" id="custom-animation">
         <TabsHeader placeholder={""}>
           {data.map(({ label, value }) => (
             <Tab key={value} value={value} placeholder={""} className="text-lg font-semibold">

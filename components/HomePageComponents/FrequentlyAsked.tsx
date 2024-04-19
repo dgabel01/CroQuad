@@ -36,7 +36,7 @@ const faqData: FAQItem[] = [
     id: 1,
     question: "What are the requirements to rent a quad?",
     answer:
-    "Person must be at least 18 years old, with a valid driver's licence."
+      "Person must be at least 18 years old, with a valid driver's licence. It's also required to sign a contract about driving on your own risk."
   },
   {
     id: 2,
@@ -59,7 +59,7 @@ const faqData: FAQItem[] = [
 ];
 
 export default function FrequentlyAsked() {
-  const [openId, setOpenId] = useState<number | null>(1); 
+  const [openId, setOpenId] = useState<number | null>(1);
 
   const handleOpen = (value: number) => {
     if (openId === value) {
@@ -71,17 +71,31 @@ export default function FrequentlyAsked() {
 
   return (
     <>
-      <h1 className="text-3xl text-center font-bold my-16" id="faq">Frequently Asked Questions</h1>
+      <h1 className="text-3xl text-center font-bold my-16" id="faq">
+        Frequently Asked Questions
+      </h1>
       {faqData.map((faq) => (
-        <Accordion animate={CUSTOM_ANIMATION} className="bg-stone-100 mb-5 rounded-lg border border-blue-gray-100 px-4" placeholder="" key={faq.id} open={openId === faq.id} icon={<Icon id={faq.id} openId={openId} />}>
-          <AccordionHeader className={`border-b-0 transition-colors ${
-            openId === faq.id ? "text-blue-700  hover:!text-blue-700" : ""
-          }`} placeholder="" onClick={() => handleOpen(faq.id)}>{faq.question}
+        <Accordion
+          animate={CUSTOM_ANIMATION}
+          className={`bg-stone-100 mb-5 rounded-lg px-4 ${
+            openId === faq.id ? "border-blue-400 border-2" : " border-2 border-blue-gray-100"
+          }`}
+          placeholder=""
+          key={faq.id}
+          open={openId === faq.id}
+          icon={<Icon id={faq.id} openId={openId} />}
+        >
+          <AccordionHeader
+            className={`border-b-0 transition-colors ${
+              openId === faq.id ? "text-blue-700  hover:!text-blue-700" : ""
+            }`}
+            placeholder=""
+            onClick={() => handleOpen(faq.id)}
+          >
+            {faq.question}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-extrabold">
-            <p className="text-lg font-extrabold">
-              {faq.answer}
-            </p>
+            <p className="text-lg font-extrabold">{faq.answer}</p>
           </AccordionBody>
         </Accordion>
       ))}
