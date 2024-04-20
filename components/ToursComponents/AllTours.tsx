@@ -50,7 +50,7 @@ const AllTours = () => {
                 {
                   image: durationIcon,
                   description: {
-                    num: 4.5,
+                    num: 5,
                     unit: 'hours',
                     type: 'Duration',
                   },
@@ -104,7 +104,7 @@ const AllTours = () => {
                 {
                   image: durationIcon,
                   description: {
-                    num: 2.5,
+                    num: 2,
                     unit: 'hours',
                     type: 'Duration',
                   },
@@ -147,7 +147,7 @@ const AllTours = () => {
               steps: `
               1st hour: Introduction to the ride with detailed explanation of quad handling and route plan. Departure from Stari Grad towards the island's peak, where we witness the sunset during the ride.\n\n
               2nd hour: Upon reaching the peak, guests have a longer break. They can use this time to capture photos as the sun touches the sea surface.\n\n
-              3rd hour: The journey continues downhill through dirt roads to the Stari Grad Plain. There, dinner is organized at the traditional Dalmatian tavern Dionis. Dinner includes: mixed grill (veal and lamb) or octopus grill, vegan menu, drinks of choice.\n\n
+              3rd hour: The journey continues downhill through dirt roads to the Stari Grad Plain. There, dinner is organized at the traditional Dalmatian tavern "Dionis". Dinner includes: mixed grill (veal and lamb) or octopus grill, vegan menu, drinks of choice.\n\n
               We return to Stari Grad in the dark, adding to the fulfillment of our adventure.
               `,
               tourCardsData: [
@@ -162,7 +162,7 @@ const AllTours = () => {
                 {
                   image: durationIcon,
                   description: {
-                    num: 3,
+                    num: 4,
                     unit: 'hours',
                     type: 'Duration',
                   },

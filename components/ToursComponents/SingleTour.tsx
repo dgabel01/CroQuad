@@ -1,10 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import MyGallery from '../HomePageComponents/MyGallery';
 import TourCard from '../HomePageComponents/TourCard';
 import WhatsIncluded from './WhatsIncluded';
 import { aboutimages } from '../AboutComponents/aboutimages';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 interface Items {
   title: string;
@@ -20,9 +18,14 @@ interface SingleTourProps {
 }
 
 const SingleTour = ({ items }: SingleTourProps) => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  const renderStep = (step:string) => {
+    // Convert "Dalmatian tavern "Kokot"" to a link
+    const kokotLink = step.replace(/(Dalmatian tavern "Kokot")/g, '<a class="text-blue-500 font-bold underline" href="https://www.instagram.com/konobakokot?igsh=ODEzMm1vNzJ6Ymo4" target="_blank">$1</a>');
+    // Convert "Dalmatian tavern "Dionis"" to a link
+    const dionisLink = kokotLink.replace(/(Dalmatian tavern "Dionis")/g, '<a class="text-blue-500 font-bold underline" href="https://www.facebook.com/DionisHvar" target="_blank">$1</a>');
+    return dionisLink;
+  };
+  
 
   return (
     <>
@@ -34,24 +37,17 @@ const SingleTour = ({ items }: SingleTourProps) => {
             <div className='border-t-2 border-b-2 border-gray-400 rounded-lg p-6'>
               <h2 className='text-3xl text-center font-semibold mb-4'>Tour highlights</h2>
               <ol className="list-none pl-6">
-                {item.steps.split('\n\n').map((step, stepIndex) => {
-                  // Use regular expression to find time in the step string and bold it
-                  const formattedStep = step.replace(/(\d{1,2}:\d{2} [AP]M - \d{1,2}:\d{2} [AP]M)/g, '<span class="font-bold">$1</span>');
-                  // Convert "Dalmatian tavern "Kokot"" to a link
-                  const linkedStep = formattedStep.replace(/(Dalmatian tavern "Kokot")/g, '<a class="text-blue-700 underline" href="https://www.instagram.com/konobakokot?igsh=ODEzMm1vNzJ6Ymo4" target="_blank">$1</a>');
-                  return (
-                    <li key={stepIndex} className="my-16 text-xl flex items-start">
-                      <span className="mr-2">{stepIndex + 1}.</span>
-                      <div dangerouslySetInnerHTML={{ __html: linkedStep }}></div>
-                    </li>
-                  );
-                })}
+                {item.steps.split('\n\n').map((step, stepIndex) => (
+                  <li key={stepIndex} className="my-16 text-xl flex items-start">
+                    <span className="mr-2">{stepIndex + 1}.</span>
+                    <div dangerouslySetInnerHTML={{ __html: renderStep(step) }}></div>
+                  </li>
+                ))}
               </ol>
               <p className='font-bold text-lg'>*Note:{item.note}</p>
             </div>
           </div>
         ))}
-
         {/* Basic info cards */}
         <div className='flex items-center justify-center'>
           <h1 className='text-3xl font-extrabold mt-24 mb-12'>Tour Information</h1>

@@ -10,10 +10,10 @@ const SocialIcons = () => {
       <h2 className='text-white font-extrabold text-4xl mb-8'>Get in Touch!</h2>
 
       <div className='flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-14 md:gap-24'>
-        <Link href={"whatsapp://send?phone=+385957021991"} aria-label='WhatsApp link'>
+        <Link href={"whatsapp://send?phone=+385915368338"} aria-label='WhatsApp link'>
           <FaWhatsapp size={48} color='white' />
         </Link>
-        <Link href={""} aria-label='Facebook link'>
+        <Link href={"#"} aria-label='Facebook link'>
           <FaFacebook size={48} color='white' />
         </Link>
         <Link href={"https://www.instagram.com/cro_quad?igsh=MXN1MHA4aWp3ZHJwaQ=="} aria-label="Instagram link" target="_blank">

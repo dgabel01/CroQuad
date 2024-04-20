@@ -1,5 +1,4 @@
-"use client"
-import React,{useEffect} from 'react';
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import guideIcon from '../../public/guideicon.jpeg';
@@ -7,17 +6,14 @@ import quadIcon from '../../public/quadicon.jpeg';
 import helmetIcon from '../../public/helmeticon.png';
 import cameraIcon from '../../public/cameraicon.jpeg';
 import lunchIcon from '../../public/lunchicon.jpeg'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 interface WhatsIncludedProps{
   lunch:string;
 }
 
 const WhatsIncluded = ({lunch}:WhatsIncludedProps) => {
-  useEffect(()=>{
-    AOS.init();
-  },[])
+  
 
 
   return (
