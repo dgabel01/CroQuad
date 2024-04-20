@@ -34,7 +34,7 @@ const AllTours = () => {
                 11:00 AM - 12:00 PM:
                 The journey continues on gravel roads to the top of St. Nicholas where guests have a longer break. Guests can use this time to climb to the top, which takes about 10 minutes. There, they can take photos and hear a detailed story about the island of Hvar and the surrounding islands.\n\n
                 12:00 PM - 1:00 PM:
-                The tour proceeds on gravel roads down to the village of Dol. There, lunch is organized in the traditional Dalmatian tavern "Kokot". Lunch includes: Mixed grill (veal and lamb) or octopus grill, dessert and unlimited drinks of choice.\n
+                The tour proceeds on gravel roads down to the village of Dol. There, lunch is organized in the traditional Dalmatian tavern "Kokot". Lunch includes: Traditional "Peka" meal (veal and lamb or octopus) , dessert and unlimited drinks of choice.\n
                 1:00 PM - 2:00 PM:
                 Return to Stari Grad through the Stari Grad Plain (Ager), which is under UNESCO protection.
               `,
