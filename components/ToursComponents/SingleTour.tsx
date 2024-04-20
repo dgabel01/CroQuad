@@ -41,7 +41,7 @@ const SingleTour = ({ items }: SingleTourProps) => {
                   const linkedStep = formattedStep.replace(/(Dalmatian tavern "Kokot")/g, '<a class="text-blue-700 underline" href="https://www.instagram.com/konobakokot?igsh=ODEzMm1vNzJ6Ymo4" target="_blank">$1</a>');
                   return (
                     <li key={stepIndex} className="my-16 text-xl flex items-start">
-                      <span className="mr-2">{stepIndex + 1})</span>
+                      <span className="mr-2">{stepIndex + 1}.</span>
                       <div dangerouslySetInnerHTML={{ __html: linkedStep }}></div>
                     </li>
                   );

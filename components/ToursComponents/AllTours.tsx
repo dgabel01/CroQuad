@@ -18,6 +18,7 @@ const AllTours = () => {
 
   const data = [
     {
+      number:"1)",
       label: "Panorama Tour",
       value: "panoramatour",
       tourintro: "Discover the thrill of exploring off-road terrain on a quad bike while soaking in the breathtaking scenery around you. Whether you're a seasoned adventurer or a first-time rider, this tour promises an unforgettable experience filled with excitement and discovery.",
@@ -78,6 +79,7 @@ const AllTours = () => {
       ),
     },
     {
+      number:"2)",
       label: "Ager Tour",
       value: "agertour",
       desc: (
@@ -133,6 +135,7 @@ const AllTours = () => {
       ),
     },
     {
+      number:"3)",
       label: "Sunset Tour",
       value: "sunsettour",
       desc: (
@@ -196,9 +199,9 @@ const AllTours = () => {
       <h1 id="tour-details" className="text-3xl text-center font-extrabold mt-36 mb-16 mx-2">Start Your Quad Journey Here: Browse Our Tour Selection</h1>
       <Tabs value="panoramatour" id="custom-animation2">
         <TabsHeader placeholder={""}>
-          {data.map(({ label, value }) => (
+          {data.map(({ number,label, value }) => (
             <Tab key={value} value={value} placeholder={""} className="text-xl font-extrabold">
-              {label}
+            {number} {label} 
             </Tab>
           ))}
         </TabsHeader>

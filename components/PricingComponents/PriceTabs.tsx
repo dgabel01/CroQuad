@@ -13,6 +13,7 @@ import {
     {/*komponenta za svaku turu u desc */}
     const data = [
       {
+        number:"1)",
         label: "Panorama Tour",
         value: "panoramatour",
         desc: (
@@ -22,6 +23,7 @@ import {
         )
       },
       {
+        number:"2)",
         label: "Ager Tour",
         value: "agertour",
         desc: (
@@ -31,6 +33,7 @@ import {
       )
       },
       {
+        number:"3)",
         label: "Sunset Tour",
         value: "sunsettour",
         desc: (
@@ -46,9 +49,9 @@ import {
        <h1 id ="prices-header" className="text-3xl text-center font-extrabold mt-16 mb-12 mx-2">Browse through our tour prices</h1>
       <Tabs value="panoramatour" id="custom-animation">
         <TabsHeader placeholder={""}>
-          {data.map(({ label, value }) => (
+          {data.map(({number, label, value }) => (
             <Tab key={value} value={value} placeholder={""} className="text-lg font-semibold">
-              {label}
+              {number} {label}
             </Tab>
           ))}
         </TabsHeader>
