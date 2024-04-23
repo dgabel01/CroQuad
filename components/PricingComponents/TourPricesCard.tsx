@@ -19,7 +19,7 @@ const TourPricesCard = ({ items }: TourPricesCardProps) => {
     <div className="flex flex-wrap items-center justify-center gap-16  max-w-6xl">
       {items.map((item, index) => (
         <div key={index} className="flex flex-col rounded-lg shadow-lg bg-zinc-50 p-6">
-          <h1 className="text-xl font-bold mb-4">{item.title}</h1>
+          <h1 className="text-2xl font-extrabold mb-4">{item.title}</h1>
           <p className="text-gray-600 text-xl font-bold mb-2">{item.riders}</p>
           <p className="text-3xl font-bold text-blue-600 flex items-center mb-4">
             <FaEuroSign size={20} className="mr-1" />{item.price}<span className="text-base ml-1">/per person</span>

@@ -34,7 +34,7 @@ const SingleTour = ({ items }: SingleTourProps) => {
           <div key={index} className='w-full flex flex-col gap-8 items-center'>
             <h1 className='text-center text-4xl font-bold text-sky-700'>{item.title}</h1>
             <h2 className='text-xl font-semibold my-4 italic'>&ldquo;{item.intro}&ldquo;</h2>
-            <div className='border-t-2 border-b-2 border-gray-400 rounded-lg p-6'>
+            <div className=' border-2 border-gray-300 shadow-lg rounded-lg p-6'>
               <h2 className='text-3xl text-center font-semibold mb-4'>Tour highlights</h2>
               <ol className="list-none pl-6">
                 {item.steps.split('\n\n').map((step, stepIndex) => (
@@ -69,7 +69,7 @@ const SingleTour = ({ items }: SingleTourProps) => {
           </div>
         </div>
         <WhatsIncluded lunch={items[0].food} />
-        <MyGallery images={aboutimages} title={"Panorama Tour Gallery"} />
+        <MyGallery images={aboutimages} title={items[0].title + " " + "Gallery"} />
       </div>
     </>
   )
