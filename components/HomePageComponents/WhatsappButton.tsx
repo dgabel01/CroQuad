@@ -24,7 +24,7 @@ return (
             notificationDelay={15}
             style={{marginBottom:"120px"}}
         />    
-        {message && <div className="fixed bottom-1 right-3">
+        {message && <div className="fixed bottom-2 right-4">
             <p className='font-extrabold text-sm'>Message Us</p>
         </div>}
     </>

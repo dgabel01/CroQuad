@@ -13,7 +13,7 @@ import Tour from './Tour';
 
 export const tourData = [
   {
-    title: 'Panorama Tour',
+    title: 'CroQuad Panorama Tour',
     images: [imageOne, imageTwo],
     description: "Explore the breathtaking landscapes on our panoramic quad bike tour. Our tour runs from 10:00 AM to 2:30 PM, with the possibility of extension until 3:00 PM, depending on the group's preference. During the tour, you'll visit the Lavanda viewpoint, the top of St. Nicholas, the village of Dol, and enjoy lunch at the traditional Dalmatian tavern 'Kokot'.",
     tourCardsData: [

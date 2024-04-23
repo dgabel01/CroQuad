@@ -17,8 +17,20 @@ import { usePathname } from 'next/navigation'
 
 function NavList({ onCloseMenu }: { onCloseMenu: any }) {
   const pathname = usePathname()
-  const isActiveRoute = (route: string) => pathname === route;
+  const isActiveRoute = (route: string) => {
+    // Check if the current pathname matches the route directly
+    if (pathname === route) {
+      return true;
+    }
+    
+    // Check if the current pathname starts with the route followed by a slash and additional characters
+    // This would cover cases like '/blog/slug'
+    if (pathname.startsWith(`${route}/`)) {
+      return true;
+    }
   
+    return false;
+  };  
   const handleItemClick = () => {
     onCloseMenu && onCloseMenu();
   };
@@ -94,7 +106,7 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
       >
         <Link
           href={"/blog"}
-          className={`text-black font-bold text-xl mr-4 ${isActiveRoute('/blog') ? ' transition-colors font-extrabold text-white bg-blue-500 p-2 rounded-md' : ''}`}           
+          className={`text-black font-bold text-xl mr-4 ${isActiveRoute('/blog' ) ? ' transition-colors font-extrabold text-white bg-blue-500 p-2 rounded-md' : ''}`}           
           onClick={handleItemClick}
         >
           Blog
