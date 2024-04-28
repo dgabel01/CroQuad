@@ -22,7 +22,7 @@ const WhatsIncluded = ({lunch}:WhatsIncludedProps) => {
         <h1 className=' text-3xl p-4 font-extrabold my-24'>What&apos;s Included</h1>
       </div>
 
-      <div className='flex flex-col items-center m-auto rounded-xl gap-12 w-10/12 bg-blue-50 p-4 md:gap-24 md:p-8'>
+      <div className='flex flex-col items-center m-auto shadow-lg rounded-xl gap-12 w-10/12 bg-blue-50 p-4 md:gap-24 md:p-8'>
         
         {/* First Row */}
         <div className='flex flex-col md:flex-row md:justify-between w-full'>

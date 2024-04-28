@@ -117,8 +117,8 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
 }
 
 export default function Navbar() {
-  
   const [openNav, setOpenNav] = React.useState(false);
+  const pathname = usePathname();
 
   const handleWindowResize = () => window.innerWidth >= 960 && setOpenNav(false);
 
@@ -130,14 +130,15 @@ export default function Navbar() {
     };
   }, []);
 
+  const isActiveHome = pathname === "/";
+
   return (
     <MaterialNavbar
       className="w-full p-0 mb-0 bg-zinc-100"
       style={{
         maxWidth: "100%",
-      //  backgroundImage: 'url("https://cdn.wallpapersafari.com/7/51/B48rdx.png")',
-      //  backgroundBlendMode:'color-dodge',
-
+        //  backgroundImage: 'url("https://cdn.wallpapersafari.com/7/51/B48rdx.png")',
+        //  backgroundBlendMode:'color-dodge',
       }}
       placeholder={""}
     >
@@ -146,10 +147,10 @@ export default function Navbar() {
           as="a"
           href={"/"}
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5"
+          className={`mr-4 cursor-pointer py-1.5 ${isActiveHome ? '' : ''}`}
           placeholder=""
         >
-          <Logo height={125} mixBlendMode="multiply"/>
+          <Logo height={125} mixBlendMode="multiply" />
         </Typography>
         <div className="hidden lg:block">
           <NavList onCloseMenu={undefined} />
@@ -163,9 +164,21 @@ export default function Navbar() {
           aria-label="Dropdown menu button"
         >
           {openNav ? (
-            <XMarkIcon role="button"  aria-label="Mobile navigation dropdown menu open button" className="h-8 w-8 font-extrabold selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
+            <XMarkIcon
+              role="button"
+              aria-label="Mobile navigation dropdown menu open button"
+              className="h-8 w-8 font-extrabold selection:w-8"
+              strokeWidth={2}
+              style={{ color: "black" }}
+            />
           ) : (
-            <Bars3Icon role="button" aria-label="Mobile navigation dropdown menu close button" className="h-8 w-8 selection:w-8" strokeWidth={2} style={{ color: 'black' }}/>
+            <Bars3Icon
+              role="button"
+              aria-label="Mobile navigation dropdown menu close button"
+              className="h-8 w-8 selection:w-8"
+              strokeWidth={2}
+              style={{ color: "black" }}
+            />
           )}
         </IconButton>
       </div>
@@ -173,21 +186,24 @@ export default function Navbar() {
         <NavList onCloseMenu={() => setOpenNav(false)} />
         <div className="flex flex-col gap-4 items-center justify-center my-8">
           <div className="flex flex-row gap-4 mt-2">
-            
             <Link href={"mailto:croquad01@gmail.com"} aria-label="Email link">
-              <MdOutlineEmail size={30} className="text-black"/>
+              <MdOutlineEmail size={30} className="text-black" />
             </Link>
 
             <Link href={"whatsapp://send?phone=+385915368338"} aria-label="WhatsApp link">
-              <FaWhatsapp  size={30} className="text-black"/>
+              <FaWhatsapp size={30} className="text-black" />
             </Link>
 
             <Link href={"/"} aria-label="Facebook link">
-              <FaFacebook  size={30} className="text-black"/>
+              <FaFacebook size={30} className="text-black" />
             </Link>
 
-            <Link href={"https://www.instagram.com/cro_quad?igsh=MXN1MHA4aWp3ZHJwaQ=="} aria-label="Instagram link" target="_blank">
-              <FaInstagram size={30}  className="text-black"/>
+            <Link
+              href={"https://www.instagram.com/cro_quad?igsh=MXN1MHA4aWp3ZHJwaQ=="}
+              aria-label="Instagram link"
+              target="_blank"
+            >
+              <FaInstagram size={30} className="text-black" />
             </Link>
           </div>
           <div>

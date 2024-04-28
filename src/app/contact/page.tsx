@@ -2,6 +2,7 @@ import React from 'react'
 import ContactHero from '../../../components/ContactUsCompnents/ContactHero';
 import SocialIcons from '../../../components/HomePageComponents/SocialIcons';
 import ContactsInfo from '../../../components/ContactUsCompnents/ContactsInfo';
+import ContactForm from '../../../components/ContactUsCompnents/ContactForm';
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ const ContactUs = () => {
   return (
     <>
       <ContactHero/>
+      <ContactForm/>
       <ContactsInfo/>
       <SocialIcons/>
     </>

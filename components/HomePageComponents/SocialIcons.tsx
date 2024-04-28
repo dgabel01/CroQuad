@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const SocialIcons = () => {
   return (
-    <div className='mx-8 flex flex-col gap-8 rounded-lg p-8 bg-sky-300 text-center'>
+    <div className='mx-8 flex flex-col gap-8 rounded-lg p-8 bg-sky-300 text-center shadow-lg'>
 
       <h1 className='text-white font-extrabold text-4xl mb-8'>Our Socials</h1>
       <h2 className='text-white font-extrabold text-4xl mb-8'>Get in Touch!</h2>
