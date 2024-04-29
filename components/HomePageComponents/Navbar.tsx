@@ -36,7 +36,7 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
   };
 
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ml-8">
+    <ul className="my-2 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ml-8">
       <Typography
         as="li"
         variant="small"
@@ -65,6 +65,21 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
           onClick={handleItemClick}
         >
           Tours
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+        placeholder={""}
+      >
+        <Link
+          href={"/rent"}
+          className={`text-black font-bold text-xl ${isActiveRoute('/rent') ? 'transition-colors font-extrabold text-white bg-blue-500 p-2 rounded-md' : ''}`}           
+          onClick={handleItemClick}
+        >
+          Rent a quad
         </Link>
       </Typography>
       <Typography
@@ -137,8 +152,6 @@ export default function Navbar() {
       className="w-full p-0 mb-0 bg-zinc-100"
       style={{
         maxWidth: "100%",
-        //  backgroundImage: 'url("https://cdn.wallpapersafari.com/7/51/B48rdx.png")',
-        //  backgroundBlendMode:'color-dodge',
       }}
       placeholder={""}
     >
