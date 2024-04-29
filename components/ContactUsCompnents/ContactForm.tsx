@@ -9,7 +9,7 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("xzbnobnb");
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await handleSubmit(e);
     if (state.succeeded) {
@@ -20,7 +20,7 @@ function ContactForm() {
     }
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
