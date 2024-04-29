@@ -1,24 +1,33 @@
 //FORMSPREE
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-hot-toast';
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("xzbnobnb");
 
-  const onSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
+  const [state, handleSubmit] = useForm("xzbnobnb");
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+
+  const onSubmit = async (e) => {
     e.preventDefault();
     await handleSubmit(e);
     if (state.succeeded) {
-      toast.success("Form sent!");
+      toast.success('Form sent!',{
+        duration:4000,
+      });     
+       setFormData({ name: '', email: '', message: '' }); // Clear form fields
     }
   };
 
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+
+
   return (
     <>
-      <ToastContainer position='top-center'/>
       <h1 className='text-center text-2xl font-extrabold mx-4 mt-24'>Fill out the form to contact Us</h1>
       <form onSubmit={onSubmit} className="mx-auto my-10 sm:my-36 flex flex-col items-center justify-center gap-8 sm:gap-16 max-w-md">
         <label htmlFor="name" className="sr-only">Name</label>
@@ -26,6 +35,8 @@ function ContactForm() {
           id="name"
           type="text"
           name="name"
+          value={formData.name}
+          onChange={handleChange}
           className="border-2 w-full p-2 rounded-lg"
           placeholder="Name"
         />
@@ -35,6 +46,8 @@ function ContactForm() {
           id="email"
           type="email"
           name="email"
+          value={formData.email}
+          onChange={handleChange}
           className="border-2 w-full p-2 rounded-lg"
           placeholder="Email Address"
         />
@@ -43,6 +56,8 @@ function ContactForm() {
         <textarea
           id="message"
           name="message"
+          value={formData.message}
+          onChange={handleChange}
           className="border-2 w-full rounded-lg p-2 h-48"
           placeholder="Message"
         >

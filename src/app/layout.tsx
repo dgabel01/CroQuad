@@ -8,6 +8,8 @@ import { Analytics } from "@vercel/analytics/react"
 import WhatsappButton from "../../components/HomePageComponents/WhatsappButton";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import ReactGA from "react-ga4";
+import { Toaster } from "react-hot-toast";
+
 
 ReactGA.initialize("G-D93226M9FT");
 
@@ -35,6 +37,7 @@ export default function RootLayout({
       </head>
       <body className={mont.className}>
         <Navbar/>
+        <Toaster position="top-center" />
         {children}
         <SpeedInsights/>
         <Analytics />
