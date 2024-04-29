@@ -21,7 +21,7 @@ const RentHero = () => {
         <div className="flex h-full items-center justify-center">
           <div className="px-6 text-center text-white md:px-12">
             <h1 className="mb-16 md:mb-40 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
-              Don't feel like taking the guided tour?
+              Don&apos;t feel like taking the guided tour?
             </h1>
             <p className='mt-36 mb-8 sm:text-3xl text-2xl font-bold'>Book your own quadbike and take the Hvar adventure into your hands.</p>
             <Link href={"/contact"}>
