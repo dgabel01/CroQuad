@@ -19,8 +19,9 @@ const ContactUs = () => {
   return (
     <>
       <ContactHero/>
-      <ContactForm/>
       <ContactsInfo/>
+      <ContactForm/>
+      <p className=' text-center text-2xl mb-16 font-extrabold'>Or choose to book your ride below, through one of our social medias:</p>
       <SocialIcons/>
     </>
   )

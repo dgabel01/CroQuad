@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { toast } from 'react-hot-toast';
 
-function ContactForm() {
+const ContactForm = () => {
 
   const [state, handleSubmit] = useForm("xzbnobnb");
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -13,7 +13,7 @@ function ContactForm() {
     e.preventDefault();
     await handleSubmit(e);
     if (state.succeeded) {
-      toast.success('Form sent!',{
+      toast.success('Information sent! Thanks for contacting us.',{
         duration:4000,
       });     
        setFormData({ name: '', email: '', message: '' }); // Clear form fields
@@ -28,7 +28,7 @@ function ContactForm() {
 
   return (
     <>
-      <h1 className='text-center text-2xl font-extrabold mx-4 mt-24'>Fill out the form to contact Us</h1>
+      <h1 className='text-center text-2xl font-extrabold mx-4 mt-24'>Or fill the contact form below to reach us and we&apos;ll get back to you:</h1>
       <form onSubmit={onSubmit} className="mx-auto my-10 sm:my-36 flex flex-col items-center justify-center gap-8 sm:gap-16 max-w-md">
         <label htmlFor="name" className="sr-only">Name</label>
         <input

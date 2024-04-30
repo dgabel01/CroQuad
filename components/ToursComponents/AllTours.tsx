@@ -198,10 +198,10 @@ const AllTours = () => {
     <>
       <h1 id="tour-details" className="text-3xl text-center font-extrabold mt-36 mb-16 mx-2">Start Your Quad Journey Here: Browse Our Tour Selection</h1>
       <Tabs value="panoramatour" id="custom-animation2">
-        <TabsHeader placeholder={""}>
+        <TabsHeader placeholder={""} className='bg-sky-300 p-1'>
           {data.map(({ number,label, value }) => (
             <Tab key={value} value={value} placeholder={""} className="text-xl font-extrabold">
-            {number} {label} 
+            <div className='flex flex-grow'>{number} {label} </div>
             </Tab>
           ))}
         </TabsHeader>

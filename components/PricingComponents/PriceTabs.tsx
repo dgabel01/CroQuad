@@ -48,7 +48,7 @@ import {
      <>
        <h1 id ="prices-header" className="text-3xl text-center font-extrabold mt-16 mb-12 mx-2">Browse through our tour prices</h1>
       <Tabs value="panoramatour" id="custom-animation">
-        <TabsHeader placeholder={""}>
+        <TabsHeader placeholder={""} className="bg-sky-300 p-1">
           {data.map(({number, label, value }) => (
             <Tab key={value} value={value} placeholder={""} className="text-lg font-semibold">
               {number} {label}
