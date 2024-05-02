@@ -1,5 +1,7 @@
 import React from 'react';
 import RentHero from '../../../components/RentComponents/RentHero';
+import RentTabs from '../../../components/RentComponents/RentTabs';
+import SocialIcons from '../../../components/HomePageComponents/SocialIcons';
 
 const Rent = () => {
  
@@ -7,8 +9,8 @@ const Rent = () => {
   return (
     <>
       <RentHero />
-      <p className='text-center my-24 text-3xl font-bold'>Prices and details coming soon...</p>
-
+      <RentTabs/>
+      <SocialIcons/>
     </>
   );
 };

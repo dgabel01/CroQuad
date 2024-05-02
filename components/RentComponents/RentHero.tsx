@@ -11,7 +11,7 @@ const RentHero = () => {
       marginTop: '0',
     }}>
       <Image
-        src="/image4.jpeg"
+        src="/image1.jpeg"
         alt="Hero Background"
         fill={true}
         style={{ objectFit: 'cover', objectPosition: '55% 50%' }}

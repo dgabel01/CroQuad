@@ -21,6 +21,7 @@
     "@vercel/speed-insights": "^1.0.10",
     "aos": "^3.0.0-beta.6",
     "contentful": "^10.8.1",
+    "file-saver": "^2.0.5",
     "keen-slider": "^6.8.6",
     "next": "14.1.0",
     "nodemailer": "^6.9.11",
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
+    "@types/file-saver": "^2.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
