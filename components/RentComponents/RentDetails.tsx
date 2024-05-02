@@ -33,6 +33,7 @@ const RentDetails = () => {
                             - Dashboard with LCD screen and blue backlighting is easy to read and provides the driver with all important information.
                         </li>
                     </ul>
+                    <p className='text-2xl ml-4 font-extrabold'>*We will also provide you with the <i>CroQuad Adventure Guide</i> for an extensive overview of quad biking on Hvar, including information about beaches, restaurants, gas stations, and routes.</p>
                 </div>
 
                 <Link href={"/contact"}>
