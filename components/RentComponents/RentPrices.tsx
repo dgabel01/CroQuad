@@ -14,7 +14,7 @@ const RentPrices = () => {
         setSelectedPrice(price as number);
     };
 
-    const getPrice = (duration: any) => {
+    const getPrice = (duration:string) => {
         switch (duration) {
             case '3 hours':
                 return 60;
@@ -30,10 +30,10 @@ const RentPrices = () => {
     return (
         <div className="flex flex-wrap items-center justify-center gap-16 max-w-6xl">
             <div className="flex flex-col rounded-lg shadow-lg bg-gray-100 p-6">
-                <h1 className="text-2xl  text-center font-extrabold mb-8">ATV single / double riding</h1>
+                <h1 className="text-3xl  text-center font-extrabold mb-8">ATV single / double riding</h1>
                 <div className="flex flex-col gap-4">
                     <label htmlFor="durationSelect" className="text-xl font-semibold mx-8">Select Your Rent Duration:</label>
-                    <select id="durationSelect" className="border p-2 rounded-md" value={selectedDuration || ""} onChange={handleDurationChange}>
+                    <select id="durationSelect" className="border p-3 rounded-lg font-bold text-lg" value={selectedDuration || ""} onChange={handleDurationChange}>
                         <option value="">Select duration</option>
                         <option value="3 hours">3 hours</option>
                         <option value="6 hours">6 hours</option>
@@ -41,14 +41,14 @@ const RentPrices = () => {
                     </select>
                 </div>
                 {selectedPrice && (
-                    <p className="text-3xl font-bold text-blue-600 flex items-center mb-4 mt-8">
+                    <p className="text-4xl font-bold text-blue-600 flex items-center mb-4 mt-8">
                     <FaEuroSign size={20} className="mr-1" />{selectedPrice}<span className="text-base ml-1">/per quadbike</span>
                   </p>
                 )}
                 <p className="text-lg font-bold mb-4 mt-8"><FaUsers size={20} className="mr-1" />One or two persons, one quad bike</p>
 
                 <Link href="/contact" className='m-auto mt-12'>
-                    <Button placeholder={""} color="blue">Book Now</Button>
+                    <Button placeholder={""} color="blue" className='text-md'>Book Now</Button>
                 </Link>
             </div>
         </div>

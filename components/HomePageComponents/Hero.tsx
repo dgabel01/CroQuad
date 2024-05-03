@@ -40,6 +40,7 @@ const Hero = () => {
     <div className='flex flex-col items-center justify-center gap-8 text-center my-36'>
       <h1 className='text-3xl font-extrabold'>Who We Are</h1>
       <p className='text-2xl mx-4 font-medium'>Business run by friends who know the best of island Hvar</p>
+      <p className='text-2xl mx-12 font-semibold'>Our business rents ATV vehicles and offers organized ATV tours, providing an adventurous way to explore the island</p>
       <p className='text-2xl mx-12 font-medium'>We are dedicated to delivering unforgettable quadbike experiences that allow you to explore the island of Hvar like never before</p>
       <Link href={"/about"}>
         <Button variant="outlined" className="rounded-full text-sm hover:bg-stone-100" placeholder={""} color='black'>
