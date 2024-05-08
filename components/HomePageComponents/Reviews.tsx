@@ -7,32 +7,13 @@ import routeIcon from '../../public/routeicon.png'
 import sceneryIcon from '../../public/sceneryicon.png'
 import { rating } from '@material-tailwind/react';
 
-const reviews: any[] = [
-  // {
-  //   rating: 5,
-  //   title: "Amazing experience",
-  //   content: "From the moment I arrived, the staff was friendly and knowledgeable, providing a quick and efficient check-in process. The selection of quads was impressive, ranging from beginner-friendly models to more advanced options for seasoned riders. The staff took the time to ensure I felt comfortable and confident operating the quad before setting off on my adventure.",
-  //   author: "Michael Scott"
-  // },
-  // {
-  //   rating: 5,
-  //   title: "Great service",
-  //   content: "The staff was very helpful and accommodating. I had a fantastic time exploring the area with their quad rentals. The equipment was in excellent condition, and the instructions provided were clear and easy to follow.",
-  //   author: "Jane Doe"
-  // },
-  // {
-  //   rating: 5,
-  //   title: "The sights were incredible",
-  //   content: "Overall, my experience was amazing. The staff was friendly, and the equipment was fine, and I especially loved the stops to take in the beautiful Hvar scenery.",
-  //   author: "John Smith"
-  // },
+const reviews: { rating: number; title: string; content: string; author: string; }[] = [
     {
-      rating:0,
-       title: "No customer reviews yet!",
-       content:"Book your quad ride now and be the first to write the epic tale of your CroQuad adventure!",
-       author: "CroQuad"
-     },
-  
+      rating: 5,
+      title: "",
+      content: "A perfect experience! Beautiful nature and the most beautiful sunset. I will definitely come again.😍",
+      author: "Lucia"
+    },
 ];
 
 

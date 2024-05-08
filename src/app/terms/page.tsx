@@ -3,9 +3,12 @@ import React from 'react'
 const Terms = () => {
   return (
     <>
+        <div className='flex items-center justify-center  rounded-lg my-24 h-36 mx-auto' style={{ backgroundColor: "rgb(59,175,138)", width: "75%" }}>
+            <h1 className='text-3xl text-center p-4 text-white font-bold'>Terms and Conditions</h1>
+        </div>
+
         <div className='flex flex-col '>
-          <h1 className='text-2xl text-center my-8'><strong>Terms and Conditions</strong></h1>
-          <p className='ml-4'>Welcome to CroQuad!</p>
+          <p className='ml-4 text-lg font-bold'>Welcome to CroQuad!</p>
           <p className='ml-4'>These terms and conditions outline the rules and regulations for the use of Cro Quad&apos;s Website, located at https://croquad.com.</p>
           <p className='ml-4'>By accessing this website we assume you accept these terms and conditions. Do not continue to use croquad if you do not agree to take all of the terms and conditions stated on this page.</p>
           <p className='ml-4'>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: &quot;Client&quot;, &quot;You&quot; and &quot;Your&quot; refers to you, the person log on this website and compliant to the Company&apos;s terms and conditions. &quot;The Company&quot;, &quot;Ourselves&quot;, &quot;We&quot;, &quot;Our&quot; and &quot;Us&quot;, refers to our Company. &quot;Party&quot;, &quot;Parties&quot;, or &quot;Us&quot;, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client&apos;s needs in respect of provision of the Company&apos;s stated services, in accordance with and subject to, prevailing law of hr. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>

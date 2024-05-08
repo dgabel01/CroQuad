@@ -38,13 +38,13 @@ const SingleTour = ({ items }: SingleTourProps) => {
               <h2 className='text-3xl text-center font-semibold mb-4'>Tour highlights</h2>
               <ol className="list-none pl-6">
                 {item.steps.split('\n\n').map((step, stepIndex) => (
-                  <li key={stepIndex} className="my-16 text-xl flex items-start">
+                  <li key={stepIndex} className="my-16 text-xl flex items-start font-medium">
                     <span className="mr-2">{stepIndex + 1}.</span>
                     <div dangerouslySetInnerHTML={{ __html: renderStep(step) }}></div>
                   </li>
                 ))}
               </ol>
-              <p className='font-bold text-lg'>*Note:{item.note}</p>
+              <p className='font-extrabold text-lg'>*Note:{item.note}</p>
             </div>
           </div>
         ))}
