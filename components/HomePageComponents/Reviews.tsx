@@ -14,6 +14,12 @@ const reviews: { rating: number; title: string; content: string; author: string;
       content: "A perfect experience! Beautiful nature and the most beautiful sunset. I will definitely come again.😍",
       author: "Lucia"
     },
+    {
+      rating: 5,
+      title: "",
+      content: "Wooow!!🤩All recommendations!",
+      author: "Danijela Vukadin"
+    },
 ];
 
 

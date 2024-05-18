@@ -13,13 +13,13 @@ const SocialIcons = () => {
         <Link href={"whatsapp://send?phone=+385915368338"} aria-label='WhatsApp link'>
           <FaWhatsapp size={48} color='white' />
         </Link>
-        <Link href={"#"} aria-label='Facebook link'>
+        <Link href={"https://www.facebook.com/profile.php?id=61559674970306"} target='_blank' aria-label='Facebook link'>
           <FaFacebook size={48} color='white' />
         </Link>
         <Link href={"https://www.instagram.com/cro_quad?igsh=MXN1MHA4aWp3ZHJwaQ=="} aria-label="Instagram link" target="_blank">
           <FaInstagram size={48} color='white' />
         </Link>
-        <Link href={""} aria-label='Google business link'>
+        <Link href={"https://g.co/kgs/WpScwR1"} target='_blank' aria-label='Google business link'>
           <FaGoogle size={48} color='white' />
         </Link>
         <Link href={"mailto:croquad01@gmail.com"} aria-label='Mail link'>

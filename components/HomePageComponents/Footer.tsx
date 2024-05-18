@@ -20,7 +20,7 @@ const year = date.getFullYear();
                   <p className='text-lg font-medium my-8'>Find us on any of these platforms</p>
 
                 <div className='flex flex-row gap-4 justify-center mb-8'>
-                  <Link href={"/"} aria-label='Facebook link'>
+                  <Link href={"https://www.facebook.com/profile.php?id=61559674970306"} target='_blank' aria-label='Facebook link'>
                     <FaFacebook size={36} className='rounded-lg bg-white p-1' />
                   </Link>
 
@@ -28,7 +28,7 @@ const year = date.getFullYear();
                     <FaInstagram size={36} className='rounded-lg bg-white p-1' />
                   </Link>
 
-                  <Link href={"/"} aria-label='Google business profile'>
+                  <Link href={"https://g.co/kgs/WpScwR1"} target="_blank" aria-label='Google business profile'>
                     <FaGoogle size={36} className='rounded-lg bg-white p-1' />
                   </Link>
 

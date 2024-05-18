@@ -207,7 +207,7 @@ export default function Navbar() {
               <FaWhatsapp size={30} className="text-black" />
             </Link>
 
-            <Link href={"/"} aria-label="Facebook link">
+            <Link href={"https://www.facebook.com/profile.php?id=61559674970306"} target="_blank" aria-label="Facebook link">
               <FaFacebook size={30} className="text-black" />
             </Link>
 
