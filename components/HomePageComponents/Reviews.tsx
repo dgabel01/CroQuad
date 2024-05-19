@@ -20,6 +20,12 @@ const reviews: { rating: number; title: string; content: string; author: string;
       content: "Wooow!!🤩All recommendations!",
       author: "Danijela Vukadin"
     },
+    {
+      rating: 5,
+      title: "",
+      content: "An ideal way to spend a day on Hvar. All recommendations from the heart. See you again! :)",
+      author: "Ivana Šolić"
+    },
 ];
 
 
