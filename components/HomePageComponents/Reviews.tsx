@@ -26,6 +26,12 @@ const reviews: { rating: number; title: string; content: string; author: string;
       content: "An ideal way to spend a day on Hvar. All recommendations from the heart. See you again! :)",
       author: "Ivana Šolić"
     },
+    {
+      rating: 5,
+      title: "",
+      content: "Very good quad rental agency. Also provides a map with the beaches to visit, some typical restaurants and tours to do",
+      author: "Kévin Racca"
+    },
 ];
 
 

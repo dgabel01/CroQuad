@@ -23,6 +23,9 @@ const RentDetails = () => {
                     </div>
                     <ul className='text-2xl font-medium'>
                         <li className='my-8 font-bold'>ATV details:</li>
+                        <li className='my-8'>
+                            - Automatic transimission.
+                        </li>
                         <li>
                             - Liquid-cooled four-stroke single-cylinder engine provides ample power for hard work and spirited acceleration.
                         </li>
