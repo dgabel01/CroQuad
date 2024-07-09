@@ -27,7 +27,7 @@ const RentPrices = () => {
             case '6 hours':
                 return 85;
             case 'One day':
-                return 110;
+                return 120;
             default:
                 return null;
         }
