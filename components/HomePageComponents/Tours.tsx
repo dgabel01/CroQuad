@@ -10,6 +10,7 @@ import durationIcon from '../../public/clockicon.png';
 import peopleIcon from '../../public/peopleicon.jpeg';
 import terrainIcon from '../../public/terrainicon.png';
 import Tour from './Tour';
+import Link from 'next/link';
 
 export const tourData = [
   {
@@ -134,7 +135,7 @@ export const tourData = [
 const Tours = () => {
   return (
     <>
-      <h1 className='mt-36 mb-24 text-center text-3xl font-extrabold'>Our Quad Rides</h1>
+      <h1 className='mt-36 mb-24 text-center text-3xl font-extrabold'>Our Guided Quad Rides</h1>
       {tourData.map((tour, index) => (
         <Tour
           key={index}
@@ -144,6 +145,10 @@ const Tours = () => {
           tourCardsData={tour.tourCardsData}
         />
       ))}
+        <div className='flex flex-col gap-16 mb-36'>
+        <p className='font-bold text-2xl text-center mx-4'>Don&apos;t feel like taking the guided tour?</p>
+        <Link href={"/rent"} className='text-2xl text-center text-blue-700 font-semibold mx-6'>Explore our renting options &rarr;</Link>
+      </div>
     </>
   );
 };

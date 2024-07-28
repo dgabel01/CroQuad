@@ -14,6 +14,7 @@ import imageEleven from '../../public/IMG_6837.webp'
 import imageTwelve from '../../public/IMG_7000.webp'
 import imageThirteen from '../../public/IMG_9344 .webp'
 import imageFourteen from '../../public/IMG_6945.webp'
+import imageFifteen from '../../public/2024-05-07.jpg'
 
 
 export interface CustomImage extends Image {
@@ -164,6 +165,17 @@ export const aboutimages: CustomImage[] = [
     height:800,
     tags:[
       {value:"Scenery", title:"Scenery"}
+    ]
+
+  },
+  {
+    src: imageFifteen.src,
+    original:imageFifteen.src,
+    width:1200,
+    height:800,
+    tags:[
+      { value: "Office", title: "Office" }, 
+
     ]
 
   },

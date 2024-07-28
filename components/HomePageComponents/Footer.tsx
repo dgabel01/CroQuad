@@ -50,6 +50,9 @@ const year = date.getFullYear();
                 <Link href={"/tours"}>
                   <p className='my-1 font-medium'>Tours</p>
                 </Link>
+                <Link href={"/rent"}>
+                  <p className='my-1 font-medium'>Rent a quad</p>
+                </Link>
                 <Link href={"/prices"}>
                   <p className='my-1 font-medium'>Prices</p>
                 </Link>
