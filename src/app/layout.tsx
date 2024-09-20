@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "../../components/HomePageComponents/Navbar";
 import Footer from "../../components/HomePageComponents/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
 import WhatsappButton from "../../components/HomePageComponents/WhatsappButton";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import ReactGA from "react-ga4";
@@ -40,7 +39,6 @@ export default function RootLayout({
         <Toaster position="top-center" />
         {children}
         <SpeedInsights/>
-        <Analytics />
         <WhatsappButton/>
         <Footer/>
       </body>
