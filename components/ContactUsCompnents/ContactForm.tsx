@@ -16,7 +16,7 @@ const ContactForm = () => {
       toast.promise(
         new Promise(resolve => setTimeout(resolve, 2000)), // Simulating an async operation
         {
-          loading: 'Sendings...',
+          loading: 'Sending...',
           success: 'Information sent! Thanks for contacting us.',
           error: 'An error occurred. Please try again.',
         },
@@ -77,7 +77,7 @@ const ContactForm = () => {
           disabled={state.submitting}
           className="rounded-lg bg-blue-400 p-2 w-36 text-white hover:bg-blue-600"
         >
-          Submit
+          {state.submitting ? 'Sending...' : 'Submit'}
         </button>
       </form>
       <p className=' text-center text-2xl mb-16 font-extrabold'>Or choose to book your ride below, through one of our social medias:</p>
