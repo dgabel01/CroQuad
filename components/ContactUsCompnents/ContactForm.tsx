@@ -13,9 +13,18 @@ const ContactForm = () => {
     e.preventDefault();
     await handleSubmit(e);
     if (state.succeeded) {
-      toast.success('Information sent! Thanks for contacting us.',{
-        duration:4000,
-      });     
+      toast.promise(
+        new Promise(resolve => setTimeout(resolve, 2000)), // Simulating an async operation
+        {
+          loading: 'Sendings...',
+          success: 'Information sent! Thanks for contacting us.',
+          error: 'An error occurred. Please try again.',
+        },
+        {
+          duration: 4000,
+          icon: '🔄',
+        }
+      );
        setFormData({ name: '', email: '', message: '' }); // Clear form fields
     }
   };
