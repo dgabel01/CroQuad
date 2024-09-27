@@ -59,6 +59,7 @@ const ContactForm = () => {
           onChange={handleChange}
           className="border-2 w-full p-2 rounded-lg"
           placeholder="Email Address"
+          required
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <label htmlFor="message" className="sr-only">Message</label>
@@ -69,6 +70,7 @@ const ContactForm = () => {
           onChange={handleChange}
           className="border-2 w-full rounded-lg p-2 h-48"
           placeholder="Message"
+          required
         >
         </textarea>
         <ValidationError prefix="Message" field="message" errors={state.errors} />
