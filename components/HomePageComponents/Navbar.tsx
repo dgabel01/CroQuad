@@ -1,5 +1,5 @@
-"use client";
-import React from "react";
+"use client"
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   Navbar as MaterialNavbar,
@@ -12,8 +12,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { usePathname } from 'next/navigation'
-
-
 
 function NavList({ onCloseMenu }: { onCloseMenu: any }) {
   const pathname = usePathname()
@@ -132,26 +130,72 @@ function NavList({ onCloseMenu }: { onCloseMenu: any }) {
 }
 
 export default function Navbar() {
-  const [openNav, setOpenNav] = React.useState(false);
+  const [openNav, setOpenNav] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
   const pathname = usePathname();
 
-  const handleWindowResize = () => window.innerWidth >= 960 && setOpenNav(false);
+  // Also update visibility when the mobile menu is toggled
+  const handleNavToggle = () => {
+    setOpenNav(!openNav);
+    if (!openNav) {
+      // When opening the menu, ensure the navbar is visible
+      setVisible(true);
+    }
+  };
 
-  React.useEffect(() => {
+  // Effect to ensure navbar stays in view when menu is open
+  useEffect(() => {
+    if (openNav) {
+      // Force navbar to be visible when menu is open
+      setVisible(true);
+    }
+  }, [openNav]);  const handleWindowResize = () => window.innerWidth >= 960 && setOpenNav(false);"use client";
+
+  // Handle scroll events
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      
+      // Make the navbar visible when scrolling up
+      // or when at the top of the page
+      setVisible(
+        (prevScrollPos > currentScrollPos) || // Scrolling up
+        currentScrollPos < 10 // At top of page
+      );
+      
+      // Update previous scroll position
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleWindowResize);
 
     return () => {
+      window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleWindowResize);
     };
-  }, []);
+  }, [prevScrollPos]);
 
   const isActiveHome = pathname === "/";
+  
+  // Calculate navbar styles based on visibility
+  // Always show navbar when mobile menu is open
+  const navbarStyles = {
+    position: "sticky" as const,
+    top: 0,
+    zIndex: 50,
+    transition: "transform 0.3s ease-in-out",
+    transform: (visible || openNav) ? "translateY(0)" : "translateY(-100%)",
+    boxShadow: (visible || openNav) ? "0 2px 4px rgba(0, 0, 0, 0.1)" : "none",
+  };
 
   return (
     <MaterialNavbar
       className="w-full p-0 mb-0 bg-zinc-100"
       style={{
         maxWidth: "100%",
+        ...navbarStyles
       }}
       placeholder={""}
     >
@@ -172,7 +216,7 @@ export default function Navbar() {
           variant="text"
           className="ml-auto mr-4 h-6 w-6 text-inherit hover:text-black focus:text-black active:text-black lg:hidden"
           ripple={false}
-          onClick={() => setOpenNav(!openNav)}
+          onClick={() => handleNavToggle()}
           placeholder={""}
           aria-label="Dropdown menu button"
         >

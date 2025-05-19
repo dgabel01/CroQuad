@@ -1,39 +1,44 @@
-//FORMSPREE
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { toast } from 'react-hot-toast';
 
 const ContactForm = () => {
-
   const [state, handleSubmit] = useForm("xzbnobnb");
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-
-  const onSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    await handleSubmit(e);
+  
+  // Watch for state changes to display toast and reset form
+  useEffect(() => {
     if (state.succeeded) {
-      toast.promise(
-        new Promise(resolve => setTimeout(resolve, 2000)), // Simulating an async operation
-        {
-          loading: 'Sending...',
-          success: 'Information sent! Thanks for contacting us.',
-          error: 'An error occurred. Please try again.',
-        },
-        {
-          duration: 4000,
-          icon: '🔄',
-        }
-      );
-       setFormData({ name: '', email: '', message: '' }); // Clear form fields
+      // Display success toast
+      toast.success('Information sent! Thanks for contacting us.', {
+        duration: 4000,
+        icon: '✅',
+      });
+      
+      // Reset form data after successful submission
+      setFormData({ name: '', email: '', message: '' });
+    } else if (Array.isArray(state.errors) && state.errors.length > 0) {
+      // Display error toast if submission failed
+      toast.error('An error occurred. Please try again.', {
+        duration: 4000,
+        icon: '❌',
+      });
     }
-  };
+  }, [state.succeeded, state.errors]);
 
-  const handleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    // Use the Formspree handler
+    handleSubmit(e);
+    
+    // The useEffect will handle success/error states
+  };
 
   return (
     <>
@@ -50,6 +55,7 @@ const ContactForm = () => {
           placeholder="Name"
         />
         <ValidationError prefix="Name" field="name" errors={state.errors} />
+        
         <label htmlFor="email" className="sr-only">Email Address</label>
         <input
           id="email"
@@ -62,6 +68,7 @@ const ContactForm = () => {
           required
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
+        
         <label htmlFor="message" className="sr-only">Message</label>
         <textarea
           id="message"
@@ -71,9 +78,9 @@ const ContactForm = () => {
           className="border-2 w-full rounded-lg p-2 h-48"
           placeholder="Message"
           required
-        >
-        </textarea>
+        />
         <ValidationError prefix="Message" field="message" errors={state.errors} />
+        
         <button
           type="submit"
           disabled={state.submitting}
@@ -82,7 +89,7 @@ const ContactForm = () => {
           {state.submitting ? 'Sending...' : 'Submit'}
         </button>
       </form>
-      <p className=' text-center text-2xl mb-16 font-extrabold'>Or choose to book your ride below, through one of our social medias:</p>
+      <p className='text-center text-2xl mb-16 font-extrabold'>Or choose to book your ride below, through one of our social medias:</p>
     </>
   );
 }
