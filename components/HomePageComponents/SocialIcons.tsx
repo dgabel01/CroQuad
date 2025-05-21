@@ -6,7 +6,7 @@ const SocialIcons = () => {
   return (
     <div className='mx-8 flex flex-col gap-8 rounded-lg p-8 bg-sky-300 text-center shadow-lg'>
 
-      <h1 className='text-white font-extrabold text-4xl mb-8'>Our Socials</h1>
+      <h1 className='text-white font-extrabold text-4xl mb-8 italic'>Our Socials</h1>
       <h2 className='text-white font-extrabold text-4xl mb-8'>Get in Touch!</h2>
 
       <div className='flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-14 md:gap-24'>

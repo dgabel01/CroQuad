@@ -71,8 +71,8 @@ export default function FrequentlyAsked() {
 
   return (
     <>
-      <h1 className="text-3xl text-center font-bold my-16" id="faq">
-        Frequently Asked Questions
+      <h1 className="text-3xl text-center font-bold my-16 italic" id="faq">
+        Frequently Asked Questions:
       </h1>
       {faqData.map((faq) => (
         <Accordion
