@@ -42,7 +42,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <h1 className='text-center text-2xl font-extrabold mx-4 mt-24'>Or fill the contact form below to reach us and we&apos;ll get back to you:</h1>
+      <h1 className='text-center text-3xl italic font-extrabold mx-4 mt-24'>Or fill the contact form below to reach us and we&apos;ll get back to you:</h1>
       <form onSubmit={onSubmit} className="mx-auto my-10 sm:my-36 flex flex-col items-center justify-center gap-8 sm:gap-16 max-w-md">
         <label htmlFor="name" className="sr-only">Name</label>
         <input
@@ -53,6 +53,7 @@ const ContactForm = () => {
           onChange={handleChange}
           className="border-2 w-full p-2 rounded-lg"
           placeholder="Name"
+          required
         />
         <ValidationError prefix="Name" field="name" errors={state.errors} />
         
@@ -89,7 +90,7 @@ const ContactForm = () => {
           {state.submitting ? 'Sending...' : 'Submit'}
         </button>
       </form>
-      <p className='text-center text-2xl mb-16 font-extrabold'>Or choose to book your ride below, through one of our social medias:</p>
+      <p className='text-center text-3xl italic mb-16 font-extrabold'>Or choose to book your ride below, through one of our social medias:</p>
     </>
   );
 }
