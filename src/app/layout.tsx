@@ -17,8 +17,8 @@ ReactGA.initialize("G-D93226M9FT");
 const mont= Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Cro Quad",
-  description: "CroQuad Hvar official website",
+  title: "Cro Quad - Quad & ATV Tours and Rental in StariGrad Hvar, Croatia | Scenic Off-Road Adventure",
+  description: "Explore Hvar Island with Cro Quad - the top-rated quad and ATV tour and rental experience in Croatia. Book your off-road adventure with local guides, stunning views, and unforgettable trails.",
   authors:[
     { name: 'Dominik Gabela', url: 'https://github.com/dgabel01' }
   ]

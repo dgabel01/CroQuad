@@ -31,6 +31,11 @@ const Hero = () => {
                 Book Now
               </button>
             </Link>
+             <Link href={"/rent"}>
+              <button type="button" className="m-4 sm:m-7 text-white rounded border-2 border-neutral-50 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-bold uppercase leading-normal transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-white hover:bg-opacity-30 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200">
+                Rent a quad now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
