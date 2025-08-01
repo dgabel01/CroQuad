@@ -38,7 +38,7 @@ import {
         value: "sunsettour",
         desc: (
           <>
-            <TourPricesCard items={[{title:"CroQuad Sunset Tour", riders:"ATV single / double riding", price:"110", personsperquad:"One or two persons, one quad bike"}]} />
+            <TourPricesCard items={[{title:"CroQuad Sunset Tour", riders:"ATV single / double riding", price:"120", personsperquad:"One or two persons, one quad bike"}]} />
           </>
       )
       },

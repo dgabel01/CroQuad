@@ -19,7 +19,7 @@ const RentDetails = () => {
             <div className='flex flex-col gap-16'>
                 <div className='flex flex-col gap-8'>
                     <div>
-                        <p className='font-bold text-2xl'>*We have a total of 3 quad bikes available, with a maximum capacity of 6 people.</p>
+                        <p className='font-bold text-2xl'>*We have a total of 8 quad bikes available, with a maximum capacity of 6 people.</p>
                     </div>
                     <ul className='text-2xl font-medium'>
                         <li className='my-8 font-bold'>ATV details:</li>

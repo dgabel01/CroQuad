@@ -50,7 +50,7 @@ const AllTours = () => {
                 {
                   image: durationIcon,
                   description: {
-                    num: 5,
+                    num: 4,
                     unit: 'hours',
                     type: 'Duration',
                   },
@@ -71,7 +71,7 @@ const AllTours = () => {
                   },
                 },
               ],
-              note: "The tour includes a bottle of cold water, a licenced guide and paid gas for the quad. We have five quads available. Each quad can accommodate two people, which means we can accommodate a maximum of ten people. The tour will proceed with a minimum of six people.",
+              note: "The tour includes a bottle of cold water, a licenced guide and paid gas for the quad. We have five quads available. Each quad can accommodate two people, which means we can accommodate a maximum of ten people. The tour will proceed with a minimum of six people.Also note: Option without lunch is possible, contact us for more info.",
               food: "Lunch included",
             },
           ]}
@@ -183,7 +183,7 @@ const AllTours = () => {
                   },
                 },
               ],
-              note: "Important - The exact departure and return times depend on the sunset. The tour includes a bottle of cold water, a licenced guide and paid gas for the quad. We have five quads available. Each quad can accommodate two people, which means we can accommodate a maximum of ten people. The tour will proceed with a minimum of six people.",
+              note: "Important - The exact departure and return times depend on the sunset. The tour includes a bottle of cold water, a licenced guide and paid gas for the quad. We have five quads available. Each quad can accommodate two people, which means we can accommodate a maximum of ten people. The tour will proceed with a minimum of six people. Also note: Option without lunch is possible, contact us for more info.",
               food: "Dinner included",
             },
           ]}
