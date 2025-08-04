@@ -1,5 +1,5 @@
 import React from "react";
-import imageOne from "../../public/image3.jpeg";
+import imageOne from "../../public/novo7.jpeg";
 import imageTwo from "../../public/image2.jpeg";
 import imageThree from "../../public/IMG_6945.webp";
 import imageFour from "../../public/IMG_6835.webp";

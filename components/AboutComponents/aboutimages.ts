@@ -15,6 +15,13 @@ import imageTwelve from '../../public/IMG_7000.webp'
 import imageThirteen from '../../public/IMG_9344 .webp'
 import imageFourteen from '../../public/IMG_6945.webp'
 import imageFifteen from '../../public/2024-05-07.jpg'
+import imageSixteen from '../../public/novo1.jpeg'
+import imageSeventeen from '../../public/novo2.jpeg'
+import imageEighteen from '../../public/novo3.jpeg'
+import imageNineteen from '../../public/novo4.jpeg'
+import imageTwenty from '../../public/novo5.jpeg'
+import imageTwentyOne from '../../public/novo6.jpeg'
+import imageTwentyTwo from '../../public/novo7.jpeg'
 
 
 export interface CustomImage extends Image {
@@ -178,5 +185,77 @@ export const aboutimages: CustomImage[] = [
 
     ]
 
+  },
+   {
+    src: imageSixteen.src,
+    original:imageSixteen.src,
+    width:1200,
+    height:900,
+    tags:[
+      { value: "Sunset", title: "Sunset" }, 
+
+    ]
+
+  },
+  {
+    src: imageSeventeen.src,
+    original:imageSeventeen.src,
+    width:1200,
+    height:900,
+    tags:[
+      { value: "Beach", title: "Beach" }, 
+
+    ]
+
+  },
+  {
+    src: imageEighteen.src,
+    original:imageEighteen.src,
+    width:1200,
+    height:900,
+    tags:[
+      { value: "Offroad", title: "Offroad" }, 
+
+    ]
+
+  },
+  {
+    src: imageNineteen.src,
+    original:imageNineteen.src,
+    width:1200,
+    height:900,
+    tags:[
+      { value: "Sunset", title: "Sunset" }, 
+
+    ]
+
+  },
+  {
+    src: imageTwenty.src,
+    original:imageTwenty.src,
+    width:1200,
+    height:900,
+    tags:[
+      { value: "Tour", title: "Tour" }, 
+
+    ]
+
+  },
+  {
+    src: imageTwentyOne.src,
+    original:imageTwentyOne.src,
+    width:1200,
+    height:900,
+    tags:[
+      { value: "Sunset Tour", title: "Sunset Tour" }, 
+
+    ]
+
+  },
+  {
+    src: imageTwentyTwo.src,
+    original:imageTwentyTwo.src,
+    width:1200,
+    height:900,
   },
 ];
