@@ -12,14 +12,32 @@ export const metadata: Metadata = {
   description: 'Page where the CroQuad team adds posts about quads and experiences',
 }
 
-const client = createClient({
-  space: process.env.SPACE_ID || "",
-  accessToken: process.env.ACCESS_TOKEN || "",
-});
+// Create client only when credentials are available
+const createContentfulClient = () => {
+  if (!process.env.SPACE_ID || !process.env.ACCESS_TOKEN) {
+    return null;
+  }
+  return createClient({
+    space: process.env.SPACE_ID,
+    accessToken: process.env.ACCESS_TOKEN,
+  });
+};
 
 const getBlogEntries = async (): Promise<BlogQueryResult> => {
-  const entries = await client.getEntries({ content_type: "blog" });
-  return entries as unknown as BlogQueryResult;
+  const client = createContentfulClient();
+  
+  // Return empty result if client couldn't be created
+  if (!client) {
+    return { items: [] } as BlogQueryResult;
+  }
+
+  try {
+    const entries = await client.getEntries({ content_type: "blog" });
+    return entries as unknown as BlogQueryResult;
+  } catch (error) {
+    console.warn("Failed to fetch blog entries:", error);
+    return { items: [] } as BlogQueryResult;
+  }
 };
 
 export default async function Blog() {
@@ -46,55 +64,61 @@ export default async function Blog() {
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-24">
-          {blogEntries.items.map((singlePost) => {
-            const { slug, title, date, image, author } = singlePost.fields;
+        {blogEntries.items.length === 0 ? (
+          <div className="flex justify-center items-center py-16">
+            <p className="text-xl text-gray-500">No blog posts available yet. Check back soon!</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-24">
+            {blogEntries.items.map((singlePost) => {
+              const { slug, title, date, image, author } = singlePost.fields;
+              
+              let imageURL :any = cardPicture;
+              if(image){
+                imageURL = `https:${(image as {fields:{file:{url:string}}}).fields.file.url}`;
+              }
             
-            let imageURL :any = cardPicture;
-            if(image){
-              imageURL = `https:${(image as {fields:{file:{url:string}}}).fields.file.url}`;
-            }
-          
-            return (
-              <div key={slug} className="flex flex-col h-full">
-                <div className="bg-white rounded-2xl overflow-hidden border-2 shadow-md flex flex-col h-full">
-                  <div className="w-full h-48 relative">
-                    <Image
-                      src={imageURL}
-                      fill
-                      alt={`${title} blog post thumbnail`}
-                      className="object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    />
-                  </div>
-                  <div className="px-6 py-4 flex-grow">
-                    <h2 className="tracking-widest text-lg title-font font-medium text-gray-400 mb-2 line-clamp-2">
-                      {title}
-                    </h2>
-                    <p className='font-medium text-base'>
-                      By: {author}
-                    </p>
-                    <p className="text-sm text-gray-600 mt-2">
-                      Posted on{" "}
-                      {new Date(date).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
-                    </p>
-                  </div>
-                  <div className="px-6 pt-2 pb-4 mt-auto">
-                    <Link href={`/blog/${slug}`}>
-                      <span className="inline-block bg-black text-white px-3 py-1 text-base font-semibold mr-2 mb-2 cursor-pointer tracking-widest rounded-full">
-                        Read More
-                      </span>
-                    </Link>
+              return (
+                <div key={slug} className="flex flex-col h-full">
+                  <div className="bg-white rounded-2xl overflow-hidden border-2 shadow-md flex flex-col h-full">
+                    <div className="w-full h-48 relative">
+                      <Image
+                        src={imageURL}
+                        fill
+                        alt={`${title} blog post thumbnail`}
+                        className="object-cover"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      />
+                    </div>
+                    <div className="px-6 py-4 flex-grow">
+                      <h2 className="tracking-widest text-lg title-font font-medium text-gray-400 mb-2 line-clamp-2">
+                        {title}
+                      </h2>
+                      <p className='font-medium text-base'>
+                        By: {author}
+                      </p>
+                      <p className="text-sm text-gray-600 mt-2">
+                        Posted on{" "}
+                        {new Date(date).toLocaleDateString("en-US", {
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
+                        })}
+                      </p>
+                    </div>
+                    <div className="px-6 pt-2 pb-4 mt-auto">
+                      <Link href={`/blog/${slug}`}>
+                        <span className="inline-block bg-black text-white px-3 py-1 text-base font-semibold mr-2 mb-2 cursor-pointer tracking-widest rounded-full">
+                          Read More
+                        </span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </>
   )

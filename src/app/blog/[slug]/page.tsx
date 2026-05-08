@@ -23,10 +23,16 @@ const renderText: RenderText = (text: string) => {
   return text.trim();
 };
 
-const client = createClient({
-    space: process.env.SPACE_ID || "",
-    accessToken: process.env.ACCESS_TOKEN || "",
+// Create client only when credentials are available
+const createContentfulClient = () => {
+  if (!process.env.SPACE_ID || !process.env.ACCESS_TOKEN) {
+    return null;
+  }
+  return createClient({
+    space: process.env.SPACE_ID,
+    accessToken: process.env.ACCESS_TOKEN,
   });
+};
   
   type BlogPageProps = {
     params: {
@@ -35,24 +41,44 @@ const client = createClient({
   };
   
   export async function generateStaticParams() {
-    const queryOptions = {
-      content_type: "blog",
-      select: "fields.slug",
-    };
-  
-    const articles = await client.getEntries(queryOptions);
-    return articles.items.map((article) => ({
-      slug: article.fields.slug,
-    }));
+    const client = createContentfulClient();
+    if (!client) {
+      return [];
+    }
+
+    try {
+      const queryOptions = {
+        content_type: "blog",
+        select: "fields.slug",
+      };
+    
+      const articles = await client.getEntries(queryOptions);
+      return articles.items.map((article) => ({
+        slug: article.fields.slug,
+      }));
+    } catch (error) {
+      console.warn("Failed to generate static params for blog posts:", error);
+      return [];
+    }
   }
   
-  const fetchBlogPost = async (slug: string): Promise<BlogItem> => {
-    const queryOptions = {
-      content_type: "blog",
-      "fields.slug[match]": slug,
-    };
-    const queryResult = await client.getEntries(queryOptions);
-    return queryResult.items[0] as unknown as BlogItem;
+  const fetchBlogPost = async (slug: string): Promise<BlogItem | null> => {
+    const client = createContentfulClient();
+    if (!client) {
+      return null;
+    }
+
+    try {
+      const queryOptions = {
+        content_type: "blog",
+        "fields.slug[match]": slug,
+      };
+      const queryResult = await client.getEntries(queryOptions);
+      return queryResult.items[0] as unknown as BlogItem;
+    } catch (error) {
+      console.warn("Failed to fetch blog post:", error);
+      return null;
+    }
   };
 
 
@@ -60,6 +86,19 @@ const client = createClient({
     const { params } = props;
     const { slug } = params;
     const article = await fetchBlogPost(slug);
+    
+    // Handle case when article is not found
+    if (!article) {
+      return (
+        <main className="min-h-screen p-24 flex justify-center mt-24">
+          <div className="max-w-2xl text-center flex flex-col items-center justify-center">
+            <h1 className="font-extrabold text-3xl mx-8 mb-8">Blog Post Not Found</h1>
+            <p className="text-xl text-slate-400">The blog post you&apos;re looking for is not available.</p>
+          </div>
+        </main>
+      );
+    }
+
     const { title, date, content, image, author} = article.fields;
   
       

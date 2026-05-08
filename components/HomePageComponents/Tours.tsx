@@ -31,7 +31,7 @@ export const tourData = [
       {
         image: durationIcon,
         description: {
-          num: 4.5,
+          num: 4,
           unit: "hours",
           type: "Duration",
         },
@@ -111,7 +111,7 @@ export const tourData = [
       {
         image: durationIcon,
         description: {
-          num: 3,
+          num: 4,
           unit: "hours",
           type: "Duration",
         },
